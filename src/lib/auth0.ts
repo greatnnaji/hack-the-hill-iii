@@ -4,7 +4,13 @@ import { NextResponse } from "next/server";
 import { upsertUser } from "@/lib/users";
 
 export function isAuthConfigured(): boolean {
-  return Boolean(process.env.AUTH0_DOMAIN);
+  return [
+    process.env.AUTH0_DOMAIN,
+    process.env.AUTH0_CLIENT_ID,
+    process.env.AUTH0_CLIENT_SECRET,
+    process.env.AUTH0_SECRET,
+    process.env.APP_BASE_URL,
+  ].every(Boolean);
 }
 
 // Runs after Auth0 redirects back: saves the user row, then continues to the page they asked for.
