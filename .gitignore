@@ -150,3 +150,10 @@ next-env.d.ts
 
 # Personal Claude Code instructions
 CLAUDE.md
+
+# Personal plan for the current task
+implementation.md
+
+# Raw GC InfoBase downloads (large)
+pipeline/data/
+__pycache__/
