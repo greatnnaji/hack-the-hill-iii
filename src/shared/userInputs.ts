@@ -1,7 +1,8 @@
 import type { UserInputs } from "./types";
 
 const key = "where-does-my-tax-go:user-inputs";
-const fallback: UserInputs = { income: 75_000, province: "ON", postalCode: "", incomeIsTypical: false };
+export const defaultUserInputs: UserInputs = { income: 75_000, province: "ON", postalCode: "", incomeIsTypical: false };
+const fallback = defaultUserInputs;
 const listeners = new Set<() => void>();
 let cachedInputs: UserInputs | undefined;
 
@@ -15,11 +16,13 @@ export function readUserInputs(): UserInputs {
 }
 
 export function saveUserInputs(inputs: UserInputs): void {
+  cachedInputs = inputs;
   try {
     sessionStorage.setItem(key, JSON.stringify(inputs));
   } catch {
     // Storage can be unavailable in private browsing or during server rendering.
   }
+  listeners.forEach((listener) => listener());
 }
 
 export function getUserInputsSnapshot(): UserInputs {
@@ -31,13 +34,13 @@ export function getUserInputsServerSnapshot(): UserInputs {
   return fallback;
 }
 
+export const getServerUserInputsSnapshot = getUserInputsServerSnapshot;
+
 export function subscribeToUserInputs(listener: () => void): () => void {
   listeners.add(listener);
   return () => listeners.delete(listener);
 }
 
 export function setUserInputs(inputs: UserInputs): void {
-  cachedInputs = inputs;
   saveUserInputs(inputs);
-  listeners.forEach((listener) => listener());
 }
