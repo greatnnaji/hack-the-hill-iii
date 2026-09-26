@@ -21,13 +21,21 @@ export function isDevBypass(): boolean {
   return !isAuthConfigured() && process.env.NODE_ENV === "development";
 }
 
-export async function requireUser(): Promise<CurrentUser> {
+// Returns null when nobody is logged in. Never builds the Auth0 client without its settings.
+export async function getCurrentUser(): Promise<CurrentUser | null> {
   if (isDevBypass()) return DEV_USER;
+  if (!isAuthConfigured()) return null;
   const session = await getAuth0().getSession();
-  if (!session) throw new UnauthorizedError();
+  if (!session) return null;
   return {
     id: session.user.sub,
     email: session.user.email ?? null,
     name: session.user.name ?? null,
   };
+}
+
+export async function requireUser(): Promise<CurrentUser> {
+  const user = await getCurrentUser();
+  if (!user) throw new UnauthorizedError();
+  return user;
 }

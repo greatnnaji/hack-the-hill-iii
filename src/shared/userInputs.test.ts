@@ -1,5 +1,5 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
-import { getUserInputsSnapshot, readUserInputs, saveUserInputs, setUserInputs, subscribeToUserInputs } from "./userInputs";
+import { clearUserInputs, getUserInputsSnapshot, readUserInputs, saveUserInputs, setUserInputs, subscribeToUserInputs } from "./userInputs";
 
 const fallback = { income: 75_000, province: "ON", postalCode: "", incomeIsTypical: false };
 
@@ -11,6 +11,7 @@ describe("tax journey user inputs", () => {
     vi.stubGlobal("sessionStorage", {
       getItem: (key: string) => values.get(key) ?? null,
       setItem: (key: string, value: string) => values.set(key, value),
+      removeItem: (key: string) => values.delete(key),
     });
   });
 
@@ -46,6 +47,19 @@ describe("tax journey user inputs", () => {
 
     expect(getUserInputsSnapshot()).toEqual(next);
     expect(notifications).toBe(1);
+    unsubscribe();
+  });
+
+  it("forgets saved preferences on logout", () => {
+    let notifications = 0;
+    const unsubscribe = subscribeToUserInputs(() => notifications++);
+    setUserInputs({ income: 92_000, province: "BC", postalCode: "V6B 1A1", incomeIsTypical: false });
+
+    clearUserInputs();
+
+    expect(values.size).toBe(0);
+    expect(getUserInputsSnapshot()).toEqual(fallback);
+    expect(notifications).toBe(2);
     unsubscribe();
   });
 });

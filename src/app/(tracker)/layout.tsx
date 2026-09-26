@@ -1,7 +1,8 @@
 import type { ReactNode } from "react";
+import { AccountMenu } from "@/components/AccountMenu";
 import { TaxTrackerShell } from "@/components/TaxTrackerShell";
 import "./tax-journey.css";
 
 export default function TaxTrackerLayout({ children }: { children: ReactNode }) {
-  return <TaxTrackerShell>{children}</TaxTrackerShell>;
+  return <TaxTrackerShell accountMenu={<AccountMenu />}>{children}</TaxTrackerShell>;
 }

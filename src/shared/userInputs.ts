@@ -44,3 +44,14 @@ export function subscribeToUserInputs(listener: () => void): () => void {
 export function setUserInputs(inputs: UserInputs): void {
   saveUserInputs(inputs);
 }
+
+// Called on logout so the next person using this tab doesn't see these numbers.
+export function clearUserInputs(): void {
+  cachedInputs = undefined;
+  try {
+    sessionStorage.removeItem(key);
+  } catch {
+    // Storage can be unavailable in private browsing.
+  }
+  listeners.forEach((listener) => listener());
+}
