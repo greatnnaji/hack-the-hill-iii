@@ -147,3 +147,6 @@ vite.config.ts.timestamp-*
 next-env.d.ts
 *.pem
 .DS_Store
+
+# Personal Claude Code instructions
+CLAUDE.md
