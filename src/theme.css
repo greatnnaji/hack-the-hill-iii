@@ -1,0 +1,26 @@
+.tax-app {
+  --wm-canvas: #e9e3d7;
+  --wm-surface: #f7f2e9;
+  --wm-ink: #201d19;
+  --wm-muted: #716d64;
+  --wm-soft: #aaa399;
+  --wm-line: rgba(32, 29, 25, .24);
+  --wm-line-strong: rgba(32, 29, 25, .52);
+  --wm-red: #b54834;
+  --wm-red-soft: #e4c2b8;
+  --wm-olive: #5d7661;
+  --wm-brass: #b18a46;
+  --wm-stone: #d5cbbb;
+  --wm-paper-shadow: 0 22px 70px rgba(42, 34, 25, .16);
+  --wm-radius-sm: 2px;
+  --wm-radius-md: 4px;
+  --wm-space-1: 8px;
+  --wm-space-2: 12px;
+  --wm-space-3: 18px;
+  --wm-space-4: 24px;
+  --wm-space-5: 32px;
+  --wm-space-6: 48px;
+  --wm-motion-fast: 180ms;
+  --wm-motion-base: 420ms;
+  --wm-motion-slow: 900ms;
+}

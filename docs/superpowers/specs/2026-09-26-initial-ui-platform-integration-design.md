@@ -13,7 +13,7 @@ Bring the initial tax journey UI from PR #4 into the fork while preserving the e
 - Do not take PR #4's deletions of the platform implementation.
 - Keep the current Auth0 gate and keep `/api/*` handlers and their response contracts intact.
 - Keep petition pages under `/petition/*` and tax-journey pages at `/`, `/receipt`, `/category/[id]`, and `/decision/[id]`.
-- Retain PR #4's illustrative receipt data and local-only income/province/postal-code preferences. The UI must continue to identify those estimates as illustrative and must not send income to the server.
+- Retain PR #4's illustrative receipt data and session-only income/province/postal-code preferences. The UI must continue to identify those estimates as illustrative and must not send income to the server.
 - Do not connect the illustrative tracker to the spending API or alter the petition draft data model as part of this integration.
 
 ## 3. Route and component structure
@@ -24,14 +24,14 @@ Keep the existing static petition routes and route handlers in place. Next's exi
 
 ## 4. UI and state
 
-Bring over the PR #4 cinematic journey, receipt/category/decision views, shared fixture data, user-input types, and local-storage helpers. Adapt navigation to the explicit App Router pages while preserving browser back/forward behavior. Keep the current landing page's default Next.js starter content only as replaced root content; do not remove petition or API code.
+Bring over the PR #4 cinematic journey, receipt/category/decision views, shared fixture data, user-input types, and session-storage helpers. Adapt navigation to the explicit App Router pages while preserving browser back/forward behavior. Keep the current landing page's default Next.js starter content only as replaced root content; do not remove petition or API code.
 
 Merge the new visual styles into `src/app/globals.css`, retaining the existing platform color tokens and base styles. Namespace or reconcile overlapping selectors so the new tax journey styles do not change petition screen layout.
 
 ## 5. Data and security boundaries
 
 - Tax estimates and spending records remain the mock values supplied by PR #4.
-- User income, province, and optional postal code stay in browser local storage, as in PR #4; no API call stores them.
+- User income, province, and optional postal code stay in browser session storage, as in PR #4; no API call stores them.
 - Auth0 sessions, database writes, draft ownership, and postal-code handling for MP lookup remain unchanged.
 - Existing links from the petition flow continue to use its current routes and API contracts.
 
