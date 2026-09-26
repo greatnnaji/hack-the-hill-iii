@@ -1,5 +1,16 @@
 @import "tailwindcss";
 
+/* Colours from the wireframe. Izu can replace these with the final design tokens. */
+@theme {
+  --color-paper: #faf9f6;
+  --color-canvas: #eceae5;
+  --color-ink: #1c1b19;
+  --color-muted: #6b6862;
+  --color-line: #dcd9d2;
+  --color-accent: #1f6f4a;
+  --color-danger: #b42318;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;

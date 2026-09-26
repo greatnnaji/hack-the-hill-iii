@@ -21,6 +21,7 @@ import pandas as pd
 from pydantic import BaseModel
 
 from find_jumps import fy, load
+from make_images import image_url
 
 HERE = Path(__file__).parent
 CACHE = HERE / "llm_cache.json"
@@ -167,7 +168,7 @@ def main():
             "source_type": "data",
             "level": "federal",
             "sources": [SOURCE],
-            "image_url": None,
+            "image_url": image_url(p["dept_code"]),
             "petition": None,
         })
 
@@ -176,15 +177,20 @@ def main():
     print(f"Wrote {len(stories)} stories to {OUT}")
 
     if args.push:
-        url, secret = os.environ["SPENDING_API_URL"].rstrip("/"), os.environ["INTERNAL_SECRET"]
-        req = urllib.request.Request(
-            f"{url}/internal/spending",
-            data=json.dumps(stories).encode(),
-            headers={"Content-Type": "application/json", "X-Internal-Secret": secret},
-            method="POST",
-        )
-        with urllib.request.urlopen(req) as res:
-            print(f"Pushed to {url}/internal/spending: HTTP {res.status}")
+        push(stories)
+
+
+def push(stories):
+    """POST stories to $SPENDING_API_URL/internal/spending (also used by build_news.py)."""
+    url, secret = os.environ["SPENDING_API_URL"].rstrip("/"), os.environ["INTERNAL_SECRET"]
+    req = urllib.request.Request(
+        f"{url}/internal/spending",
+        data=json.dumps(stories).encode(),
+        headers={"Content-Type": "application/json", "X-Internal-Secret": secret},
+        method="POST",
+    )
+    with urllib.request.urlopen(req) as res:
+        print(f"Pushed to {url}/internal/spending: HTTP {res.status}")
 
 
 if __name__ == "__main__":

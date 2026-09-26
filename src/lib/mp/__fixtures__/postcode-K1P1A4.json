@@ -1,0 +1,41 @@
+{
+  "code": "K1P1A4",
+  "representatives_centroid": [
+    {
+      "name": "Catherine McKenney",
+      "district_name": "Ottawa Centre",
+      "elected_office": "MPP",
+      "party_name": "New Democratic Party of Ontario",
+      "email": "cmckenney-co@ndp.on.ca",
+      "photo_url": "https://www.ola.org/sites/default/files/member/profile-photo/Catherine-McKenney.jpg",
+      "url": "https://www.ola.org/en/members/all/catherine-mckenney",
+      "offices": [
+        { "type": "legislature", "tel": "1 416 325-0071" },
+        { "type": "constituency", "tel": "1 613 722-6414" }
+      ]
+    },
+    {
+      "name": "Yasir Naqvi",
+      "district_name": "Ottawa Centre",
+      "elected_office": "MP",
+      "party_name": "Liberal",
+      "email": "yasir.naqvi@parl.gc.ca",
+      "photo_url": "https://www.ourcommons.ca/Content/Parliamentarians/Images/OfficialMPPhotos/45/NaqviYasir_Lib.jpg",
+      "url": "https://www.ourcommons.ca/Members/en/yasir-naqvi(110572)",
+      "offices": [
+        { "type": "legislature", "tel": "1 613 996-5322" },
+        { "type": "constituency", "tel": "1 613 946-8682" }
+      ]
+    },
+    {
+      "name": "Ariel Troster",
+      "district_name": "Somerset",
+      "elected_office": "Councillor",
+      "party_name": "",
+      "email": "Ariel.Troster@ottawa.ca",
+      "photo_url": "",
+      "url": "https://ottawa.ca/en/city-hall/mayor-and-city-councillors/ariel-troster-councillor-ward-14-somerset",
+      "offices": [{ "type": "legislature", "tel": "1 613 580-2484" }]
+    }
+  ]
+}
