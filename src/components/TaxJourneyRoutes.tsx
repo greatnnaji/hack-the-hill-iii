@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { CinematicTaxJourney } from "@/components/CinematicTaxJourney";
 import { CategoryScreen, DecisionScreen, ReceiptScreen } from "@/components/TrackerScreens";
 import { useTaxInputs } from "@/components/TaxTrackerShell";
+import { estimateTax } from "@/shared/tax";
 
 type Province = { code: string; name: string };
 
@@ -17,7 +18,6 @@ const provinces: Province[] = [
 ];
 
 const money = new Intl.NumberFormat("en-CA", { style: "currency", currency: "CAD", maximumFractionDigits: 0 });
-const federalTax = (income: number) => Math.round(9510 * (income / 75_000));
 
 export function TaxLandingRoute() {
   const { inputs, updateInputs } = useTaxInputs();
@@ -46,7 +46,7 @@ export function TaxLandingRoute() {
 
   return (
     <CinematicTaxJourney
-      data={{ incomeLabel: money.format(inputs.income), federalTaxLabel: money.format(federalTax(inputs.income)), provinceLabel: inputs.province }}
+      data={{ incomeLabel: money.format(inputs.income), federalTaxLabel: money.format(estimateTax(inputs.income, inputs.province).federal), provinceLabel: inputs.province }}
       onContinue={() => router.push("/receipt")}
     >
       <form className="journey-income-form" onSubmit={submit}>
@@ -59,7 +59,7 @@ export function TaxLandingRoute() {
         <input className="postal-input" id="postal" inputMode="text" maxLength={7} placeholder="K1A 0B1" value={inputs.postalCode} onChange={(event) => updateInputs({ ...inputs, postalCode: event.target.value.toUpperCase() })} aria-describedby={postalError ? "postal-error" : undefined} />
         {postalError && <p className="field-error" id="postal-error" role="alert">{postalError}</p>}
         <button className="primary-button" type="submit">See my receipt <span aria-hidden="true">→</span></button>
-        <p className="privacy-note">Your income never leaves this device. Estimates use mock fiscal-year 2024–25 data for now.</p>
+        <p className="privacy-note">Your income never leaves this device. Estimates use Canada Revenue Agency 2024 tax rates and actual federal spending for 2024–25.</p>
       </form>
     </CinematicTaxJourney>
   );

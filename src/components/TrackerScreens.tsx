@@ -1,17 +1,24 @@
+import { breakdown, yourShare } from '../shared/breakdown'
 import { categoryById, receiptCategories, spendingById, spendingItems } from '../shared/fixtures'
+import { howWeCalculate } from '../shared/howWeCalculate'
+import { estimateTax } from '../shared/tax'
 import type { SpendingItem, UserInputs } from '../shared/types'
 
 const money = new Intl.NumberFormat('en-CA', { style: 'currency', currency: 'CAD', maximumFractionDigits: 0 })
 const cents = new Intl.NumberFormat('en-CA', { style: 'currency', currency: 'CAD', minimumFractionDigits: 2, maximumFractionDigits: 2 })
-const federalTax = (income: number) => Math.round(9510 * (income / 75_000))
-const totalFederalSpending = 1_000_000_000_000
-const shareOf = (tax: number, amount: number) => cents.format(tax * (amount / totalFederalSpending))
+const federalTax = (inputs: UserInputs) => estimateTax(inputs.income, inputs.province).federal
+const shareOf = (tax: number, amount: number) => cents.format(yourShare(tax, amount))
 const dateLabel = (value: string) => new Intl.DateTimeFormat('en-CA', { dateStyle: 'medium' }).format(new Date(`${value}T12:00:00`))
 
 export function ReceiptScreen({ inputs, navigate }: { inputs: UserInputs; navigate: (path: string) => void }) {
-  const tax = federalTax(inputs.income)
-  const rows = receiptCategories.map((category) => ({ ...category, personal: Math.round(tax * category.percent / 100) }))
-  const operationalPercent = rows.filter((row) => row.id === 'departments' || row.id === 'defence').reduce((sum, row) => sum + row.percent, 0)
+  const tax = federalTax(inputs)
+  // With no federal tax to split, show how every $100 of federal spending is split instead.
+  const perHundred = tax === 0
+  const base = perHundred ? 100 : tax
+  const rows = breakdown.items.map((item) => ({ ...item, personal: yourShare(base, item.amount) }))
+  const programs = rows.slice(0, -1)
+  const topPercent = (programs.reduce((sum, row) => sum + row.amount, 0) / breakdown.total_federal_spending) * 100
+  const biggestPercent = Math.max(...programs.map((row) => row.percent))
 
   return (
     <section className="tracker-page receipt-page" aria-labelledby="receipt-title">
@@ -21,22 +28,27 @@ export function ReceiptScreen({ inputs, navigate }: { inputs: UserInputs; naviga
       </div>
       <div className="receipt-layout">
         <article className="tax-receipt">
-          <div className="receipt-header"><span>WHERE DOES MY TAX GO?</span><span>2024–25</span></div>
+          <div className="receipt-header"><span>WHERE DOES MY TAX GO?</span><span>{breakdown.fiscal_year.replace('-', '–')}</span></div>
           <div className="receipt-rule" />
-          <p className="receipt-small">ESTIMATED FEDERAL INCOME TAX</p>
-          <strong className="receipt-total">{money.format(tax)}</strong>
-          <p className="receipt-subtitle">Based on {money.format(inputs.income)} income · {inputs.province}</p>
+          <p className="receipt-small">{perHundred ? 'HOW EVERY $100 OF FEDERAL SPENDING IS SPLIT' : 'ESTIMATED FEDERAL INCOME TAX'}</p>
+          <strong className="receipt-total">{money.format(base)}</strong>
+          <p className="receipt-subtitle">{perHundred ? `No federal income tax on ${money.format(inputs.income)} income · ${inputs.province}` : `Based on ${money.format(inputs.income)} income · ${inputs.province}`}</p>
           <div className="receipt-rule receipt-rule-dashed" />
-          <div className="receipt-lines">{rows.map((row, index) => <div className="receipt-line" key={row.id} style={{ '--line-delay': `${index * 60}ms` } as React.CSSProperties}><span>{row.name}</span><strong>{money.format(row.personal)}</strong><button onClick={() => row.drillable && navigate(`/category/${row.id}`)} disabled={!row.drillable} aria-label={row.drillable ? `Explore ${row.name}` : `${row.name} information`}>{row.drillable ? '↗' : '·'}</button></div>)}</div>
+          <div className="receipt-lines">{rows.map((row, index) => <div className="receipt-line" key={row.name} style={{ '--line-delay': `${index * 60}ms` } as React.CSSProperties}><span title={row.official_name || undefined}>{row.name}</span><strong>{money.format(row.personal)}</strong><span aria-hidden="true">·</span></div>)}</div>
           <div className="receipt-rule" />
           <p className="receipt-method">Estimate. Your federal income tax, split in the same proportions as total federal spending.</p>
-          <div className="receipt-footer"><span>DATA: FISCAL YEAR 2024–25</span><a href="https://www.canada.ca/en.html" target="_blank" rel="noreferrer">OFFICIAL SOURCE ↗</a></div>
+          <div className="receipt-footer"><span>DATA: FISCAL YEAR {breakdown.fiscal_year.replace('-', '–')}</span><a href={breakdown.source.url} target="_blank" rel="noreferrer">OFFICIAL SOURCE ↗</a></div>
         </article>
         <aside className="receipt-insight">
           <p className="section-label">A closer look</p>
-          <div className="receipt-stat"><strong>{operationalPercent.toFixed(1)}%</strong><span>supports departments and defence—the part of the federal budget where contracts appear.</span></div>
-          <div className="receipt-bars">{rows.slice(0, 6).map((row) => <div key={row.id} className="mini-bar"><span>{row.name}</span><i><b style={{ width: `${row.percent * 4.3}%` }} /></i><em>{row.percent}%</em></div>)}</div>
-          <p className="source-note">Mock values for the visual phase. Each line will connect to the official Public Accounts data source when the API is available.</p>
+          <div className="receipt-stat"><strong>{topPercent.toFixed(1)}%</strong><span>goes to just {programs.length} of the {breakdown.program_count.toLocaleString('en-CA')} federal programs.</span></div>
+          <div className="receipt-bars">{programs.slice(0, 6).map((row) => <div key={row.name} className="mini-bar"><span>{row.name}</span><i><b style={{ width: `${(row.percent / biggestPercent) * 100}%` }} /></i><em>{row.percent}%</em></div>)}</div>
+          <button className="text-action receipt-explore" onClick={() => navigate(`/category/${categoryOptions()[0].id}`)}>Browse spending records ↗</button>
+          <details className="how-we-calculate">
+            <summary>How we calculate</summary>
+            {howWeCalculate.map((section) => <section key={section.title}><h3>{section.title}</h3>{section.body.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}{section.sources.map((source) => <a key={source.url} href={source.url} target="_blank" rel="noreferrer">{source.label} ↗</a>)}</section>)}
+          </details>
+          <p className="source-note">Source: {breakdown.source.label}, actual spending for fiscal year {breakdown.fiscal_year.replace('-', '–')}. Tax estimate uses Canada Revenue Agency 2024 rates.</p>
         </aside>
       </div>
     </section>
@@ -46,7 +58,7 @@ export function ReceiptScreen({ inputs, navigate }: { inputs: UserInputs; naviga
 export function CategoryScreen({ categoryId, inputs, navigate }: { categoryId: string; inputs: UserInputs; navigate: (path: string) => void }) {
   const category = categoryById(categoryId) ?? receiptCategories.find((item) => item.drillable)!
   const items = spendingItems.filter((item) => categoryFor(item) === category.id).sort((a, b) => b.amount - a.amount)
-  const tax = federalTax(inputs.income)
+  const tax = federalTax(inputs)
   return (
     <section className="tracker-page category-page" aria-labelledby="category-title">
       <button className="back-action" onClick={() => navigate('/receipt')}>← Back to receipt</button>
@@ -66,7 +78,7 @@ function DecisionCard({ item, tax, navigate }: { item: SpendingItem; tax: number
 
 export function DecisionScreen({ itemId, inputs, navigate }: { itemId: string; inputs: UserInputs; navigate: (path: string) => void }) {
   const item = spendingById(itemId) ?? spendingItems[0]
-  const tax = federalTax(inputs.income)
+  const tax = federalTax(inputs)
   const growth = Math.round((item.currentValue / item.originalValue - 1) * 100)
   return (
     <section className="tracker-page detail-page" aria-labelledby="decision-title">

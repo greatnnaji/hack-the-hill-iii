@@ -1,0 +1,91 @@
+{
+  "fiscal_year": "2024-25",
+  "total_federal_spending": 472529869720,
+  "program_count": 1228,
+  "items": [
+    {
+      "name": "Old Age Security pensions",
+      "description": "Monthly payments to Canadians aged 65 and over.",
+      "official_name": "Old Age Security",
+      "department": "Employment and Social Development Canada",
+      "dept_code": "HRSD",
+      "program_code": "BGN01",
+      "amount": 80762279357,
+      "percent": 17.1
+    },
+    {
+      "name": "Health care transfer to provinces",
+      "description": "The Canada Health Transfer, which helps provinces and territories pay for health care.",
+      "official_name": "Canada Health Transfer",
+      "department": "Department of Finance Canada",
+      "dept_code": "FIN",
+      "program_code": "BUV07",
+      "amount": 52070685977,
+      "percent": 11.0
+    },
+    {
+      "name": "Interest on the national debt",
+      "description": "Interest paid on money the federal government has borrowed.",
+      "official_name": "Market Debt and Foreign Reserves Management",
+      "department": "Department of Finance Canada",
+      "dept_code": "FIN",
+      "program_code": "BUV11",
+      "amount": 48097919564,
+      "percent": 10.2
+    },
+    {
+      "name": "Equalization and social transfers to provinces",
+      "description": "Equalization, the Canada Social Transfer and territorial funding, which help provinces and territories pay for services.",
+      "official_name": "Fiscal Arrangements with Provinces and Territories",
+      "department": "Department of Finance Canada",
+      "dept_code": "FIN",
+      "program_code": "BUV08",
+      "amount": 40009159602,
+      "percent": 8.5
+    },
+    {
+      "name": "Benefits paid by the Canada Revenue Agency",
+      "description": "Benefit payments the Canada Revenue Agency sends directly to people.",
+      "official_name": "Benefits",
+      "department": "Canada Revenue Agency",
+      "dept_code": "CCRA",
+      "program_code": "BRB01",
+      "amount": 16182472509,
+      "percent": 3.4
+    },
+    {
+      "name": "Pensions and benefits for public servants",
+      "description": "The government's share, as employer, of federal workers' pensions, health and dental plans.",
+      "official_name": "Public Service Employer Payments",
+      "department": "Treasury Board of Canada Secretariat",
+      "dept_code": "TBC",
+      "program_code": "BXC04",
+      "amount": 10653709488,
+      "percent": 2.3
+    },
+    {
+      "name": "Settling Indigenous land claims",
+      "description": "Payments to First Nations to settle specific claims about historic treaty and land obligations.",
+      "official_name": "Specific Claims",
+      "department": "Crown-Indigenous Relations and Northern Affairs Canada",
+      "dept_code": "INAC",
+      "program_code": "BWM03",
+      "amount": 8353352288,
+      "percent": 1.8
+    },
+    {
+      "name": "All other programs",
+      "description": "The other 1,221 federal programs, from defence to the public service.",
+      "official_name": "",
+      "department": "",
+      "dept_code": "",
+      "program_code": "",
+      "amount": 216400290935,
+      "percent": 45.8
+    }
+  ],
+  "source": {
+    "label": "GC InfoBase: Federal Programs Spending",
+    "url": "https://open.canada.ca/data/en/dataset/a35cf382-690c-4221-a971-cf0fd189a46f"
+  }
+}
