@@ -4,12 +4,12 @@
 
 A user enters income + province, sees their federal tax broken down by where it goes, browses real federal spending stories with their personal share of each, and either opens a linked House of Commons e-petition or drafts a new one and emails their MP to sponsor it.
 
-**In the MVP:** 6 screens (layout from the wireframe), real tax math, real government spending data, stories from that data plus news, real MP lookup, Auth0 login to save petition drafts.
+**In the MVP:** 6 screens (layout from the wireframe), real tax math, real government spending data, stories from that data plus news, real MP lookup, Auth0 login when the app opens.
 
 **Not in the MVP (stretch):** tracking petitions, signature trend charts (Tiger Data), provincial items, milestone notifications.
 
 **Ground rules**
-- Screens 01–04 need no login. Only ask for Auth0 login at "Start a petition" / saving a draft.
+- Auth0 login comes first, before screen 01. Every screen needs a logged-in user.
 - Income never leaves the device. The tax calculation runs on the client.
 - Only federal items get a petition card. House of Commons e-petitions can't cover provincial spending.
 - Petitions can't be signed or submitted inside the app. "Join petition" opens ourcommons.ca, and "Start a petition" produces a draft + sponsor email.
@@ -97,7 +97,7 @@ Branch: `ui/feed-detail`
 Branch: `ui/petition-flow`
 - **Phase 1:** Screen 05 form (title with 250-char counter, issue with "Whereas" helper, requested action, 6-step explainer under the form). Screen 06 layout (postal code + Find, MP card, email template) with a sample MP.
 - **Phase 2:** Wire to Muktar's `GET /mp?postal=` and draft endpoints. Step progress bar (1 of 3, 2 of 3). Editable sponsorship email.
-- **Phase 3:** Login prompt when tapping "Start a petition", step 3 hand-off screen, validation messages, final visual pass across all screens.
+- **Phase 3:** Step 3 hand-off screen, validation messages, final visual pass across all screens.
 
 ---
 
@@ -150,8 +150,8 @@ Branch: `stories/petition-matching`
 ### Task 1: Build auth (Auth0)
 Branch: `platform/auth`
 - **Phase 1:** Create the Auth0 tenant and app, share env vars with the team.
-- **Phase 2:** Auth0 login in the frontend, triggered only from "Start a petition". JWT validation middleware on the API for `/me/*` routes.
-- **Phase 3:** Create the user row on first login. Make sure logged-out users can still use screens 01–04 with no prompts.
+- **Phase 2:** Auth0 login in the frontend as the first step of the app, before screen 01. JWT validation middleware on the API for `/me/*` routes.
+- **Phase 3:** Create the user row on first login. Make sure logged-out users are sent to login from any screen, including direct links.
 
 ### Task 2: Build MP lookup + sponsor email
 Branch: `platform/mp-lookup`
