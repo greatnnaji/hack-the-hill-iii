@@ -169,7 +169,6 @@ def main():
             "level": "federal",
             "sources": [SOURCE],
             "image_url": image_url(p["dept_code"]),
-            "petition": None,
         })
 
     OUT.parent.mkdir(exist_ok=True)

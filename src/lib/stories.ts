@@ -18,13 +18,7 @@ export type Story = {
   level: "federal" | "provincial";
   sources: { label: string; url: string }[];
   image_url: string | null;
-  petition: {
-    number: string;
-    title: string;
-    signatures: number;
-    closes: string;
-    url: string;
-  } | null;
+  // Campaigns are in the database, not here: the API routes add `campaigns` with withCampaigns (src/lib/campaigns.ts).
 };
 
 export type Department = { dept_code: string; name: string; count: number };

@@ -237,7 +237,6 @@ def main():
             "level": "federal",
             "sources": [{"label": a["outlet"], "url": a["link"]}],
             "image_url": image_url(e["dept_code"]),
-            "petition": None,
             "_words": words(a["title"]) | words(e["title"]),
         })
 
