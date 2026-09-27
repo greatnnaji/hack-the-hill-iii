@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { getCurrentUser } from "@/lib/auth";
-import { withCampaigns } from "@/lib/campaigns";
+import { withCampaigns } from "@/lib/campaigns/campaigns";
 import { handleRouteError, jsonError } from "@/lib/http";
 import { getStory } from "@/lib/stories";
 
