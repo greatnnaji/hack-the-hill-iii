@@ -1,65 +1,38 @@
-import { boolean, date, index, integer, numeric, pgEnum, pgTable, primaryKey, text, timestamp, unique, uuid } from "drizzle-orm/pg-core";
+import { index, integer, jsonb, numeric, pgEnum, pgTable, primaryKey, text, timestamp, unique, uuid } from "drizzle-orm/pg-core";
+import type { Mp } from "@/lib/mp/types";
 
 export const users = pgTable("users", {
   id: text("id").primaryKey(),
   email: text("email"),
   name: text("name"),
+  // The user's federal riding, found from a postal code when they first join a campaign. The postal code is never stored.
+  riding: text("riding"),
   createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
   lastLoginAt: timestamp("last_login_at", { withTimezone: true }).notNull().defaultNow(),
 });
 
-// Campaigns (TASKS.md Great Task 3): the in-app part of a petition. Someone writes one on a story (draft, only they
-// can see it), publishes it, and others join; at the target the team takes it to an MP and ourcommons.ca.
-// A story can have many campaigns, one per person. story_id points at a story in pipeline/*.json (stories are not
-// in the database), so story ids never change.
-export const campaignStatus = pgEnum("campaign_status", ["draft", "gathering", "review", "sponsor_asked", "official", "closed"]);
-
-export const campaigns = pgTable(
-  "campaigns",
+export const drafts = pgTable(
+  "drafts",
   {
     id: uuid("id").primaryKey().defaultRandom(),
-    storyId: text("story_id").notNull(),
-    startedBy: text("started_by")
-      .notNull()
-      .references(() => users.id, { onDelete: "cascade" }),
-    title: text("title").notNull(),
-    issue: text("issue").notNull(),
-    request: text("request").notNull(),
-    // 1,000 = twice the 500 signatures ourcommons.ca needs, since about half of supporters sign officially.
-    target: integer("target").notNull().default(1000),
-    // Set when published: 30 to 120 days out, the same window as an e-petition. Null while a draft.
-    deadline: date("deadline"),
-    status: campaignStatus("status").notNull().default("draft"),
-    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
-    updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
-  },
-  // Also serves "list a story's campaigns", since story_id comes first.
-  (t) => [unique("campaigns_story_id_started_by_unique").on(t.storyId, t.startedBy)],
-);
-
-export type CampaignRow = typeof campaigns.$inferSelect;
-
-// One row per person per campaign. Joining is support, not a signature: everyone signs again on ourcommons.ca.
-// Name, email and riding are copied at join time so the team can show an MP who the supporters are (with consent).
-export const campaignSupporters = pgTable(
-  "campaign_supporters",
-  {
-    campaignId: uuid("campaign_id")
-      .notNull()
-      .references(() => campaigns.id, { onDelete: "cascade" }),
     userId: text("user_id")
       .notNull()
       .references(() => users.id, { onDelete: "cascade" }),
-    name: text("name").notNull(),
-    email: text("email").notNull(),
-    riding: text("riding"),
-    shareWithMp: boolean("share_with_mp").notNull().default(false),
-    joinedAt: timestamp("joined_at", { withTimezone: true }).notNull().defaultNow(),
+    storyId: text("story_id").notNull(),
+    storyTitle: text("story_title").notNull(),
+    title: text("title").notNull(),
+    issue: text("issue").notNull(),
+    request: text("request").notNull(),
+    mp: jsonb("mp").$type<Mp>(),
+    sponsorEmail: text("sponsor_email"),
+    sponsorRequestedAt: timestamp("sponsor_requested_at", { withTimezone: true }),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+    updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
   },
-  (t) => [primaryKey({ columns: [t.campaignId, t.userId] }), index("campaign_supporters_user_id_idx").on(t.userId)],
+  (t) => [index("drafts_user_id_idx").on(t.userId)],
 );
 
-export type CampaignSupporterRow = typeof campaignSupporters.$inferSelect;
+export type DraftRow = typeof drafts.$inferSelect;
 
 // GC InfoBase federal spending (open.canada.ca), loaded by `npm run db:load` (pipeline/load_db.mts).
 // Sources are in VERIFIED_SOURCES.md. year 2024 = fiscal year April 2024 to March 2025.
@@ -107,3 +80,72 @@ export const programLabels = pgTable(
   },
   (t) => [primaryKey({ columns: [t.deptCode, t.programCode] })],
 );
+
+// Campaigns: proposals people start on a story, which our team can turn into official House of Commons e-petitions.
+// Stages, in order: gathering members -> in review -> MP asked -> MP agreed -> live (official petition open) -> closed.
+export const CAMPAIGN_STAGES = ["gathering", "in_review", "mp_asked", "mp_agreed", "live", "closed"] as const;
+export const campaignStage = pgEnum("campaign_stage", CAMPAIGN_STAGES);
+
+// export const campaigns = pgTable(
+//   "campaigns",
+//   {
+//     id: uuid("id").primaryKey().defaultRandom(),
+//     storyId: text("story_id").notNull(),
+//     storyTitle: text("story_title").notNull(),
+//     starterId: text("starter_id")
+//       .notNull()
+//       .references(() => users.id, { onDelete: "cascade" }),
+//     title: text("title").notNull(),
+//     issue: text("issue").notNull(),
+//     request: text("request").notNull(),
+//     stage: campaignStage("stage").notNull().default("gathering"),
+//     teamNote: text("team_note"),
+//     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+//     updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
+//   },
+//   (t) => [
+//     // One campaign per person per story.
+//     unique("campaigns_story_starter_unique").on(t.storyId, t.starterId),
+//     index("campaigns_story_id_idx").on(t.storyId),
+//     index("campaigns_stage_idx").on(t.stage),
+//   ],
+// );
+
+// // Everyone who joined a campaign, the starter included. Joining requires consent to share name, email and riding with the MP.
+// export const campaignMembers = pgTable(
+//   "campaign_members",
+//   {
+//     campaignId: uuid("campaign_id")
+//       .notNull()
+//       .references(() => campaigns.id, { onDelete: "cascade" }),
+//     userId: text("user_id")
+//       .notNull()
+//       .references(() => users.id, { onDelete: "cascade" }),
+//     riding: text("riding"),
+//     consentedAt: timestamp("consented_at", { withTimezone: true }).notNull().defaultNow(),
+//     joinedAt: timestamp("joined_at", { withTimezone: true }).notNull().defaultNow(),
+//   },
+//   (t) => [primaryKey({ columns: [t.campaignId, t.userId] }), index("campaign_members_user_id_idx").on(t.userId)],
+// );
+
+// // Official e-petitions on ourcommons.ca that our team created from a campaign. Refreshed from ourcommons.ca by the petition sync.
+// export const petitions = pgTable("petitions", {
+//   number: text("number").primaryKey(), // e.g. "e-7203"
+//   campaignId: uuid("campaign_id")
+//     .notNull()
+//     .unique()
+//     .references(() => campaigns.id, { onDelete: "cascade" }),
+//   title: text("title").notNull(),
+//   sponsorName: text("sponsor_name"),
+//   sponsorRiding: text("sponsor_riding"),
+//   signatures: integer("signatures").notNull().default(0),
+//   openedAt: timestamp("opened_at", { withTimezone: true }),
+//   closesAt: timestamp("closes_at", { withTimezone: true }),
+//   presentedAt: timestamp("presented_at", { withTimezone: true }),
+//   responseTabledAt: timestamp("response_tabled_at", { withTimezone: true }),
+//   syncedAt: timestamp("synced_at", { withTimezone: true }),
+//   createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+// });
+
+// export type CampaignRow = typeof campaigns.$inferSelect;
+// export type PetitionRow = typeof petitions.$inferSelect;

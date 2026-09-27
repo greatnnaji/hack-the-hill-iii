@@ -93,7 +93,11 @@ export function PetitionForm({ story, campaign }: Props) {
       </label>
       <p className="mt-1 text-xs text-danger">{errors.request}</p>
 
-      {saveError && <p className="mt-4 text-sm text-danger">{saveError}</p>}
+      {saveError && (
+        <p role="alert" className="mt-4 text-sm text-danger">
+          {saveError}
+        </p>
+      )}
       <button
         type="submit"
         disabled={saving}

@@ -51,20 +51,21 @@ export function pickMp(body: { representatives_centroid?: RepresentRep[] }): Mp 
   return rep ? toMp(rep) : null;
 }
 
-/** GETs a Represent path. Returns null on 404; throws LookupError on anything else that isn't 200. */
+/** GETs a Represent path. Returns null on 404; throws LookupError on anything else that isn't a readable 200. */
 async function getRepresent<T>(path: string): Promise<T | null> {
-  let response: Response;
   try {
-    response = await fetch(`${REPRESENT_BASE}${path}`, {
+    const response = await fetch(`${REPRESENT_BASE}${path}`, {
       signal: AbortSignal.timeout(TIMEOUT_MS),
       next: { revalidate: ONE_DAY_SECONDS },
     });
-  } catch {
+    if (response.status === 404) return null;
+    if (!response.ok) throw new Error(`Represent returned HTTP ${response.status}`);
+    return (await response.json()) as T;
+  } catch (error) {
+    // The path can hold a postal code, which we never keep, so it stays out of the log.
+    console.error("Represent lookup failed", error);
     throw new LookupError();
   }
-  if (response.status === 404) return null;
-  if (!response.ok) throw new LookupError();
-  return (await response.json()) as T;
 }
 
 export async function lookupMpByPostal(code: string): Promise<Mp | null> {

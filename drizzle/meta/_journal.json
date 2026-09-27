@@ -19,15 +19,8 @@
     {
       "idx": 2,
       "version": "7",
-      "when": 1790469548450,
+      "when": 1790465416150,
       "tag": "0002_campaigns",
-      "breakpoints": true
-    },
-    {
-      "idx": 3,
-      "version": "7",
-      "when": 1790469556716,
-      "tag": "0003_drop_drafts",
       "breakpoints": true
     }
   ]
