@@ -1,9 +1,9 @@
-import { and, asc, desc, eq, exists, ne, sql, type SQL } from "drizzle-orm";
+import { and, asc, desc, eq, exists, inArray, ne, sql, type SQL } from "drizzle-orm";
 import { db } from "@/db";
 import { campaignMembers, campaigns, CAMPAIGN_STAGES, petitions, users, type CampaignRow } from "@/db/schema";
 import type { CurrentUser } from "@/lib/auth";
 import { toPetitionCard, type PetitionCard } from "@/lib/petitions/petitions";
-import { getStory } from "@/lib/stories";
+import { getStory, type Story } from "@/lib/stories";
 import { ensureUser } from "@/lib/users";
 import { CampaignError } from "./errors";
 import { checkCampaignText, PETITION_OPENING, type CreateCampaignInput, type UpdateCampaignInput } from "./rules";
@@ -17,6 +17,10 @@ export type CampaignSummary = {
   storyTitle: string;
   starterFirstName: string;
   memberCount: number;
+  // 1,000: reaching it moves a gathering campaign to in_review.
+  target: number;
+  // Last day to gather members (YYYY-MM-DD).
+  deadline: string;
   stage: CampaignStage;
   createdAt: string;
   updatedAt: string;
@@ -37,8 +41,12 @@ export type CampaignDetail = CampaignSummary & {
   canLeave: boolean;
 };
 
+export type StoryWithCampaigns = Story & { campaigns: CampaignSummary[] };
+
 export type ListCampaignsOptions = {
   storyId?: string;
+  // Several stories at once (the feed): same order as storyId, grouped by story by withCampaigns().
+  storyIds?: string[];
   stage?: CampaignStage;
   mineFor?: string;
   sort?: "members" | "newest";
@@ -47,6 +55,7 @@ export type ListCampaignsOptions = {
 
 // People can join from "Gathering members" up to "MP agreed"; once live they sign on ourcommons.ca instead.
 const JOINABLE: CampaignStage[] = ["gathering", "in_review", "mp_asked", "mp_agreed"];
+const DAY_MS = 24 * 60 * 60 * 1000;
 const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 
 /**
@@ -62,6 +71,11 @@ const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 export function firstName(name: string | null): string {
   const first = name?.trim().split(/\s+/)[0];
   return first && !first.includes("@") ? first : "Someone";
+}
+
+// Every member needs an email: our team sends the "sign it now" link to all of them by hand (Gmail, BCC).
+function requireEmail(user: CurrentUser): void {
+  if (!user.email) throw new CampaignError("email_required", 400);
 }
 
 /**
@@ -115,6 +129,8 @@ function toSummary(row: CampaignQueryRow, viewerId: string | null): CampaignSumm
     storyTitle: c.storyTitle,
     starterFirstName: firstName(row.starterName),
     memberCount: row.memberCount,
+    target: c.target,
+    deadline: c.deadline,
     stage: c.stage,
     createdAt: c.createdAt.toISOString(),
     updatedAt: c.updatedAt.toISOString(),
@@ -130,6 +146,7 @@ function toSummary(row: CampaignQueryRow, viewerId: string | null): CampaignSumm
  *
  * Args:
  *	- options.storyId: only this story's campaigns (closed ones included, at the bottom)
+ *	- options.storyIds: only these stories' campaigns, in the same order as storyId
  *	- options.stage: only this stage (the only way closed campaigns show outside a story)
  *	- options.mineFor: only campaigns this user started or joined
  *	- options.sort: "members" (default) or "newest"; ignored on a story, which puts live first and closed last
@@ -141,9 +158,11 @@ function toSummary(row: CampaignQueryRow, viewerId: string | null): CampaignSumm
 export async function listCampaigns(options: ListCampaignsOptions = {}): Promise<CampaignSummary[]> {
   const viewerId = options.viewerId ?? null;
   const conditions: SQL[] = [];
+  const onStories = Boolean(options.storyId || options.storyIds);
   if (options.storyId) conditions.push(eq(campaigns.storyId, options.storyId));
+  if (options.storyIds) conditions.push(inArray(campaigns.storyId, options.storyIds.length ? options.storyIds : [""]));
   if (options.stage) conditions.push(eq(campaigns.stage, options.stage));
-  else if (!options.storyId) conditions.push(ne(campaigns.stage, "closed"));
+  else if (!onStories) conditions.push(ne(campaigns.stage, "closed"));
   if (options.mineFor) {
     const mine = db
       .select({ one: sql`1` })
@@ -153,7 +172,7 @@ export async function listCampaigns(options: ListCampaignsOptions = {}): Promise
   }
 
   const members = sql`count(${campaignMembers.userId})`;
-  const order = options.storyId
+  const order = onStories
     ? [asc(sql`case ${campaigns.stage} when 'live' then 0 when 'closed' then 2 else 1 end`), desc(members), desc(campaigns.createdAt)]
     : options.sort === "newest"
       ? [desc(campaigns.createdAt)]
@@ -161,6 +180,26 @@ export async function listCampaigns(options: ListCampaignsOptions = {}): Promise
 
   const rows = await campaignQuery(viewerId).where(and(...conditions)).orderBy(...order);
   return rows.map((row) => toSummary(row, viewerId));
+}
+
+/**
+ * Purpose:
+ *	Attach each story's `campaigns` (TASKS.md shared contract) for GET /api/spending and /api/spending/:id,
+ *	in one query for the whole feed.
+ *
+ * Args:
+ *	- stories: stories from src/lib/stories.ts
+ *	- viewerId: the logged-in user, for `joined` / `isStarter`, or null
+ *
+ * Returns:
+ *	Promise<StoryWithCampaigns[]>: the same stories in the same order; `campaigns: []` is the empty state
+ */
+export async function withCampaigns(stories: Story[], viewerId: string | null): Promise<StoryWithCampaigns[]> {
+  const byStory = new Map<string, CampaignSummary[]>();
+  for (const campaign of await listCampaigns({ storyIds: stories.map((story) => story.id), viewerId })) {
+    byStory.set(campaign.storyId, [...(byStory.get(campaign.storyId) ?? []), campaign]);
+  }
+  return stories.map((story) => ({ ...story, campaigns: byStory.get(story.id) ?? [] }));
 }
 
 /**
@@ -200,15 +239,17 @@ export async function getCampaign(id: string, viewerId: string | null = null): P
  *
  * Args:
  *	- user: the logged-in starter
- *	- input: storyId, title, issue, request (already checked against the petition rules)
+ *	- input: storyId, title, issue, request (already checked against the petition rules), days until the deadline
  *	- riding: the starter's riding, from ridingForJoin()
  *
  * Returns:
- *	Promise<string>: the new campaign's id; throws CampaignError story_not_found (404) or already_started (409, with campaignId)
+ *	Promise<string>: the new campaign's id; throws CampaignError story_not_found (404), email_required (400)
+ *	or already_started (409, with campaignId)
  */
 export async function createCampaign(user: CurrentUser, input: CreateCampaignInput, riding: string): Promise<string> {
   const story = await getStory(input.storyId);
   if (!story) throw new CampaignError("story_not_found", 404);
+  requireEmail(user);
   await ensureUser(user);
 
   const id = await db.transaction(async (tx) => {
@@ -221,6 +262,7 @@ export async function createCampaign(user: CurrentUser, input: CreateCampaignInp
         title: input.title.trim(),
         issue: input.issue.trim(),
         request: input.request.trim(),
+        deadline: new Date(Date.now() + input.days * DAY_MS).toISOString().slice(0, 10),
       })
       .onConflictDoNothing()
       .returning({ id: campaigns.id });
@@ -289,6 +331,7 @@ export async function updateCampaignText(userId: string, id: string, input: Upda
 /**
  * Purpose:
  *	Add the user as a member, recording their riding and their consent to be contacted and shared with the MP.
+ *	Reaching the target moves a gathering campaign to in_review, so our team can take it to an MP.
  *
  * Args:
  *	- user: the logged-in user
@@ -296,11 +339,13 @@ export async function updateCampaignText(userId: string, id: string, input: Upda
  *	- riding: their riding, from ridingForJoin()
  *
  * Returns:
- *	Promise<void>; throws CampaignError not_found (404), not_joinable (409, live or closed) or already_member (409)
+ *	Promise<void>; throws CampaignError not_found (404), not_joinable (409, live or closed), email_required (400)
+ *	or already_member (409)
  */
 export async function joinCampaign(user: CurrentUser, id: string, riding: string): Promise<void> {
   const { campaign } = await loadCampaign(id);
   if (!JOINABLE.includes(campaign.stage)) throw new CampaignError("not_joinable", 409, { stage: campaign.stage });
+  requireEmail(user);
   await ensureUser(user);
 
   const [joined] = await db
@@ -309,7 +354,16 @@ export async function joinCampaign(user: CurrentUser, id: string, riding: string
     .onConflictDoNothing()
     .returning({ userId: campaignMembers.userId });
   if (!joined) throw new CampaignError("already_member", 409);
-  await db.update(campaigns).set({ updatedAt: new Date() }).where(eq(campaigns.id, id));
+  const [{ memberCount }] = await db
+    .select({ memberCount: sql<number>`count(*)::int` })
+    .from(campaignMembers)
+    .where(eq(campaignMembers.campaignId, id));
+  // Only from gathering: never pulls back a campaign the team has already moved on.
+  const reachedTarget = memberCount >= campaign.target && campaign.stage === "gathering";
+  await db
+    .update(campaigns)
+    .set({ updatedAt: new Date(), ...(reachedTarget ? { stage: "in_review" as const } : {}) })
+    .where(eq(campaigns.id, id));
 }
 
 /**

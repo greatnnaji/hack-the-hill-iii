@@ -59,8 +59,18 @@ const postalCode = z.string().trim().max(10).optional();
 // Request shapes only. The petition rules are checked separately with checkCampaignText(), so the API can
 // answer 400 invalid_text with the same messages the form shows.
 
+// How long a campaign gathers members: 30 to 120 days, the same window as an e-petition.
+export const MIN_DAYS = 30;
+export const MAX_DAYS = 120;
+
 // POST /api/campaigns
-export const createCampaignSchema = z.object({ storyId: z.string().min(1).max(200), ...text, postalCode, consent: z.literal(true) });
+export const createCampaignSchema = z.object({
+  storyId: z.string().min(1).max(200),
+  ...text,
+  postalCode,
+  consent: z.literal(true),
+  days: z.number().int().min(MIN_DAYS).max(MAX_DAYS).default(MAX_DAYS),
+});
 
 // PATCH /api/campaigns/:id (starter only, before anyone else joins)
 export const updateCampaignSchema = z.object({ title: text.title.optional(), issue: text.issue.optional(), request: text.request.optional() });

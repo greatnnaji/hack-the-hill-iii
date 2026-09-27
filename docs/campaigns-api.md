@@ -12,7 +12,7 @@ For the frontend: every endpoint behind the story page, Start a campaign, the ca
 | `stage` | Show as | Who moves it here |
 |---|---|---|
 | `gathering` | Gathering members | Start (default) |
-| `in_review` | In review | Admin |
+| `in_review` | In review | Automatically when a gathering campaign reaches its `target` (1,000), or Admin |
 | `mp_asked` | MP asked | Admin |
 | `mp_agreed` | MP agreed | Admin, or automatically when a petition number is attached |
 | `live` | Live | Automatically when ourcommons.ca shows the petition open for signature |
@@ -29,6 +29,8 @@ Joining is open from `gathering` to `mp_agreed`. Once `live`, show **Sign on our
   id: string; title: string; storyId: string; storyTitle: string;
   starterFirstName: string;        // first name only, "Someone" if unknown
   memberCount: number; stage: Stage; createdAt: string; updatedAt: string;
+  target: number;                  // 1,000 members: "412 of 1,000"
+  deadline: string;                // last day to gather members, "YYYY-MM-DD"
   joined: boolean;                 // viewer is a member ("Joined" tag)
   isStarter: boolean;              // viewer started it ("Your campaign")
   petition: PetitionCard | null;
@@ -74,12 +76,13 @@ Joining is open from `gathering` to `mp_agreed`. Once `live`, show **Sign on our
 | Route | Login | Does | Returns / errors |
 |---|---|---|---|
 | `GET /api/campaigns?story=&stage=&mine=1&sort=` | only for `mine=1` | Lists campaigns. `story`: one story's campaigns, live first, closed last (story page). Without `story`, closed are hidden unless `stage=closed`. `mine=1`: started or joined (Mine tab). `sort=members` (default) or `newest`. | `CampaignSummary[]` · 400 `invalid_query` |
-| `POST /api/campaigns` | yes | Starts a campaign; the starter becomes the first member. Body `{ storyId, title, issue, request, postalCode?, consent: true }`. `postalCode` can be left out if `GET /api/me` already has a `riding`. | 201 `{ id }` · 400 `invalid_body`, `invalid_text` + `problems: string[]`, `invalid_postal`, `riding_required` · 404 `story_not_found`, `riding_not_found` · 409 `already_started` + `campaignId` (open that one instead) · 502 `lookup_failed` |
+| `POST /api/campaigns` | yes | Starts a campaign; the starter becomes the first member. Body `{ storyId, title, issue, request, postalCode?, consent: true, days? }`. `days`: 30–120 to gather members (default 120), sets `deadline`. The login must have an email (the team BCCs every member the ourcommons.ca link). `postalCode` can be left out if `GET /api/me` already has a `riding`. | 201 `{ id }` · 400 `invalid_body`, `invalid_text` + `problems: string[]`, `invalid_postal`, `riding_required`, `email_required` · 404 `story_not_found`, `riding_not_found` · 409 `already_started` + `campaignId` (open that one instead) · 502 `lookup_failed` |
 | `GET /api/campaigns/:id` | no | The campaign page. | `CampaignDetail` · 404 `not_found` |
 | `PATCH /api/campaigns/:id` | yes | Starter edits `{ title?, issue?, request? }` while `canEdit`. | `CampaignDetail` · 400 `invalid_body`, `invalid_text` + `problems` · 403 `not_starter` · 404 `not_found` · 409 `locked` |
-| `POST /api/campaigns/:id/members` | yes | Join. Body `{ postalCode?, consent: true }` (consent is the checkbox, required). | 201 `CampaignDetail` · 400 `invalid_body`, `invalid_postal`, `riding_required` · 404 `not_found`, `riding_not_found` · 409 `already_member`, `not_joinable` + `stage` · 502 `lookup_failed` |
+| `POST /api/campaigns/:id/members` | yes | Join. Body `{ postalCode?, consent: true }` (consent is the checkbox, required). | 201 `CampaignDetail` · 400 `invalid_body`, `invalid_postal`, `riding_required`, `email_required` · 404 `not_found`, `riding_not_found` · 409 `already_member`, `not_joinable` + `stage` · 502 `lookup_failed` |
 | `DELETE /api/campaigns/:id/members` | yes | Leave. | `CampaignDetail` · 403 `starter_cannot_leave` · 404 `not_found`, `not_member` |
 | `GET /api/petitions?story=` | no | Official petitions (Petitions page; `story` for a story page). Open first, then pending, closed, presented, response. | `PetitionCard[]` |
+| `GET /api/spending`, `GET /api/spending/:id` | no | The feed and the story page. Each story comes with `campaigns: CampaignSummary[]` in the same order as `?story=` (`[]` = "No campaigns yet. Start the first one."). | stories with `campaigns` |
 | `GET /api/me` | yes | The user: `{ id, name, firstName, email, riding, isAdmin }`. Use `riding` for "Your riding: …" and `isAdmin` for the gear menu's Admin link. | |
 | `PUT /api/me/riding` | yes | Body `{ postalCode }`. Finds the riding and saves only the riding (the postal code is never stored). | `{ riding }` · 400 `invalid_body`, `invalid_postal` · 404 `riding_not_found` · 502 `lookup_failed` |
 

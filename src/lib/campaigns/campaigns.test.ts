@@ -410,3 +410,39 @@ describe("petition sync", () => {
   });
 });
 
+
+describe("target, deadline and email", () => {
+  const detail = async (id: string) => (await campaignRoute.GET(req(`/api/campaigns/${id}`), ctx(id))).json();
+
+  it("sets the deadline from days (120 by default) and rejects days outside 30 to 120", async () => {
+    const day = (days: number) => new Date(Date.now() + days * 86400000).toISOString().slice(0, 10);
+    expect(await detail(await start(ALICE))).toMatchObject({ target: 1000, deadline: day(120) });
+    expect((await detail(await start(BOB, { days: 45 }))).deadline).toBe(day(45));
+
+    loginAs(CAROL);
+    for (const days of [29, 121, 60.5]) {
+      const res = await campaignsRoute.POST(req("/api/campaigns", "POST", { storyId: STORY, ...TEXT, postalCode: "K1P 1A4", consent: true, days }));
+      expect(res.status).toBe(400);
+    }
+  });
+
+  it("moves a gathering campaign to in_review when it reaches the target, and never moves one back", async () => {
+    const id = await start(ALICE);
+    await db.update(campaigns).set({ target: 2 });
+    expect(await (await join(BOB, id)).json()).toMatchObject({ memberCount: 2, stage: "in_review" });
+
+    const other = await start(BOB, { storyId: "data-nd-bur03-2024" });
+    await db.update(campaigns).set({ target: 2, stage: "mp_asked" }).where(eq(campaigns.id, other));
+    expect((await (await join(ALICE, other)).json()).stage).toBe("mp_asked");
+  });
+
+  it("needs an email to start or join, so the team can send the sign-it-now link", async () => {
+    const noEmail = { ...CAROL, email: null };
+    loginAs(noEmail);
+    const res = await campaignsRoute.POST(req("/api/campaigns", "POST", { storyId: STORY, ...TEXT, postalCode: "K1P 1A4", consent: true }));
+    expect(await res.json()).toEqual({ error: "email_required" });
+
+    const id = await start(ALICE);
+    expect(await (await join(noEmail, id)).json()).toEqual({ error: "email_required" });
+  });
+});
