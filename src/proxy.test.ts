@@ -48,7 +48,7 @@ describe("proxy", () => {
   });
 
   it("returns 401 JSON for logged-out API requests", async () => {
-    const res = await proxy(request("/api/me/drafts"));
+    const res = await proxy(request("/api/campaigns"));
     expect(res.status).toBe(401);
     expect(await res.json()).toEqual({ error: "unauthorized" });
   });
@@ -56,7 +56,7 @@ describe("proxy", () => {
   it("lets everything through in development when Auth0 is not configured", async () => {
     vi.mocked(isAuthConfigured).mockReturnValue(false);
     vi.stubEnv("NODE_ENV", "development");
-    const res = await proxy(request("/api/me/drafts"));
+    const res = await proxy(request("/api/campaigns"));
     expect(res.status).toBe(200);
     expect(res.headers.get("x-middleware-next")).toBe("1");
   });

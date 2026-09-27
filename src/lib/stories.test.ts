@@ -132,7 +132,7 @@ describe("campaigns on stories", () => {
   async function addCampaign(startedBy: string, fields: Partial<typeof campaigns.$inferInsert> = {}) {
     const [row] = await db
       .insert(campaigns)
-      .values({ storyId: AIRCRAFT, startedBy, title: `By ${startedBy}`, issue: "i", request: "r", deadline: "2026-12-25", ...fields })
+      .values({ storyId: AIRCRAFT, startedBy, title: `By ${startedBy}`, issue: "i", request: "r", deadline: "2026-12-25", status: "gathering", ...fields })
       .returning();
     await db.insert(campaignSupporters).values({ campaignId: row.id, userId: startedBy, name: startedBy, email: `${startedBy}@example.com` });
     return row;
@@ -148,10 +148,19 @@ describe("campaigns on stories", () => {
 
     const story = await detail();
     expect(story.campaigns.map((c) => c.id)).toEqual([official.id, big.id, small.id, closed.id]);
-    expect(story.campaigns[1]).toMatchObject({ starter: "Bob", supporters: 2, target: 1000, deadline: "2026-12-25", status: "gathering", joined: true, petition: null });
+    expect(story.campaigns[0].mine).toBe(true);
+    expect(story.campaigns[1]).toMatchObject({ starter: "Bob", supporters: 2, target: 1000, deadline: "2026-12-25", status: "gathering", joined: true, mine: false, petition: null });
     expect(story.campaigns[2].joined).toBe(false);
     // Other stories stay empty.
     expect((await detail("data-oicc-byb04-2024")).campaigns).toEqual([]);
+  });
+
+  it("shows a draft only to its starter", async () => {
+    await db.insert(users).values([ALICE, BOB]);
+    await addCampaign(BOB.id, { status: "draft", deadline: null });
+    expect((await detail()).campaigns).toEqual([]);
+    vi.mocked(getCurrentUser).mockResolvedValue(BOB);
+    expect((await detail()).campaigns).toMatchObject([{ status: "draft", mine: true }]);
   });
 
   it("reports joined: false for everyone when nobody is logged in", async () => {
