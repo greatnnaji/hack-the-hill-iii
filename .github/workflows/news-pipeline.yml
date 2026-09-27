@@ -1,5 +1,5 @@
-# Refresh news stories every 6 hours: Google News -> Gemini -> news_stories.json (+ push to the API).
-# Needs repo secret GEMINI_API_KEY. Pushes to the API only when SPENDING_API_URL + INTERNAL_SECRET are set.
+# Refresh news stories every 6 hours: Google News -> Gemini -> news_stories.json, committed back to the repo.
+# Needs repo secret GEMINI_API_KEY.
 name: News pipeline
 
 on:
@@ -17,8 +17,6 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-      SPENDING_API_URL: ${{ secrets.SPENDING_API_URL }}
-      INTERNAL_SECRET: ${{ secrets.INTERNAL_SECRET }}
     steps:
       - uses: actions/checkout@v4
 
@@ -42,7 +40,7 @@ jobs:
       - run: python3 pipeline/fetch_news.py
 
       - name: Build stories
-        run: python3 pipeline/build_news.py ${{ secrets.SPENDING_API_URL != '' && '--push' || '' }}
+        run: python3 pipeline/build_news.py
 
       # Commit the new articles + Gemini cache back, so the next run only reads new articles.
       # Pull first: someone may have pushed to main while this run was going.

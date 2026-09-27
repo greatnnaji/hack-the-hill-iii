@@ -10,10 +10,8 @@ Needs GEMINI_API_KEY (in the environment or the repo's .env).
 
 Usage:
   python3 pipeline/build_news.py            # build news_stories.json
-  python3 pipeline/build_news.py --push     # also POST to $SPENDING_API_URL/internal/spending
 """
 
-import argparse
 import hashlib
 import json
 import os
@@ -26,7 +24,6 @@ from typing import Literal, Optional
 
 from pydantic import BaseModel
 
-from build_stories import push
 from find_jumps import load
 from make_images import image_url
 
@@ -182,10 +179,6 @@ def extract(client, system, articles):
 
 
 def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--push", action="store_true", help="POST stories to $SPENDING_API_URL/internal/spending")
-    args = ap.parse_args()
-
     articles = json.loads(RAW.read_text())
     programs, depts, lines = catalog()
     system = SYSTEM.format(year=CATALOG_YEAR, catalog=lines)
@@ -245,9 +238,6 @@ def main():
     OUT.write_text(json.dumps(stories, indent=2, ensure_ascii=False) + "\n")
     print(f"Wrote {len(stories)} stories to {OUT.relative_to(HERE.parent)} ({found - len(stories)} duplicates merged)")
     print("Dropped: " + ", ".join(f"{n} {r}" for r, n in sorted(dropped.items(), key=lambda x: -x[1])))
-
-    if args.push:
-        push(stories)
 
 
 if __name__ == "__main__":

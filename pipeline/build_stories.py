@@ -7,14 +7,11 @@ so each story is generated once); otherwise a plain template is used.
 
 Usage:
   python3 pipeline/build_stories.py            # build stories.json
-  python3 pipeline/build_stories.py --push     # also POST to $SPENDING_API_URL/internal/spending
 """
 
-import argparse
 import hashlib
 import json
 import os
-import urllib.request
 from pathlib import Path
 
 import pandas as pd
@@ -110,10 +107,6 @@ def llm_draft(client, f):
 
 
 def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--push", action="store_true", help="POST stories to $SPENDING_API_URL/internal/spending")
-    args = ap.parse_args()
-
     picked = pd.read_csv(HERE / "picked.csv", keep_default_na=False)
     df, years = load(YEAR_FROM, YEAR_TO)
     exact = df.pivot_table(index=["dept_code", "program_code"], columns="year", values="expenditure", aggfunc="sum")
@@ -174,22 +167,6 @@ def main():
     OUT.parent.mkdir(exist_ok=True)
     OUT.write_text(json.dumps(stories, indent=2, ensure_ascii=False) + "\n")
     print(f"Wrote {len(stories)} stories to {OUT}")
-
-    if args.push:
-        push(stories)
-
-
-def push(stories):
-    """POST stories to $SPENDING_API_URL/internal/spending (also used by build_news.py)."""
-    url, secret = os.environ["SPENDING_API_URL"].rstrip("/"), os.environ["INTERNAL_SECRET"]
-    req = urllib.request.Request(
-        f"{url}/internal/spending",
-        data=json.dumps(stories).encode(),
-        headers={"Content-Type": "application/json", "X-Internal-Secret": secret},
-        method="POST",
-    )
-    with urllib.request.urlopen(req) as res:
-        print(f"Pushed to {url}/internal/spending: HTTP {res.status}")
 
 
 if __name__ == "__main__":
