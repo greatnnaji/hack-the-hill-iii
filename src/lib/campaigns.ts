@@ -1,4 +1,4 @@
-import { and, count, eq, sql } from "drizzle-orm";
+import { and, count, eq, inArray, sql } from "drizzle-orm";
 import type { NextResponse } from "next/server";
 import { z } from "zod";
 import { db } from "@/db";
@@ -8,7 +8,7 @@ import { getDraft } from "@/lib/drafts";
 import { handleRouteError, jsonError } from "@/lib/http";
 import { normalizePostal } from "@/lib/mp/postal";
 import { lookupMpByPostal } from "@/lib/mp/represent";
-import { getStory } from "@/lib/stories";
+import { getStory, type Story } from "@/lib/stories";
 
 // Campaigns (TASKS.md Great Task 3): start one from a draft, join someone else's. Joining is support, not a
 // signature; the official e-petition is opened later by the team on ourcommons.ca.
@@ -52,6 +52,8 @@ export type Campaign = {
   petition: null;
 };
 
+export type StoryWithCampaigns = Story & { campaigns: Campaign[] };
+
 export class CampaignError extends Error {
   constructor(readonly code: "not_found" | "closed" | "email_required") {
     super(code);
@@ -93,6 +95,41 @@ function firstName(name: string | null): string {
   return first && !first.includes("@") ? first : "A supporter";
 }
 
+// Shared by getCampaign and listCampaigns: each campaign with its starter's name, live count and `joined`.
+function selectCampaigns(userId: string | null) {
+  return db
+    .select({
+      campaign: campaigns,
+      starterName: users.name,
+      supporters: sql<number>`(select count(*)::int from ${campaignSupporters} where ${campaignSupporters.campaignId} = ${campaigns.id})`,
+      joined: userId
+        ? sql<boolean>`exists(select 1 from ${campaignSupporters} where ${campaignSupporters.campaignId} = ${campaigns.id} and ${campaignSupporters.userId} = ${userId})`
+        : sql<boolean>`false`,
+    })
+    .from(campaigns)
+    .innerJoin(users, eq(users.id, campaigns.startedBy))
+    .$dynamic();
+}
+
+type SelectedCampaign = Awaited<ReturnType<typeof selectCampaigns>>[number];
+
+function toCampaign({ campaign, starterName, supporters, joined }: SelectedCampaign): Campaign {
+  return {
+    id: campaign.id,
+    story_id: campaign.storyId,
+    title: campaign.title,
+    issue: campaign.issue,
+    request: campaign.request,
+    starter: firstName(starterName),
+    supporters,
+    target: campaign.target,
+    deadline: campaign.deadline,
+    status: campaign.status,
+    joined,
+    petition: null,
+  };
+}
+
 /**
  * Purpose:
  *	Read one campaign in the shared shape, with its live supporter count and whether this user has joined.
@@ -106,32 +143,50 @@ function firstName(name: string | null): string {
  */
 export async function getCampaign(id: string, userId: string): Promise<Campaign | null> {
   if (!UUID.test(id)) return null;
-  const [row] = await db
-    .select({
-      campaign: campaigns,
-      starterName: users.name,
-      supporters: sql<number>`(select count(*)::int from ${campaignSupporters} where ${campaignSupporters.campaignId} = ${campaigns.id})`,
-      joined: sql<boolean>`exists(select 1 from ${campaignSupporters} where ${campaignSupporters.campaignId} = ${campaigns.id} and ${campaignSupporters.userId} = ${userId})`,
-    })
-    .from(campaigns)
-    .innerJoin(users, eq(users.id, campaigns.startedBy))
-    .where(eq(campaigns.id, id));
-  if (!row) return null;
-  const { campaign } = row;
-  return {
-    id: campaign.id,
-    story_id: campaign.storyId,
-    title: campaign.title,
-    issue: campaign.issue,
-    request: campaign.request,
-    starter: firstName(row.starterName),
-    supporters: row.supporters,
-    target: campaign.target,
-    deadline: campaign.deadline,
-    status: campaign.status,
-    joined: row.joined,
-    petition: null,
-  };
+  const [row] = await selectCampaigns(userId).where(eq(campaigns.id, id));
+  return row ? toCampaign(row) : null;
+}
+
+// Official (live on ourcommons.ca) first, closed last, everything else in between.
+const STATUS_RANK: Record<Campaign["status"], number> = { official: 0, gathering: 1, review: 1, sponsor_asked: 1, closed: 2 };
+
+/**
+ * Purpose:
+ *	List the campaigns on some stories, in the order the detail page shows them:
+ *	official first, then most supporters, closed last (oldest first on a tie).
+ *
+ * Args:
+ *	- storyIds: the stories to look up
+ *	- userId: the logged-in user for `joined`, or null (then joined is always false)
+ *
+ * Returns:
+ *	Promise<Map<string, Campaign[]>>: story id → its campaigns; stories without any are missing from the map
+ */
+export async function listCampaigns(storyIds: string[], userId: string | null): Promise<Map<string, Campaign[]>> {
+  const byStory = new Map<string, Campaign[]>();
+  if (!storyIds.length) return byStory;
+  const rows = await selectCampaigns(userId).where(inArray(campaigns.storyId, storyIds)).orderBy(campaigns.createdAt);
+  const sorted = rows
+    .map(toCampaign)
+    .sort((a, b) => STATUS_RANK[a.status] - STATUS_RANK[b.status] || b.supporters - a.supporters);
+  for (const campaign of sorted) byStory.set(campaign.story_id, [...(byStory.get(campaign.story_id) ?? []), campaign]);
+  return byStory;
+}
+
+/**
+ * Purpose:
+ *	Attach each story's `campaigns` list (shared contract in TASKS.md) for /api/spending and /api/spending/:id.
+ *
+ * Args:
+ *	- stories: stories from src/lib/stories.ts
+ *	- userId: the logged-in user for `joined`, or null
+ *
+ * Returns:
+ *	Promise<StoryWithCampaigns[]>: the same stories in the same order; `campaigns: []` means the empty state
+ */
+export async function withCampaigns(stories: Story[], userId: string | null): Promise<StoryWithCampaigns[]> {
+  const byStory = await listCampaigns(stories.map((story) => story.id), userId);
+  return stories.map((story) => ({ ...story, campaigns: byStory.get(story.id) ?? [] }));
 }
 
 /**

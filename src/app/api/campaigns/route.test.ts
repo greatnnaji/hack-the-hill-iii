@@ -2,11 +2,12 @@ import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { eq } from "drizzle-orm";
 import { db } from "@/db";
 import { campaigns, campaignSupporters, users } from "@/db/schema";
-import { requireUser, UnauthorizedError, type CurrentUser } from "@/lib/auth";
+import { getCurrentUser, requireUser, UnauthorizedError, type CurrentUser } from "@/lib/auth";
 import type { Campaign } from "@/lib/campaigns";
 import { createDraft } from "@/lib/drafts";
 import postcodeFixture from "@/lib/mp/__fixtures__/postcode-K1P1A4.json";
 import { ensureUser } from "@/lib/users";
+import { GET as getSpendingStory } from "../spending/[id]/route";
 import * as joinRoute from "./[id]/join/route";
 import * as campaignsRoute from "./route";
 
@@ -18,6 +19,7 @@ vi.mock("@/db", async () => {
 vi.mock("@/lib/auth", async (importOriginal) => ({
   ...(await importOriginal<typeof import("@/lib/auth")>()),
   requireUser: vi.fn(),
+  getCurrentUser: vi.fn(),
 }));
 
 const ALICE: CurrentUser = { id: "auth0|alice", email: "alice@example.com", name: "Alice Tremblay" };
@@ -33,6 +35,7 @@ const DRAFT = {
 
 function signInAs(user: CurrentUser) {
   vi.mocked(requireUser).mockResolvedValue(user);
+  vi.mocked(getCurrentUser).mockResolvedValue(user);
 }
 
 function post(url: string, body: unknown) {
@@ -150,5 +153,20 @@ describe("POST /api/campaigns/:id/join", () => {
     expect((await join(campaign.id)).status).toBe(409);
     expect((await join("00000000-0000-0000-0000-000000000000")).status).toBe(404);
     expect((await join("not-a-uuid")).status).toBe(404);
+  });
+});
+
+describe("demo check: start, join, see it on the story", () => {
+  it("shows the campaign on its story with the count going up and joined per user", async () => {
+    const story = async () => (await getSpendingStory(new Request("http://localhost"), { params: Promise.resolve({ id: DRAFT.storyId }) })).json();
+    expect((await story()).campaigns).toEqual([]);
+
+    const { body: campaign } = await start({ draftId: (await draftFor(ALICE)).id, shareWithMp: true });
+    signInAs(BOB);
+    expect((await story()).campaigns).toMatchObject([{ id: campaign.id, starter: "Alice", supporters: 1, joined: false }]);
+
+    await join(campaign.id);
+    await join(campaign.id);
+    expect((await story()).campaigns).toMatchObject([{ supporters: 2, joined: true }]);
   });
 });

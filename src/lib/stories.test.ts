@@ -1,11 +1,32 @@
 import { NextRequest } from "next/server";
-import { describe, expect, it } from "vitest";
+import { beforeEach, describe, expect, it, vi } from "vitest";
+import { db } from "@/db";
+import { campaigns, campaignSupporters, users } from "@/db/schema";
+import { getCurrentUser, type CurrentUser } from "@/lib/auth";
+import type { StoryWithCampaigns } from "@/lib/campaigns";
 import { GET as getDepartments } from "@/app/api/departments/route";
 import { GET as getSpendingStory } from "@/app/api/spending/[id]/route";
 import { GET as getSpending } from "@/app/api/spending/route";
 import dataStories from "../../pipeline/stories.json";
 import newsStories from "../../pipeline/news_stories.json";
-import { getStory, listDepartments, listStories, type Story } from "./stories";
+import { getStory, listDepartments, listStories } from "./stories";
+
+vi.mock("@/db", async () => {
+  const { createTestDb } = await import("@/test/db");
+  return { db: await createTestDb() };
+});
+
+vi.mock("@/lib/auth", async (importOriginal) => ({
+  ...(await importOriginal<typeof import("@/lib/auth")>()),
+  getCurrentUser: vi.fn(),
+}));
+
+const ALICE: CurrentUser = { id: "auth0|alice", email: "alice@example.com", name: "Alice" };
+
+beforeEach(async () => {
+  await db.delete(users);
+  vi.mocked(getCurrentUser).mockResolvedValue(ALICE);
+});
 
 describe("stories", () => {
   it("lists the pipeline stories", async () => {
@@ -58,12 +79,15 @@ describe("GET /api/spending", () => {
   it("returns the whole feed without a filter", async () => {
     const res = await get();
     expect(res.status).toBe(200);
-    expect(await res.json()).toHaveLength((await listStories()).length);
+    const stories: StoryWithCampaigns[] = await res.json();
+    expect(stories).toHaveLength((await listStories()).length);
+    // No campaigns in the database yet: every story shows the empty state.
+    expect(stories.every((story) => Array.isArray(story.campaigns) && story.campaigns.length === 0)).toBe(true);
   });
 
   it("returns one department's stories", async () => {
     const [department] = await listDepartments();
-    const stories: Story[] = await (await get(`?department=${department.dept_code}`)).json();
+    const stories: StoryWithCampaigns[] = await (await get(`?department=${department.dept_code}`)).json();
     expect(stories).toHaveLength(department.count);
   });
 
@@ -81,7 +105,7 @@ describe("GET /api/spending/:id", () => {
     const [first] = await listStories();
     const res = await get(first.id);
     expect(res.status).toBe(200);
-    expect(await res.json()).toEqual(first);
+    expect(await res.json()).toEqual({ ...first, campaigns: [] });
   });
 
   it("404s for an unknown id", async () => {
@@ -96,5 +120,44 @@ describe("GET /api/departments", () => {
     const res = await getDepartments();
     expect(res.status).toBe(200);
     expect(await res.json()).toEqual(await listDepartments());
+  });
+});
+
+describe("campaigns on stories", () => {
+  const BOB: CurrentUser = { id: "auth0|bob", email: "bob@example.com", name: "Bob" };
+  const AIRCRAFT = "data-nd-bur03-2024";
+  const detail = async (id = AIRCRAFT): Promise<StoryWithCampaigns> =>
+    (await getSpendingStory(new Request(`http://localhost/api/spending/${id}`), { params: Promise.resolve({ id }) })).json();
+
+  async function addCampaign(startedBy: string, fields: Partial<typeof campaigns.$inferInsert> = {}) {
+    const [row] = await db
+      .insert(campaigns)
+      .values({ storyId: AIRCRAFT, startedBy, title: `By ${startedBy}`, issue: "i", request: "r", deadline: "2026-12-25", ...fields })
+      .returning();
+    await db.insert(campaignSupporters).values({ campaignId: row.id, userId: startedBy, name: startedBy, email: `${startedBy}@example.com` });
+    return row;
+  }
+
+  it("orders official first, then most supporters, closed last", async () => {
+    await db.insert(users).values([ALICE, BOB, { id: "carol", name: "Carol" }, { id: "dan", name: "Dan" }]);
+    const closed = await addCampaign("dan", { status: "closed" });
+    const small = await addCampaign("carol");
+    const big = await addCampaign(BOB.id);
+    await db.insert(campaignSupporters).values({ campaignId: big.id, userId: ALICE.id, name: "Alice", email: ALICE.email! });
+    const official = await addCampaign(ALICE.id, { status: "official" });
+
+    const story = await detail();
+    expect(story.campaigns.map((c) => c.id)).toEqual([official.id, big.id, small.id, closed.id]);
+    expect(story.campaigns[1]).toMatchObject({ starter: "Bob", supporters: 2, target: 1000, deadline: "2026-12-25", status: "gathering", joined: true, petition: null });
+    expect(story.campaigns[2].joined).toBe(false);
+    // Other stories stay empty.
+    expect((await detail("data-oicc-byb04-2024")).campaigns).toEqual([]);
+  });
+
+  it("reports joined: false for everyone when nobody is logged in", async () => {
+    await db.insert(users).values(ALICE);
+    await addCampaign(ALICE.id);
+    vi.mocked(getCurrentUser).mockResolvedValue(null);
+    expect((await detail()).campaigns[0]).toMatchObject({ supporters: 1, joined: false });
   });
 });
