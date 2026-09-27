@@ -1,10 +1,10 @@
 const STEPS = [
-  { title: "Draft", detail: "Write the issue and request (you are here)." },
-  { title: "5 supporters", detail: "Five people confirm by email before it goes to an MP." },
-  { title: "MP sponsor", detail: "An MP authorizes it. Without one it can't be published." },
-  { title: "Open for 120 days", detail: "Anyone in Canada can sign on ourcommons.ca." },
-  { title: "500 signatures", detail: "Reaching 500 means it will be presented in the House." },
-  { title: "Government response", detail: "Required within 45 days of being tabled." },
+  { title: "Write it", detail: "The issue and what you're asking for (you are here). Only you see it until you publish." },
+  { title: "Publish to the app", detail: "It goes live on the story and others can join." },
+  { title: "1,000 supporters", detail: "Twice the 500 signatures an e-petition needs, since about half sign officially." },
+  { title: "MP sponsor", detail: "Our team asks an MP to authorize it. Without one it can't go on ourcommons.ca." },
+  { title: "Sign on ourcommons.ca", detail: "Our team opens the official e-petition and emails every supporter the link." },
+  { title: "Government response", detail: "At 500 signatures it's presented in the House; the government must answer within 45 days." },
 ];
 
 export function ProcessExplainer() {

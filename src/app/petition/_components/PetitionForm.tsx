@@ -3,10 +3,11 @@
 import { useRouter } from "next/navigation";
 import { useState, type FormEvent } from "react";
 import { apiFetch } from "@/lib/apiFetch";
-import { LIMITS, REQUEST_PREFIX, type Draft } from "@/lib/petition";
+import type { Campaign } from "@/lib/campaigns";
+import { LIMITS, REQUEST_PREFIX } from "@/lib/petition";
 
 type Field = "title" | "issue" | "request";
-type Props = { story: { id: string; title: string }; draft?: Draft };
+type Props = { story: { id: string; title: string }; campaign?: Campaign };
 
 const inputClass =
   "mt-2 w-full rounded-lg border border-line bg-paper px-3 py-2 text-sm focus:border-ink focus:outline-none";
@@ -24,12 +25,12 @@ function validate(values: Record<Field, string>): Partial<Record<Field, string>>
   return errors;
 }
 
-export function PetitionForm({ story, draft }: Props) {
+export function PetitionForm({ story, campaign }: Props) {
   const router = useRouter();
   const [values, setValues] = useState<Record<Field, string>>({
-    title: draft?.title ?? "",
-    issue: draft?.issue ?? "Whereas ",
-    request: draft?.request ?? "",
+    title: campaign?.title ?? "",
+    issue: campaign?.issue ?? "Whereas ",
+    request: campaign?.request ?? "",
   });
   const [errors, setErrors] = useState<Partial<Record<Field, string>>>({});
   const [saveError, setSaveError] = useState<string | null>(null);
@@ -47,13 +48,11 @@ export function PetitionForm({ story, draft }: Props) {
     setSaving(true);
     setSaveError(null);
     try {
-      const saved = draft
-        ? await apiFetch<Draft>(`/api/me/drafts/${draft.id}`, { method: "PATCH", body: values })
-        : await apiFetch<Draft>("/api/me/drafts", {
-            method: "POST",
-            body: { storyId: story.id, storyTitle: story.title, ...values },
-          });
-      router.push(`/petition/${saved.id}/sponsor`);
+      // Saved as a private draft. If they already have a campaign on this story, the API returns that one instead.
+      const saved = campaign
+        ? await apiFetch<Campaign>(`/api/campaigns/${campaign.id}`, { method: "PATCH", body: values })
+        : await apiFetch<Campaign>("/api/campaigns", { method: "POST", body: { storyId: story.id, ...values } });
+      router.push(`/petition/${saved.id}/publish`);
     } catch {
       setSaveError("We couldn't save your draft. Try again.");
       setSaving(false);
@@ -100,7 +99,7 @@ export function PetitionForm({ story, draft }: Props) {
         disabled={saving}
         className="mt-6 w-full rounded-lg bg-ink px-4 py-3 text-sm font-medium text-paper disabled:opacity-60"
       >
-        {saving ? "Saving…" : "Next: find an MP sponsor"}
+        {saving ? "Saving…" : "Next: publish to the app"}
       </button>
     </form>
   );
