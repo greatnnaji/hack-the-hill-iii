@@ -1,4 +1,4 @@
-CREATE TYPE "public"."campaign_status" AS ENUM('gathering', 'review', 'sponsor_asked', 'official', 'closed');--> statement-breakpoint
+CREATE TYPE "public"."campaign_status" AS ENUM('draft', 'gathering', 'review', 'sponsor_asked', 'official', 'closed');--> statement-breakpoint
 CREATE TABLE "campaign_supporters" (
 	"campaign_id" uuid NOT NULL,
 	"user_id" text NOT NULL,
@@ -18,8 +18,8 @@ CREATE TABLE "campaigns" (
 	"issue" text NOT NULL,
 	"request" text NOT NULL,
 	"target" integer DEFAULT 1000 NOT NULL,
-	"deadline" date NOT NULL,
-	"status" "campaign_status" DEFAULT 'gathering' NOT NULL,
+	"deadline" date,
+	"status" "campaign_status" DEFAULT 'draft' NOT NULL,
 	"created_at" timestamp with time zone DEFAULT now() NOT NULL,
 	"updated_at" timestamp with time zone DEFAULT now() NOT NULL,
 	CONSTRAINT "campaigns_story_id_started_by_unique" UNIQUE("story_id","started_by")

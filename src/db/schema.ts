@@ -1,5 +1,4 @@
-import { boolean, date, index, integer, jsonb, numeric, pgEnum, pgTable, primaryKey, text, timestamp, unique, uuid } from "drizzle-orm/pg-core";
-import type { Mp } from "@/lib/mp/types";
+import { boolean, date, index, integer, numeric, pgEnum, pgTable, primaryKey, text, timestamp, unique, uuid } from "drizzle-orm/pg-core";
 
 export const users = pgTable("users", {
   id: text("id").primaryKey(),
@@ -9,33 +8,11 @@ export const users = pgTable("users", {
   lastLoginAt: timestamp("last_login_at", { withTimezone: true }).notNull().defaultNow(),
 });
 
-export const drafts = pgTable(
-  "drafts",
-  {
-    id: uuid("id").primaryKey().defaultRandom(),
-    userId: text("user_id")
-      .notNull()
-      .references(() => users.id, { onDelete: "cascade" }),
-    storyId: text("story_id").notNull(),
-    storyTitle: text("story_title").notNull(),
-    title: text("title").notNull(),
-    issue: text("issue").notNull(),
-    request: text("request").notNull(),
-    mp: jsonb("mp").$type<Mp>(),
-    sponsorEmail: text("sponsor_email"),
-    sponsorRequestedAt: timestamp("sponsor_requested_at", { withTimezone: true }),
-    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
-    updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
-  },
-  (t) => [index("drafts_user_id_idx").on(t.userId)],
-);
-
-export type DraftRow = typeof drafts.$inferSelect;
-
-// Campaigns (TASKS.md Great Task 3): the in-app part of a petition. People start one on a story and others join it;
-// at the target the team takes it to an MP and ourcommons.ca. A story can have many campaigns, one per person.
-// story_id points at a story in pipeline/*.json (stories are not in the database), so story ids never change.
-export const campaignStatus = pgEnum("campaign_status", ["gathering", "review", "sponsor_asked", "official", "closed"]);
+// Campaigns (TASKS.md Great Task 3): the in-app part of a petition. Someone writes one on a story (draft, only they
+// can see it), publishes it, and others join; at the target the team takes it to an MP and ourcommons.ca.
+// A story can have many campaigns, one per person. story_id points at a story in pipeline/*.json (stories are not
+// in the database), so story ids never change.
+export const campaignStatus = pgEnum("campaign_status", ["draft", "gathering", "review", "sponsor_asked", "official", "closed"]);
 
 export const campaigns = pgTable(
   "campaigns",
@@ -50,9 +27,9 @@ export const campaigns = pgTable(
     request: text("request").notNull(),
     // 1,000 = twice the 500 signatures ourcommons.ca needs, since about half of supporters sign officially.
     target: integer("target").notNull().default(1000),
-    // 30 to 120 days out, the same window as an e-petition.
-    deadline: date("deadline").notNull(),
-    status: campaignStatus("status").notNull().default("gathering"),
+    // Set when published: 30 to 120 days out, the same window as an e-petition. Null while a draft.
+    deadline: date("deadline"),
+    status: campaignStatus("status").notNull().default("draft"),
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
     updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
   },

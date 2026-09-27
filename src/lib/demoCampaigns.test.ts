@@ -44,9 +44,10 @@ describe("seedDemoCampaigns", () => {
 describe("campaign constraints", () => {
   it("allows one campaign per person per story and one supporter row per person per campaign", async () => {
     await db.insert(users).values(REAL);
-    const base = { storyId: "data-nd-bur03-2024", startedBy: REAL.id, title: "t", issue: "i", request: "r", deadline: "2026-12-25" };
+    const base = { storyId: "data-nd-bur03-2024", startedBy: REAL.id, title: "t", issue: "i", request: "r" };
     const [campaign] = await db.insert(campaigns).values(base).returning();
-    expect(campaign).toMatchObject({ target: 1000, status: "gathering" });
+    // New campaigns start as a private draft with no deadline yet.
+    expect(campaign).toMatchObject({ target: 1000, status: "draft", deadline: null });
     await expect(db.insert(campaigns).values(base)).rejects.toThrow();
     await db.insert(campaigns).values({ ...base, storyId: "data-oicc-byb04-2024" });
 
