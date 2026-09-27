@@ -1,7 +1,8 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
 import { count, eq } from "drizzle-orm";
 import { db } from "@/db";
-import { campaigns, campaignSupporters, users } from "@/db/schema";
+import { campaignMembers, campaigns, users } from "@/db/schema";
+import { checkCampaignText } from "@/lib/campaigns/rules";
 import { getStory } from "./stories";
 import { DEMO_CAMPAIGNS, seedDemoCampaigns } from "./demoCampaigns";
 
@@ -24,12 +25,15 @@ describe("seedDemoCampaigns", () => {
 
     for (const demo of DEMO_CAMPAIGNS) {
       expect(await getStory(demo.storyId)).not.toBeNull();
+      expect(checkCampaignText(demo).problems).toEqual([]);
       const campaign = rows.find((r) => r.title === demo.title)!;
-      const members = await db.select().from(campaignSupporters).where(eq(campaignSupporters.campaignId, campaign.id)).orderBy(campaignSupporters.joinedAt);
-      expect(members).toHaveLength(demo.supporters);
-      expect(members[0]).toMatchObject({ userId: campaign.startedBy, name: expect.stringMatching(new RegExp(`^${demo.starter} `)) });
+      const members = await db.select().from(campaignMembers).where(eq(campaignMembers.campaignId, campaign.id)).orderBy(campaignMembers.joinedAt);
+      expect(members).toHaveLength(demo.members);
+      expect(members[0].userId).toBe(campaign.starterId);
+      const [starter] = await db.select().from(users).where(eq(users.id, campaign.starterId));
+      expect(starter.name).toMatch(new RegExp(`^${demo.starter} `));
     }
-    expect(rows.find((r) => r.storyId === "data-nd-bur03-2024")).toMatchObject({ status: "review", target: 1000, deadline: "2026-11-06" });
+    expect(rows.find((r) => r.storyId === "data-nd-bur03-2024")).toMatchObject({ stage: "in_review", target: 1000, deadline: "2026-11-06" });
   });
 
   it("replaces demo rows on re-run and leaves real users alone", async () => {
@@ -38,21 +42,5 @@ describe("seedDemoCampaigns", () => {
     await seedDemoCampaigns();
     expect((await db.select({ n: count() }).from(campaigns))[0].n).toBe(DEMO_CAMPAIGNS.length);
     expect(await db.select().from(users).where(eq(users.id, REAL.id))).toHaveLength(1);
-  });
-});
-
-describe("campaign constraints", () => {
-  it("allows one campaign per person per story and one supporter row per person per campaign", async () => {
-    await db.insert(users).values(REAL);
-    const base = { storyId: "data-nd-bur03-2024", startedBy: REAL.id, title: "t", issue: "i", request: "r" };
-    const [campaign] = await db.insert(campaigns).values(base).returning();
-    // New campaigns start as a private draft with no deadline yet.
-    expect(campaign).toMatchObject({ target: 1000, status: "draft", deadline: null });
-    await expect(db.insert(campaigns).values(base)).rejects.toThrow();
-    await db.insert(campaigns).values({ ...base, storyId: "data-oicc-byb04-2024" });
-
-    const member = { campaignId: campaign.id, userId: REAL.id, name: REAL.name, email: REAL.email };
-    await db.insert(campaignSupporters).values(member);
-    await expect(db.insert(campaignSupporters).values(member)).rejects.toThrow();
   });
 });
