@@ -12,6 +12,7 @@
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
     "db:load": "tsx pipeline/load_db.ts",
+    "db:seed": "tsx pipeline/seed_campaigns.ts",
     "petitions:sync": "tsx pipeline/sync_petitions.ts"
   },
   "dependencies": {

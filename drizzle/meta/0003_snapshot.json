@@ -1,11 +1,11 @@
 {
-  "id": "219a094f-866f-4f01-af29-7f64c8ff72be",
-  "prevId": "d81ae9af-8019-46da-a2f6-b5c2eb09b024",
+  "id": "a161b2ec-955d-44b0-a428-38032416e44f",
+  "prevId": "87138534-52d8-4cff-9d8d-6131ed6d39f9",
   "version": "7",
   "dialect": "postgresql",
   "tables": {
-    "public.campaign_supporters": {
-      "name": "campaign_supporters",
+    "public.campaign_members": {
+      "name": "campaign_members",
       "schema": "",
       "columns": {
         "campaign_id": {
@@ -20,30 +20,18 @@
           "primaryKey": false,
           "notNull": true
         },
-        "name": {
-          "name": "name",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": true
-        },
-        "email": {
-          "name": "email",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": true
-        },
         "riding": {
           "name": "riding",
           "type": "text",
           "primaryKey": false,
           "notNull": false
         },
-        "share_with_mp": {
-          "name": "share_with_mp",
-          "type": "boolean",
+        "consented_at": {
+          "name": "consented_at",
+          "type": "timestamp with time zone",
           "primaryKey": false,
           "notNull": true,
-          "default": false
+          "default": "now()"
         },
         "joined_at": {
           "name": "joined_at",
@@ -54,8 +42,8 @@
         }
       },
       "indexes": {
-        "campaign_supporters_user_id_idx": {
-          "name": "campaign_supporters_user_id_idx",
+        "campaign_members_user_id_idx": {
+          "name": "campaign_members_user_id_idx",
           "columns": [
             {
               "expression": "user_id",
@@ -71,9 +59,9 @@
         }
       },
       "foreignKeys": {
-        "campaign_supporters_campaign_id_campaigns_id_fk": {
-          "name": "campaign_supporters_campaign_id_campaigns_id_fk",
-          "tableFrom": "campaign_supporters",
+        "campaign_members_campaign_id_campaigns_id_fk": {
+          "name": "campaign_members_campaign_id_campaigns_id_fk",
+          "tableFrom": "campaign_members",
           "tableTo": "campaigns",
           "columnsFrom": [
             "campaign_id"
@@ -84,9 +72,9 @@
           "onDelete": "cascade",
           "onUpdate": "no action"
         },
-        "campaign_supporters_user_id_users_id_fk": {
-          "name": "campaign_supporters_user_id_users_id_fk",
-          "tableFrom": "campaign_supporters",
+        "campaign_members_user_id_users_id_fk": {
+          "name": "campaign_members_user_id_users_id_fk",
+          "tableFrom": "campaign_members",
           "tableTo": "users",
           "columnsFrom": [
             "user_id"
@@ -99,8 +87,8 @@
         }
       },
       "compositePrimaryKeys": {
-        "campaign_supporters_campaign_id_user_id_pk": {
-          "name": "campaign_supporters_campaign_id_user_id_pk",
+        "campaign_members_campaign_id_user_id_pk": {
+          "name": "campaign_members_campaign_id_user_id_pk",
           "columns": [
             "campaign_id",
             "user_id"
@@ -129,8 +117,14 @@
           "primaryKey": false,
           "notNull": true
         },
-        "started_by": {
-          "name": "started_by",
+        "story_title": {
+          "name": "story_title",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "starter_id": {
+          "name": "starter_id",
           "type": "text",
           "primaryKey": false,
           "notNull": true
@@ -153,6 +147,14 @@
           "primaryKey": false,
           "notNull": true
         },
+        "stage": {
+          "name": "stage",
+          "type": "campaign_stage",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'gathering'"
+        },
         "target": {
           "name": "target",
           "type": "integer",
@@ -164,15 +166,13 @@
           "name": "deadline",
           "type": "date",
           "primaryKey": false,
-          "notNull": false
+          "notNull": true
         },
-        "status": {
-          "name": "status",
-          "type": "campaign_status",
-          "typeSchema": "public",
+        "team_note": {
+          "name": "team_note",
+          "type": "text",
           "primaryKey": false,
-          "notNull": true,
-          "default": "'draft'"
+          "notNull": false
         },
         "created_at": {
           "name": "created_at",
@@ -189,14 +189,45 @@
           "default": "now()"
         }
       },
-      "indexes": {},
+      "indexes": {
+        "campaigns_story_id_idx": {
+          "name": "campaigns_story_id_idx",
+          "columns": [
+            {
+              "expression": "story_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "campaigns_stage_idx": {
+          "name": "campaigns_stage_idx",
+          "columns": [
+            {
+              "expression": "stage",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
       "foreignKeys": {
-        "campaigns_started_by_users_id_fk": {
-          "name": "campaigns_started_by_users_id_fk",
+        "campaigns_starter_id_users_id_fk": {
+          "name": "campaigns_starter_id_users_id_fk",
           "tableFrom": "campaigns",
           "tableTo": "users",
           "columnsFrom": [
-            "started_by"
+            "starter_id"
           ],
           "columnsTo": [
             "id"
@@ -207,12 +238,12 @@
       },
       "compositePrimaryKeys": {},
       "uniqueConstraints": {
-        "campaigns_story_id_started_by_unique": {
-          "name": "campaigns_story_id_started_by_unique",
+        "campaigns_story_starter_unique": {
+          "name": "campaigns_story_starter_unique",
           "nullsNotDistinct": false,
           "columns": [
             "story_id",
-            "started_by"
+            "starter_id"
           ]
         }
       },
@@ -247,6 +278,115 @@
       "foreignKeys": {},
       "compositePrimaryKeys": {},
       "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.petitions": {
+      "name": "petitions",
+      "schema": "",
+      "columns": {
+        "number": {
+          "name": "number",
+          "type": "text",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "campaign_id": {
+          "name": "campaign_id",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "title": {
+          "name": "title",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "sponsor_name": {
+          "name": "sponsor_name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "sponsor_riding": {
+          "name": "sponsor_riding",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "signatures": {
+          "name": "signatures",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "default": 0
+        },
+        "opened_at": {
+          "name": "opened_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "closes_at": {
+          "name": "closes_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "presented_at": {
+          "name": "presented_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "response_tabled_at": {
+          "name": "response_tabled_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "synced_at": {
+          "name": "synced_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "petitions_campaign_id_campaigns_id_fk": {
+          "name": "petitions_campaign_id_campaigns_id_fk",
+          "tableFrom": "petitions",
+          "tableTo": "campaigns",
+          "columnsFrom": [
+            "campaign_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {
+        "petitions_campaign_id_unique": {
+          "name": "petitions_campaign_id_unique",
+          "nullsNotDistinct": false,
+          "columns": [
+            "campaign_id"
+          ]
+        }
+      },
       "policies": {},
       "checkConstraints": {},
       "isRLSEnabled": false
@@ -417,6 +557,12 @@
           "primaryKey": false,
           "notNull": false
         },
+        "riding": {
+          "name": "riding",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
         "created_at": {
           "name": "created_at",
           "type": "timestamp with time zone",
@@ -442,15 +588,15 @@
     }
   },
   "enums": {
-    "public.campaign_status": {
-      "name": "campaign_status",
+    "public.campaign_stage": {
+      "name": "campaign_stage",
       "schema": "public",
       "values": [
-        "draft",
         "gathering",
-        "review",
-        "sponsor_asked",
-        "official",
+        "in_review",
+        "mp_asked",
+        "mp_agreed",
+        "live",
         "closed"
       ]
     }
