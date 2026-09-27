@@ -34,6 +34,7 @@ export function TaxTrackerShell({ children, accountMenu, childrenAreMain = false
     { href: "/receipt", label: "Receipt", active: pathname === "/receipt" },
     { href: "/spending", label: "Stories", active: pathname.startsWith("/spending") },
     { href: "/campaigns", label: "Campaigns", active: pathname.startsWith("/campaigns") },
+    { href: "/petitions", label: "Petitions", active: pathname.startsWith("/petitions") },
   ];
 
   return (

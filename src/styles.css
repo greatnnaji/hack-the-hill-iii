@@ -105,6 +105,7 @@
 .civic-action { max-width: 640px; margin-top: 48px; padding: 27px 30px; border-top: 3px solid var(--wm-red); background: var(--wm-ink); color: var(--wm-paper); }
 .civic-action .section-label { color: #bdb5aa; }
 .civic-action h2 { margin: 14px 0 8px; font: 500 31px/1 'Newsreader', serif; }
+.civic-action .next-steps-title { color: #c59c64; }
 .action-copy { max-width: 500px; margin: 0; color: #c6beb2; font-size: 13px; line-height: 1.55; }
 .petition-progress { display: flex; align-items: baseline; gap: 10px; margin: 22px 0 8px; }
 .petition-progress strong { color: #f0c75f; font: 500 32px 'DM Mono', monospace; letter-spacing: -.06em; }

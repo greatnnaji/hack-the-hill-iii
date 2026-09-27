@@ -135,7 +135,7 @@ function ActionSection({ story }: { story: StoryWithCampaigns }) {
         </>
       ) : (
         <>
-          <h2>What happens next?</h2>
+          <h2 className="next-steps-title">What happens next?</h2>
           <p className="action-copy">Turn a question about this spending story into a campaign people can join, then move it toward an official petition.</p>
           <div className="action-links"><Link className="primary-action" href={`/campaigns/new?story=${encodeURIComponent(story.id)}`}>Start a campaign ↗</Link><Link className="text-action" href="/campaigns">Browse all campaigns ↗</Link></div>
           <small>Only federal spending stories can lead to a House of Commons e-petition.</small>
