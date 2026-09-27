@@ -1,9 +1,9 @@
 const STEPS = [
-  { title: "Write it", detail: "The issue and what you're asking for (you are here). Only you see it until you publish." },
+  { title: "Write it", detail: "The issue and what you're asking for (you are here)." },
   { title: "Publish to the app", detail: "It goes live on the story and others can join." },
-  { title: "1,000 supporters", detail: "Twice the 500 signatures an e-petition needs, since about half sign officially." },
+  { title: "1,000 members", detail: "Twice the 500 signatures an e-petition needs, since about half sign officially." },
   { title: "MP sponsor", detail: "Our team asks an MP to authorize it. Without one it can't go on ourcommons.ca." },
-  { title: "Sign on ourcommons.ca", detail: "Our team opens the official e-petition and emails every supporter the link." },
+  { title: "Sign on ourcommons.ca", detail: "Our team opens the official e-petition and emails every member the link." },
   { title: "Government response", detail: "At 500 signatures it's presented in the House; the government must answer within 45 days." },
 ];
 

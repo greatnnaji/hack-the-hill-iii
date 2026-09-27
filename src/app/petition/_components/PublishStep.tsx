@@ -1,67 +1,63 @@
 "use client";
 
-import { useRouter } from "next/navigation";
 import { useState, type FormEvent } from "react";
-import { ApiError, apiFetch } from "@/lib/apiFetch";
-import type { Campaign } from "@/lib/campaigns";
+import { MAX_DAYS, MIN_DAYS, type CampaignText } from "@/lib/campaigns/rules";
 import { normalizePostal } from "@/lib/mp/postal";
 import { fullRequest } from "@/lib/petition";
 
-const DAYS = [30, 60, 90, 120] as const;
+const DAYS = [MIN_DAYS, 60, 90, MAX_DAYS];
 
-// Step 2: publish the draft to its story so others can join. The starter becomes its first member.
-export function PublishStep({ campaign, storyTitle }: { campaign: Campaign; storyTitle: string }) {
-  const router = useRouter();
+export type PublishChoices = { postalCode?: string; days: number };
+
+type Props = {
+  storyTitle: string;
+  text: CampaignText;
+  busy: boolean;
+  error: string | null;
+  onPublish: (choices: PublishChoices) => void;
+};
+
+// Step 2: publish the campaign to its story. Nothing is saved until this step: publishing starts it, with the
+// starter as its first member. Consent is required, the same as for everyone who joins.
+export function PublishStep({ storyTitle, text, busy, error, onPublish }: Props) {
   const [postal, setPostal] = useState("");
-  const [shareWithMp, setShareWithMp] = useState(false);
-  const [days, setDays] = useState<(typeof DAYS)[number]>(120);
-  const [error, setError] = useState<string | null>(null);
-  const [publishing, setPublishing] = useState(false);
+  const [days, setDays] = useState(MAX_DAYS);
+  const [consent, setConsent] = useState(false);
+  const [postalError, setPostalError] = useState<string | null>(null);
 
-  async function onSubmit(event: FormEvent) {
+  function submit(event: FormEvent) {
     event.preventDefault();
     const code = postal.trim() ? normalizePostal(postal) : null;
     if (postal.trim() && !code) {
-      setError("Enter a postal code like K1P 1A4, or leave it empty.");
+      setPostalError("Enter a postal code like K1P 1A4.");
       return;
     }
-    setPublishing(true);
-    setError(null);
-    try {
-      await apiFetch<Campaign>(`/api/campaigns/${campaign.id}/publish`, {
-        method: "POST",
-        body: { days, shareWithMp, ...(code ? { postal: code } : {}) },
-      });
-      router.push(`/petition/${campaign.id}/live`);
-    } catch (caught) {
-      setError(
-        caught instanceof ApiError && caught.code === "email_required"
-          ? "Your account has no email address. Add one to your login, then try again."
-          : "We couldn't publish your campaign. Try again.",
-      );
-      setPublishing(false);
-    }
+    setPostalError(null);
+    onPublish({ days, ...(code ? { postalCode: code } : {}) });
   }
 
   return (
     <div className="grid gap-10 lg:grid-cols-2">
       <section className="rounded-xl border border-line bg-paper p-5 text-sm">
         <p className="text-xs text-muted">On: {storyTitle}</p>
-        <h2 className="mt-2 font-semibold">{campaign.title}</h2>
-        <p className="mt-3 whitespace-pre-line">{campaign.issue}</p>
-        <p className="mt-3">{fullRequest(campaign.request)}</p>
+        <h2 className="mt-2 font-semibold">{text.title}</h2>
+        <p className="mt-3 whitespace-pre-line">{text.issue}</p>
+        <p className="mt-3">{fullRequest(text.request)}</p>
       </section>
 
-      <form onSubmit={onSubmit} noValidate>
+      <form onSubmit={submit} noValidate>
         <h1 className="text-2xl font-semibold">Publish to the app</h1>
         <p className="mt-1 text-sm text-muted">
-          Your campaign goes live on the story and you become its first supporter. Others can then join. Once it
-          reaches 1,000 supporters, our team takes it to an MP and ourcommons.ca.
+          Your campaign goes live on the story and you become its first member. Others can then join. Once it
+          reaches 1,000 members, our team takes it to an MP and ourcommons.ca.
         </p>
 
         <label className="mt-6 block">
-          <span className="text-sm font-semibold">Postal code (optional)</span>
-          <span className="block text-xs text-muted">Only used to find your riding, so an MP can see supporters from theirs.</span>
+          <span className="text-sm font-semibold">Postal code</span>
+          <span className="block text-xs text-muted">
+            Finds your riding, so an MP can see members from theirs. Only the riding is saved. You can leave it
+            empty if you&rsquo;ve given it before.
+          </span>
           <input
             value={postal}
             onChange={(event) => setPostal(event.target.value)}
@@ -69,12 +65,13 @@ export function PublishStep({ campaign, storyTitle }: { campaign: Campaign; stor
             className="mt-2 w-full rounded-lg border border-line bg-paper px-3 py-2 text-sm"
           />
         </label>
+        {postalError && <p className="mt-1 text-xs text-danger">{postalError}</p>}
 
         <label className="mt-4 block">
           <span className="text-sm font-semibold">Gather support for</span>
           <select
             value={days}
-            onChange={(event) => setDays(Number(event.target.value) as (typeof DAYS)[number])}
+            onChange={(event) => setDays(Number(event.target.value))}
             className="mt-2 w-full rounded-lg border border-line bg-paper px-3 py-2 text-sm"
           >
             {DAYS.map((d) => (
@@ -86,17 +83,21 @@ export function PublishStep({ campaign, storyTitle }: { campaign: Campaign; stor
         </label>
 
         <label className="mt-4 flex gap-2 text-sm">
-          <input type="checkbox" checked={shareWithMp} onChange={(event) => setShareWithMp(event.target.checked)} />
-          <span>Share my name, email and riding with the sponsoring MP so they can check supporters are real.</span>
+          <input type="checkbox" checked={consent} onChange={(event) => setConsent(event.target.checked)} />
+          <span>Email me about this campaign, and share my name, email and riding with the MP we ask to sponsor it.</span>
         </label>
 
-        {error && <p className="mt-4 text-sm text-danger">{error}</p>}
+        {error && (
+          <p role="alert" className="mt-4 text-sm text-danger">
+            {error}
+          </p>
+        )}
         <button
           type="submit"
-          disabled={publishing}
+          disabled={busy || !consent}
           className="mt-6 w-full rounded-lg bg-ink px-4 py-3 text-sm font-medium text-paper disabled:opacity-60"
         >
-          {publishing ? "Publishing…" : "Publish campaign"}
+          {busy ? "Publishing…" : "Publish campaign"}
         </button>
       </form>
     </div>

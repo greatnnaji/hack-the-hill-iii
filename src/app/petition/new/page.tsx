@@ -1,8 +1,6 @@
 import Link from "next/link";
 import { getStory } from "@/lib/stories";
-import { PetitionForm } from "../_components/PetitionForm";
-import { ProcessExplainer } from "../_components/ProcessExplainer";
-import { StepHeader } from "../_components/StepHeader";
+import { StartCampaign } from "../_components/StartCampaign";
 
 type Props = { searchParams: Promise<{ story?: string | string[] }> };
 
@@ -21,13 +19,5 @@ export default async function NewPetitionPage({ searchParams }: Props) {
     );
   }
 
-  return (
-    <main>
-      <StepHeader step={1} backHref="/dev/petition" />
-      <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_320px]">
-        <PetitionForm story={{ id: story.id, title: story.title }} />
-        <ProcessExplainer />
-      </div>
-    </main>
-  );
+  return <StartCampaign story={{ id: story.id, title: story.title }} />;
 }

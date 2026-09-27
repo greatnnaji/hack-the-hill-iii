@@ -1,18 +1,17 @@
 import { z } from "zod";
-import type { Mp } from "@/lib/mp/types";
+import { PETITION_OPENING } from "@/lib/campaigns/rules";
 
-export const REQUEST_PREFIX = "We, the undersigned, call upon the Government of Canada to";
+// Petition wording shared by the campaign screens and the MP sponsor letter. The text rules themselves
+// (title length, "Whereas", 250 words, no links) live in src/lib/campaigns/rules.ts.
+
+export const REQUEST_PREFIX = PETITION_OPENING;
 
 export const LIMITS = {
-  title: 250,
-  issue: 4000,
-  request: 2000,
   sponsorEmail: 5000,
 } as const;
 
-const requiredText = (max: number) => z.string().trim().min(1).max(max);
-
 // Generous caps: real Represent values are far shorter, but the API shouldn't store unbounded text.
+// Used by the admin page's MP ask.
 export const mpSchema = z.object({
   name: z.string().min(1).max(200),
   riding: z.string().min(1).max(200),
@@ -23,40 +22,6 @@ export const mpSchema = z.object({
   hillPhone: z.string().max(50).nullable(),
   ridingPhone: z.string().max(50).nullable(),
 });
-
-export const createDraftSchema = z.object({
-  storyId: z.string().min(1).max(200),
-  storyTitle: z.string().min(1).max(500),
-  title: requiredText(LIMITS.title),
-  issue: requiredText(LIMITS.issue),
-  request: requiredText(LIMITS.request),
-});
-
-export const updateDraftSchema = z.object({
-  title: requiredText(LIMITS.title).optional(),
-  issue: requiredText(LIMITS.issue).optional(),
-  request: requiredText(LIMITS.request).optional(),
-  mp: mpSchema.optional(),
-  sponsorEmail: z.string().max(LIMITS.sponsorEmail).nullable().optional(),
-  sponsorRequested: z.literal(true).optional(),
-});
-
-export type CreateDraftInput = z.infer<typeof createDraftSchema>;
-export type UpdateDraftInput = z.infer<typeof updateDraftSchema>;
-
-export type Draft = {
-  id: string;
-  storyId: string;
-  storyTitle: string;
-  title: string;
-  issue: string;
-  request: string;
-  mp: Mp | null;
-  sponsorEmail: string | null;
-  sponsorRequestedAt: string | null;
-  createdAt: string;
-  updatedAt: string;
-};
 
 export function fullRequest(request: string): string {
   return `${REQUEST_PREFIX} ${request}`;

@@ -1,14 +1,22 @@
 import Link from "next/link";
 
-type Props = { step: 1 | 2 | 3; backHref: string };
+// backHref for a link, or onBack when going back stays on the same page (steps 1 and 2 of Start a campaign).
+type Props = { step: 1 | 2 | 3; backHref?: string; onBack?: () => void };
 
-export function StepHeader({ step, backHref }: Props) {
+export function StepHeader({ step, backHref, onBack }: Props) {
+  const label = step === 1 ? "Cancel" : "← Back";
   return (
     <header className="mb-8">
       <div className="flex items-center justify-between text-sm">
-        <Link href={backHref} className="text-muted hover:text-ink">
-          {step === 1 ? "Cancel" : "← Back"}
-        </Link>
+        {onBack ? (
+          <button type="button" onClick={onBack} className="text-muted hover:text-ink">
+            {label}
+          </button>
+        ) : (
+          <Link href={backHref ?? "/dev/petition"} className="text-muted hover:text-ink">
+            {label}
+          </Link>
+        )}
         <span className="text-muted">Step {step} of 3</span>
       </div>
       <div className="mt-3 grid grid-cols-3 gap-2" aria-hidden>
