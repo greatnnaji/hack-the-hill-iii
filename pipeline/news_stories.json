@@ -552,7 +552,7 @@
     "image_credit": "HPCwire"
   },
   {
-    "id": "news-e78764b2e8d0",
+    "id": "news-c4098e4bdd5c",
     "title": "Canadian agri-food sector receives $1B federal funding boost",
     "summary": "The federal government is providing $1 billion to support domestic production projects across Canada's agri-food industry.",
     "amount": 1000000000,
@@ -567,11 +567,15 @@
       {
         "label": "CBC",
         "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQTDVPVHhTZ1dMOE9hR0tGRTFoT0V2T2ZCUTBzYVhXc3Y4M1lCeTBXSG5SNGszZV80MVZmMGV4R0pUT1ExSHJqNHFtX2lXekF2dkZtLXAzampmQjhJc05nQWZoWV9kMU9sTE9uNE01QmJlSjl3VDYtallVU1Z1Wk0yNUZSWTN2VkkzOXR6dUtramNNQU9NQk1QckpZZ3VYMjNDVEhUWVJfSldySjlFMF9jalo5eUdQcXJ0a1c3Q05GajN5OFF4WHBGVkdOSEdJMkFDUjNseQ?oc=5"
+      },
+      {
+        "label": "ctvnews.ca",
+        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNUHBvaGhmX2xfODYxVGR0Q1lfSnBlc1N6dVBWRUdsZ3UyVW1Ram4wYm5iaFpOU2NDazdhTlduVlRRck5OSFM4NzE1bWZaaXUtbnY5clVLX3dxem1HVDZidFc1SkxzSlNZU0p6SHFmWmlRWmxkZ0xGdENyOXVHaldLbkktRzZIR09sX2diRl9iNmpMdmgtTjA2QU5GZGxKbEpyaHdBaGhDcUpCVXVsSkM5WEQyanNTT3dZTTVTNmNtYmljZTNkWmFwVUFIbXo0cjdiQTJfZA?oc=5"
       }
     ],
-    "image_url": null,
-    "image_source_url": null,
-    "image_credit": null
+    "image_url": "/story-images/news/news-c4098e4bdd5c.webp",
+    "image_source_url": "https://www.ctvnews.ca/london/article/federal-government-unleashes-1b-funding-blitz-for-agri-food-sector-150m-allocated-for-export-growth/",
+    "image_credit": "ctvnews.ca"
   },
   {
     "id": "news-5b68a7193d7b",
@@ -648,7 +652,7 @@
     "image_credit": null
   },
   {
-    "id": "news-ab54611a1d38",
+    "id": "news-909cad9731e3",
     "title": "Feds announce $5M for HIV self-testing and support staff",
     "summary": "The federal government announced $5 million for HIV self-test kits and additional peer support staff.",
     "amount": 5000000,
@@ -673,13 +677,17 @@
         "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQeEZEQU9Fem5DV0xIY0ROd19BcVRMTVp3VjhGck8xaFBZc1RTR1NHbFpZMEloRlNlZ0dHelhpQUtPX25jakpmSG1kSkx0VFBXSTlYUmlNR2pnN0ZnN3Q1cG9UMThoRHFTalpQNm5ReVA5eVZCbHhZVlpSdmZUQ3R3Q2x2cWMySTlwQ2ZVWjl1RENRdDlSUWxxS3JVcFFobWJTREE?oc=5"
       },
       {
+        "label": "rdnewsnow.com",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQajhNaDZ1Q0JSc0F0bGMzQlhQeXZOaTA0ZmNRT2FkMWR0VlROb2FURWhvRmNnSWRmQmVIc1hONDltOURtdEQ4T2FNeGpaemhWeGpjR2xCazZiOWRWejY0YzBSbzFuUTZPWmJFSUNsM3hHUEZDU1VCUFRTRHFlUmdKTkJBWDlhdVZVWkRjOHlXYTVfcmFl?oc=5"
+      },
+      {
         "label": "新住民全球新聞網",
         "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQSXdDWXRJWUxQdTRkVTMyOVE2WExMa1daNmpWWE4waTVFWnZrT19TTERGVnNxMVNaakFDaHpWMEdvTlJlSzdvcWYtX2JBeWhZTzBXNm0xcXVWMllQd0FXNmhUTE9uVnBFOVVJZmlLOVZuVW1ucDBLeTh3TWpqLV94UTVRNUJha0RyY2ZIWVNIS0NoZUx6SzNyUTNpSQ?oc=5"
       }
     ],
-    "image_url": "/story-images/news/news-ab54611a1d38.webp",
-    "image_source_url": "https://www.ctvnews.ca/winnipeg/article/ottawa-announces-5m-for-hiv-self-test-kits-support-staff/",
-    "image_credit": "CTV News"
+    "image_url": "/story-images/news/news-909cad9731e3.webp",
+    "image_source_url": "https://rdnewsnow.com/2026/09/10/ottawa-announces-5m-for-hiv-self-test-kits-support-staff/",
+    "image_credit": "rdnewsnow.com"
   },
   {
     "id": "news-8a3fbe1df937",
@@ -699,9 +707,9 @@
         "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQaTZrSnNjcjF5Z05vd0hYdzluVFQ0U0ozWnBoQnR2MGFRZXJsNEotV3g5S3RMMW5TS2FCUXlvdmE2TVhXZ2hWZXVGZHRlRzhmbHRTQ1lNb2RxMWh4UlM2eXhyWDJUT0h3OHowdjJHQWlnVlFSdUVKNF9FV1plako3d25Fckp5M3laQWt3VWpvb1Fhb3BMRF96ZER0VldoUERL?oc=5"
       }
     ],
-    "image_url": null,
-    "image_source_url": null,
-    "image_credit": null
+    "image_url": "/story-images/news/news-8a3fbe1df937.webp",
+    "image_source_url": "https://finance.yahoo.com/economy/policy/articles/canada-paid-stellantis-222-million-140000309.html",
+    "image_credit": "Yahoo Finance"
   },
   {
     "id": "news-6a9bc54a3c8a",
@@ -765,9 +773,9 @@
         "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOTlNxSDJGNGdrQzYyMEhFRnNMTFFDU1c5Z1hEaFROSXdWemg5OVBBcGtkN3A2SjZwLXFhelpPNU02Q1VTWnVnRkdUWmtQTEFOd0RXOTBmMzhzdm9EbDliNXkyS3dVSmdTZnhmcExETzNhb1RmZjhlUHpiSS1EZ2RxSFFVM0FQTWt5YUxrWWVzWFBHUFpXSDAzaVNManRteUplakJmZGhGbm9HYVJwaEYtOUJR?oc=5"
       }
     ],
-    "image_url": null,
-    "image_source_url": null,
-    "image_credit": null
+    "image_url": "/story-images/news/news-0ed6f37bf9c8.webp",
+    "image_source_url": "https://www.on-sitemag.com/construction/pomerleau-lands-121-6m-federal-building-contract-in-st-johns/1003987929/",
+    "image_credit": "On-Site Magazine"
   },
   {
     "id": "news-28b59b949d4f",
@@ -874,15 +882,15 @@
     "image_credit": null
   },
   {
-    "id": "news-6e7d3e44e5a4",
-    "title": "Parks Canada spending nearly $130 million on Cape Breton site repairs",
-    "summary": "Parks Canada is spending nearly $130 million on infrastructure repairs and assets across Cape Breton.",
+    "id": "news-31e0dea067b2",
+    "title": "Federal government provides $130M for historic sites in Cape Breton",
+    "summary": "Parks Canada historic sites in Cape Breton are receiving $130 million in funding.",
     "amount": 130000000,
     "date": "2026-09-02",
     "fiscal_year": "2026-27",
     "department": "Parks Canada",
     "dept_code": "PCA",
-    "program_code": null,
+    "program_code": "BGW02",
     "source_type": "news",
     "level": "federal",
     "sources": [
@@ -897,11 +905,15 @@
       {
         "label": "CTV News",
         "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNTzZ2MnVRMng5TFk4d01GRTJjdUR3alhDQkhIODQwNzlEdE1WUGxBSzBYc2tiQXZiRTFPODlqamo5TFRUYWI3YmJLZ3hwcm1MN09Wa0w0RWVNbC1pTFkzSnRITTlrSUh4T2hWWW5VN09FOVZUQXE2U25KbTVqYUFyTG5icF9BbmF0Unhnem5xSjFvYTNXT3pWU09vMGNzVEhZUjEtdkYzMFZoLWUxMzAzemZJRTNBWDZiVXA2WHJ3UzNGbkhXRkJvT2JlX1ZzNGdKRkFYQUNn?oc=5"
+      },
+      {
+        "label": "saltwire.com",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOT3ZYc296ejNBV01oWEpmbHY5ak1iSFdiWndPTmY4Q0FCMkFiRGNJUWRIdkVsTndMdHBUREpWY0szRlpRWExjcWZJQVNKRFZnWTBrOTlVdzg4Y0VOVFBfZ0dIMW9OVlpWcXNKWFhoVUdxdHVPOTF3TzlPclNTbm1yeC1LMGlWb0pvNzdkS1VhUW5OcVJWT2R5eEdEbw?oc=5"
       }
     ],
-    "image_url": "/story-images/news/news-bd9dcbfbb8c3.webp",
-    "image_source_url": "https://www.ctvnews.ca/atlantic/nova-scotia/article/ottawa-spending-nearly-130m-on-improvements-to-parks-canada-sites-in-cape-breton-canso/",
-    "image_credit": "CTV News"
+    "image_url": "/story-images/news/news-31e0dea067b2.webp",
+    "image_source_url": "https://www.saltwire.com/cape-breton/130-million-for-parks-canada-historic-sites-in-cape-breton",
+    "image_credit": "saltwire.com"
   },
   {
     "id": "news-bbcbea65de3f",
