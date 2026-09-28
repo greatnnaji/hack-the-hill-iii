@@ -1,25 +1,125 @@
 [
   {
+    "id": "news-42d81134b623",
+    "title": "Ottawa spent $1.8 million on diversity, equity, and inclusion in one year",
+    "summary": "The federal government spent $1.8 million on DEI in a single year. Spending included payments to the Anti-Hate Network to train Environment Canada personnel.",
+    "amount": 1800000,
+    "date": "2026-09-28",
+    "fiscal_year": "2026-27",
+    "department": "Environment and Climate Change Canada",
+    "dept_code": "EC",
+    "program_code": null,
+    "source_type": "news",
+    "level": "federal",
+    "sources": [
+      {
+        "label": "rebelnews.com",
+        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOeHlBMEFnR0NNRzNJMG94QkpBM2FMeFZUTHdDX0UxNFNqSkZEaEo1aUlnTHBSWjFVa29hTEhPeGNUZ2hId3NjUW11NEppbHh1UlFraUpxRUxUTGt6dEpqWm1YM2lLVUJqUUYtcG04emZ0MjFRSTJOX2Q2MW8xNmI0eVMyTzA1dWZXSk5ac1BwaUtVR3A0cUhmVFJWdFJqY1J6bjQzUVgyVGJpN2xUZFQ5Q29yZlFfYVNoNUJqUG1YLVVjNHJ6R29QLW1rTUl4ZkdGM0FRWi1XVnZkUQ?oc=5"
+      }
+    ],
+    "image_url": null,
+    "image_source_url": null,
+    "image_credit": null
+  },
+  {
+    "id": "news-210eccc4f380",
+    "title": "Canada invests $85.5 million to rehabilitate Rankin Inlet Airport",
+    "summary": "The Government of Canada is investing $85.5 million to rehabilitate the Rankin Inlet Airport and enhance Arctic and northern connectivity.",
+    "amount": 85500000,
+    "date": "2026-09-28",
+    "fiscal_year": "2026-27",
+    "department": "Transport Canada",
+    "dept_code": "TC",
+    "program_code": "BTY03",
+    "source_type": "news",
+    "level": "federal",
+    "sources": [
+      {
+        "label": "The Globe and Mail",
+        "url": "https://news.google.com/rss/articles/CBMivwJBVV95cUxNTVJRbjdYRDBDcEpic0M0SC1sY1VjQU1lUGwwRmZGYzFHal9XbUpuc1pPWUJIT1JoSUxWZzRDRUdqR1ktc3VEbnlmMVE4YTA1X1pQWGNoZUlzaDZieUY0dklRZXlxYzhfR2pQaVN2TFdBZmZ6bXpnS0dWNlpGRTlTTFZERXVjd09Jc2NqTnVXX3ZnZzdVUFp3VDRLbm5USGZSNktxREpkVklmZkdQdXoweExtRFVPcU1aUlFkNnA5M2hiVFNtMFgtUnNtME5oUDBZMERyOHN2eXRpSnNncl9qRDJIMmxQbFF2Q180N0ktaWhLb0w0dk12X00teWpOWUFzSWllY3NZMy1aSXpDWV9LR1c2WHpVM3pSUWgtSmQzczdDZl9JRF9QMGV5SWN2cjdvbS0yWlBhVnJ5UTFhRFdj?oc=5"
+      },
+      {
+        "label": "Traders Union",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQanZRTUs5REdkQmp6WFlFVUxnM1dBRFd1aFVpZ2lsMXJra3k4cGExVkhYdjliTWFtdXFhUklQNER2WTZhcDJNQ1NzcjFMazhKMFVQb3FMc1dJRzBIakZMazIzMTJqYXpFNVI3YjVuRS00ek9XUTE2QmxHUnozWGdfWGFSVTlzSEt4RjNFVHNDWXJ2OTlwNFBySWtyRzN2T0JyYVZV?oc=5"
+      },
+      {
+        "label": "skiesmag.com",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQR3M4VEFxSktNWmJVdXNqeDRHZkZJc0xIUDQtWnVZakJfdmE5MExGTm5FajNucVdtQTFnOE1NTklKaTExN2VMWmgxeXZfSHFGVE10OUN0OTNVdmZBRkJ2YVg5TGlWM0gyTUlRMXNkQjN4aVZQNWN0bVQyUmc2dzdBZktZU1NKOE45Q3N3ZmQwWjAxdmwwQWfSAZsBQVVfeXFMTVZnSTBfQXZqQy16VnRReE5uWXpNT2VHdVdDaURCWVFHYVM0Qkh4Z2ZyeUZMOVlRazF5YXEzcDZWSTg1MDZMcjRPd25RNzZfelBtTlZnamMya19BaWNSZW1Zb2VpNXJLbVVGTWxfS2FQcHJHOFRzSDNjS1JlZjRmQWhfVUV6WFI3MWcwMUlEVmFsR29xZkpTVUM5bUE?oc=5"
+      }
+    ],
+    "image_url": "/story-images/news/news-c0f5c1f92367.webp",
+    "image_source_url": "https://skiesmag.com/press-releases/rankin-inlet-airport-receives-85-5m-in-federal-funding/",
+    "image_credit": "skiesmag.com"
+  },
+  {
+    "id": "news-a9b6f26c6ace",
+    "title": "Ottawa directs $300 million in housing funds to Indigenous-led projects",
+    "summary": "The federal government is steering $300 million from the national housing strategy to support Indigenous-led housing projects.",
+    "amount": 300000000,
+    "date": "2026-09-28",
+    "fiscal_year": "2026-27",
+    "department": "Canada Mortgage and Housing Corporation",
+    "dept_code": "CMHC",
+    "program_code": "BGJ00",
+    "source_type": "news",
+    "level": "federal",
+    "sources": [
+      {
+        "label": "iPolitics",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPVXZKS0hXUUZUMFpWLTB3VXFwYmdjSVp2Ynd2dHhVdWNFaGdUanVXZ2RvQTI4QWZibUNFcjMyNTRJaHdiazl0dDZnQnhpR1QzRnNBdnJaOHlUSGE0aEZuTjA0SENaenIyUVBvVHlRdkt6SE8tQnlYdDRZeTJWVTU3UlRpUnBPQzBFZkpORmRRTms0YkRoYm1tU0dxQWdRc3hWVmRScjBiTE9lQjg2?oc=5"
+      }
+    ],
+    "image_url": "/story-images/news/news-a9b6f26c6ace.webp",
+    "image_source_url": "https://www.ipolitics.ca/2026/09/28/ottawa-steers-300m-of-housing-strategy-funds-to-indigenous-led-projects/",
+    "image_credit": "iPolitics"
+  },
+  {
     "id": "news-3de807b167c0",
-    "title": "Ottawa provides $162M to Mitacs for small business AI internships",
-    "summary": "The federal government is providing $162 million to Mitacs. The funding supports an artificial intelligence internship program designed for smaller Canadian businesses.",
+    "title": "Canada invests $162 million in 10,000 AI work placements",
+    "summary": "The federal government is investing $162 million to fund 10,000 artificial intelligence work placements.",
     "amount": 162000000,
     "date": "2026-09-25",
     "fiscal_year": "2026-27",
-    "department": "Innovation, Science and Economic Development Canada",
-    "dept_code": "ISC",
-    "program_code": "BNP17",
+    "department": "Employment and Social Development Canada",
+    "dept_code": "HRSD",
+    "program_code": "BGO11",
     "source_type": "news",
     "level": "federal",
     "sources": [
       {
         "label": "betakit.com",
         "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOd04wWVZhUkJqMk5Tb2lPV2RXdlBldmZVdlNYTENUT1ZwUU80aTNJSjBQYnh3dWFEcjg2UWJ6cFptV3MwRmc2TVJRVVUwM0tROEM4dmI2RjJnQjFBM3dsTXQ0MzdfV2J4aFQ1T25mMU1zOHhyRXhCNGdGaVBXWndpMFdxbDF3SU0zZ2R6Q0txdkJyLXVLdkN4b3pTQW1qSmtYaXNQUFFRWjQxZjA?oc=5"
+      },
+      {
+        "label": "dig.watch",
+        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1qMHVNM2Jwa2FOYUg5SWNrZjk2SVFHS3RhazFxb1V3bUVNRkF1MjRRclJMckZUa3k4anRRUkVrS0lBR3B4aW1jUE5MeVdrMTRtbndCRW14U05qOVNn?oc=5"
       }
     ],
     "image_url": "/story-images/news/news-3de807b167c0.webp",
     "image_source_url": "https://betakit.com/feds-give-mitacs-162-million-for-ai-internship-program-for-smaller-canadian-businesses/",
     "image_credit": "betakit.com"
+  },
+  {
+    "id": "news-49618d121882",
+    "title": "Two recipients receive two-thirds of Canada's $4.5M rail trespassing grants",
+    "summary": "Canada has awarded $4.5 million in rail trespassing grants, with two recipients receiving two-thirds of the total.",
+    "amount": 4500000,
+    "date": "2026-09-25",
+    "fiscal_year": "2026-27",
+    "department": "Transport Canada",
+    "dept_code": "TC",
+    "program_code": "BTW15",
+    "source_type": "news",
+    "level": "federal",
+    "sources": [
+      {
+        "label": "railway.supply",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPVXUydW9FRjBlaW1GYTVlWE1CWmF6c29wLTFMbnFIVk1sQndtdWpqWU01QkFtMWtVWU4tdXhnWkVabDVqMkltcm5iNExvbHdZSXRQYkswMU9Da3dIWnBLTVZZQ3dtUTFvRU9OMER1T1NLaE9vLWV1OUx1WjFuS0NFVVIyZ2ZyeG84SVJoVGZCTkl1bEZrNFZia2pXQ19jck0?oc=5"
+      }
+    ],
+    "image_url": "/story-images/news/news-49618d121882.webp",
+    "image_source_url": "https://www.railway.supply/two-recipients-get-two-thirds-of-canadas-c4-5m-rail-trespassing-grants/",
+    "image_credit": "railway.supply"
   },
   {
     "id": "news-1ea76d425f6a",
@@ -64,6 +164,28 @@
     "image_url": "/story-images/news/news-ea665235c5a4.webp",
     "image_source_url": "https://www.independent.co.uk/news/world/americas/wild-horse-population-control-government-b3054833.html",
     "image_credit": "Yahoo News UK"
+  },
+  {
+    "id": "news-5532d1f265ce",
+    "title": "Canada provides $25.4 million in new aid to Haiti",
+    "summary": "The Canadian government is providing $25.4 million in new financial assistance to Haiti.",
+    "amount": 25400000,
+    "date": "2026-09-23",
+    "fiscal_year": "2026-27",
+    "department": "Global Affairs Canada",
+    "dept_code": "EA",
+    "program_code": "BVD02",
+    "source_type": "news",
+    "level": "federal",
+    "sources": [
+      {
+        "label": "HaitiLibre.com",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOZ3lFQnBtNUNIV19OcjhOWDU3SzVxX0pRVUd2N1RuYW03ZUlmWVF0NUlMSUw1eTROTDJNalZBM3d6dzV1ZWxVUWNIVDlPelc2UkxHUFo0WVNTSHRIRlNnVXFRUnc4a0Z0ZS1oalRXOEtLb3d5OWt3QWxDNU1Wdi1GLTZwZXRrU0I3NTFhNVN3?oc=5"
+      }
+    ],
+    "image_url": "/story-images/news/news-5532d1f265ce.webp",
+    "image_source_url": "https://www.haitilibre.com/en/news-48504-canada-new-aid-to-haiti-of-$254-million.html",
+    "image_credit": "HaitiLibre.com"
   },
   {
     "id": "news-c14e48224d51",
@@ -129,11 +251,15 @@
       {
         "label": "CBC",
         "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNclNRRkxXZzJmS2tkOXlmdUMtQUVOMmF0RlBMNEVjX2V1dnVYd0lVTW9pMWlxZ3dNQV93Q1hnSFVCZFJiSGxwMVl0amx2R2JwVVlHZGFyTTV3QnlDUnJMZlo4RUpZcUZEclhJVHk4QVZGSTJpcjJkcHpUWmQtWVpwanpGN2s0MjZ5OVJTd2lfUjdNTTA?oc=5"
+      },
+      {
+        "label": "HighRiverOnline",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOUzZrb2tMQkdNS2NQUnhqdzVSSjdPNkN2SVFvVENDRGdqRGZqM1lDOUtGS0l4LVBPdkdiZ3hpX1NoNGV1UkF3cnVqdEMtU05uYjdFSENQUUtOM01xNGpIYXVxeDdlRGZvSm5pVVZaV2xmaDFpLW5DNjkxMjdaODd1b3g5dVVoMldUMUdqRXVaOGR6cTBZSnhMMWw4U2lLY0JaNlktd3oteG5oTGdyeFhj?oc=5"
       }
     ],
-    "image_url": null,
-    "image_source_url": null,
-    "image_credit": null
+    "image_url": "/story-images/news/news-0112e97c9338.webp",
+    "image_source_url": "https://highriveronline.com/articles/federal-government-invests-more-than-1-million-in-farm-safety-initiatives",
+    "image_credit": "HighRiverOnline"
   },
   {
     "id": "news-c241b09738bd",
@@ -315,6 +441,10 @@
         "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxObWx1dGxPZkhJSFVWR0lfODR4RDJmVlpRM2otQm1xQ3YyeXZJNnQ3MjF6TUl3T3ozdlpqNXpsWkJTLXpNT1E3T2tJLTBUMXhzQnZET2c5Z0hlSFMtVXd2SENiSTdaazh1SGxNZElCQ3NzM3AyNzB4VmU4V3c4UDVzamttNEtyRVdqeUZzdEdHeVZUN2Jma3BOZ1JSX1d0NVUxd0h6TThqRDRQUUJtYnk5SllwQ0VlMEZqU0tYR1lPdEU?oc=5"
       },
       {
+        "label": "Yahoo",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNSjkyYkNFcklDT25Udmg5dVVTOFRjejg1eDRHdkNnbWZ1X2M5WjdHQW1acUtWQmhFRWVfQXRuWGxHZl82LU1lMFlPZmo1SjhTdkZac0kxbXY0LXJ0UVJQZGNyU0tBazZCUWZiOU1aNVBXdW9fSXBTOWNYWHNwcjJ5RGRnVEw0c3N6X21ueVVB?oc=5"
+      },
+      {
         "label": "canada.constructconnect.com",
         "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNVWhjWE9tal9VZm5XWEMtZ2JZaU9tQjNjSWI3X254VmxWSjJqUk5GRm9tMTN5ME1fdmNsQzgtWGZGZ0F3WFJFYnVJall2NVcwdm1UM0doV3pqRFk2ek5veVo1TlF6Tk9PZldGRVdtdU0zZzlXVE1Qc0VaczJqYU5CSU9FVHp1ZmJRVU1yekQ5bzAtMlc1a0hyeFlVbDZzMXJMaTdFb3RtYmNPbWpfWlJKaW5wTWJ6dTdwMmQ5eUc3bTFXQllJTTFnQXVlekZHRElVRFNqV1FYYw?oc=5"
       }
@@ -322,6 +452,32 @@
     "image_url": "/story-images/news/news-15beea9f0e27.webp",
     "image_source_url": "https://www.cp24.com/news/sports/2026/09/16/federal-government-invests-76-million-in-national-basketball-centre-in-toronto/",
     "image_credit": "CTV News"
+  },
+  {
+    "id": "news-9a5e15494372",
+    "title": "Canada invests $150M to make AI safer",
+    "summary": "The federal government is investing $150 million into efforts aimed at making artificial intelligence safer.",
+    "amount": 150000000,
+    "date": "2026-09-16",
+    "fiscal_year": "2026-27",
+    "department": "Innovation, Science and Economic Development Canada",
+    "dept_code": "ISC",
+    "program_code": "BNP01",
+    "source_type": "news",
+    "level": "federal",
+    "sources": [
+      {
+        "label": "CBC",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNTVd3SWQtWFBSN2p3UDd6XzhmV09uSklvNUhHdTdiek1PbGdGdTRoYnBYa3FzUEx5MUFfa25sSm03ZzJVbWV4R3U1bHRYaXM5Q2liYW03Q1cxdk1YaFZySlpldUcwdFFQZ0Rpc24zOWpxX2d1ME1qUUdiMDNQSXJzTVM4bF9QbnBXWmpxSXZrV0JsUUJfSy1V?oc=5"
+      },
+      {
+        "label": "Radio-Canada",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOdFZvTUJpbV93ajFwM1h1V2pSQ1dUdmNyNW1MVFIxR0ZKZTZKZ1BzekhhVF9pSG41YVM3M0ZXY2duVm5rVVotVXp6dmQxdGRKWENrMEJBZmlVYy1fdmYwM0ZvYnJGTkQ3RGE4cTlrQlZfN21Ea2lNQzJVaGxWLVNocXJKNHZobEE5Qnl1UzQwU1hUclIwWXpBbVZHeTI3QXV1b2taZA?oc=5"
+      }
+    ],
+    "image_url": null,
+    "image_source_url": null,
+    "image_credit": null
   },
   {
     "id": "news-2c5410b5ac82",
@@ -396,28 +552,6 @@
     "image_url": "/story-images/news/news-753dd62e809f.webp",
     "image_source_url": "https://ca.finance.yahoo.com/news/federal-government-invests-2-6-210800573.html",
     "image_credit": "Yahoo! Finance Canada"
-  },
-  {
-    "id": "news-9a5e15494372",
-    "title": "Canada invests $150M to make AI safer",
-    "summary": "The federal government is investing $150 million into efforts aimed at making artificial intelligence safer.",
-    "amount": 150000000,
-    "date": "2026-09-16",
-    "fiscal_year": "2026-27",
-    "department": "Innovation, Science and Economic Development Canada",
-    "dept_code": "ISC",
-    "program_code": "BNP01",
-    "source_type": "news",
-    "level": "federal",
-    "sources": [
-      {
-        "label": "CBC",
-        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNTVd3SWQtWFBSN2p3UDd6XzhmV09uSklvNUhHdTdiek1PbGdGdTRoYnBYa3FzUEx5MUFfa25sSm03ZzJVbWV4R3U1bHRYaXM5Q2liYW03Q1cxdk1YaFZySlpldUcwdFFQZ0Rpc24zOWpxX2d1ME1qUUdiMDNQSXJzTVM4bF9QbnBXWmpxSXZrV0JsUUJfSy1V?oc=5"
-      }
-    ],
-    "image_url": null,
-    "image_source_url": null,
-    "image_credit": null
   },
   {
     "id": "news-c63a206fc7f1",
@@ -602,6 +736,28 @@
     "image_url": "/story-images/news/news-5b68a7193d7b.webp",
     "image_source_url": "https://www.ctvnews.ca/atlantic/nova-scotia/article/federal-government-spending-15m-on-gang-violence-prevention-in-cape-breton/",
     "image_credit": "CTV News"
+  },
+  {
+    "id": "news-e23dd591b170",
+    "title": "Federal government provides over $15 million for graphite projects",
+    "summary": "The federal government is providing more than $15 million in funding to support graphite projects. Focus Graphite has also added a $2 million credit line.",
+    "amount": 15000000,
+    "date": "2026-09-14",
+    "fiscal_year": "2026-27",
+    "department": "Natural Resources Canada",
+    "dept_code": "NR",
+    "program_code": "BTO02",
+    "source_type": "news",
+    "level": "federal",
+    "sources": [
+      {
+        "label": "Stock Titan",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNRjZiaHJxU054TzAxczVCRGxrT3JGb1dxQ1haN082cmE0dFhJRmhWdnlfS0xQUHIzS2VHUE5zaU9YUEZVZ1pBdzAtTjJEUURJTGFRS2RpYU54Vy13d1hrVXR2aWxQam16X09jVHFCT25wNkQ1a2tFbV80OXVVVjQ1NFNsa19JMVdIX1M0OUhPS1RIT0lBdmRiQXF0eDFRa2tiMEN2dkltMjdtM005X3k4SXoxekVJejA1UkdDU29Waw?oc=5"
+      }
+    ],
+    "image_url": "/story-images/news/news-e23dd591b170.webp",
+    "image_source_url": "https://www.stocktitan.net/news/FCSMF/focus-graphite-establishes-c-2-0-million-revolving-credit-facility-h907zghywimy.html",
+    "image_credit": "Stock Titan"
   },
   {
     "id": "news-1ef08cae15ae",
