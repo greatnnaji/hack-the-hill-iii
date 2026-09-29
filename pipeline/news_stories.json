@@ -1,5 +1,75 @@
 [
   {
+    "id": "news-49759a60c6c4",
+    "title": "Halifax receives nearly $2M to prevent gun and gang violence",
+    "summary": "Nearly $2 million has been dedicated toward initiatives aimed at preventing gun and gang violence in Halifax.",
+    "amount": 2000000,
+    "date": "2026-09-29",
+    "fiscal_year": "2026-27",
+    "department": "Public Safety Canada",
+    "dept_code": "PSEP",
+    "program_code": "BVT01",
+    "source_type": "news",
+    "level": "federal",
+    "sources": [
+      {
+        "label": "CityNews Halifax",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxORFVWOEI5MEQxc2IyQzNpcE9wZlFKRG9rVzBJbk5yczk4ODhxQmY1elk0VHFIOFYyNFktZC1jS21vdjBoeG1YdEd4emtVNDc4YkcxRURDa1RGdmJhaERMMDV6VmxiLUF0OGVLenVrbjNubVh0S1BGZUJlM1g0ZUxnTDljemRnVV9Dal80NjQyQ3c3SndxbjFNNzVuTXlvREprQVhIVg?oc=5"
+      },
+      {
+        "label": "Global News",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOUUk1R2NGNnpidzc5Yy0zUDdwcGdKTkwxN2ZfdDliN0VLTjFRYmdsbFRrSFhHN2Rzam1KczBFVEZDQUJwR0ZkdXRVQUlZeDVuZ1Jyams2WlRpakxrY2kwZEx1d0E3YzFhelpPM2lYOFVRRmg1aGlIRzRacGoxcUUzYVE0OHJ6VE80WkMtMw?oc=5"
+      }
+    ],
+    "image_url": "/story-images/news/news-49759a60c6c4.webp",
+    "image_source_url": "https://halifax.citynews.ca/2026/09/29/nearly-2m-dedicated-to-preventing-gun-gang-violence-in-halifax/",
+    "image_credit": "CityNews Halifax"
+  },
+  {
+    "id": "news-a728b805374d",
+    "title": "Ottawa spends $58M on health centre near Dorchester Penitentiary",
+    "summary": "The federal government is spending $58 million to construct a health centre near Dorchester Penitentiary in New Brunswick.",
+    "amount": 58000000,
+    "date": "2026-09-29",
+    "fiscal_year": "2026-27",
+    "department": "Correctional Service Canada",
+    "dept_code": "CSC",
+    "program_code": null,
+    "source_type": "news",
+    "level": "federal",
+    "sources": [
+      {
+        "label": "CTV News",
+        "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNWUlXckpRMloxRUZsTzNJdHhETE5mY3V5RG5tRUhVMFRtOFlfMTRYazRMV3k2U0VtUk1Iamk0aFp6T2NJY1ctN3RzdS1ha2F6VHBEaWN2U0tVSExLNnRYMHJPMm5LaUVBc0dfdGRkZW03VFVBSkxMRU1va192R0VpU0xPLXdxR1ZTcG16c1U1SmtsVGkzWGR4N2RTbDluMEtFamhLX2xJVHNGWDRHVDkyWVVwekVGZ2Q1bXRjbFA1MlRxaWdPNGt5SVdtVkZaY0l4X042VUhrSk9LQ1FTUzV1aHVSaw?oc=5"
+      }
+    ],
+    "image_url": "/story-images/news/news-a728b805374d.webp",
+    "image_source_url": "https://www.ctvnews.ca/atlantic/new-brunswick/article/ottawa-spending-58m-on-health-centre-near-dorchester-penitentiary-in-new-brunswick/",
+    "image_credit": "CTV News"
+  },
+  {
+    "id": "news-6192b93c3a90",
+    "title": "Ottawa invests $1.2M in Francophone immigration projects outside Quebec",
+    "summary": "The federal government announced $1.2 million to support Francophone immigration initiatives in communities outside Quebec.",
+    "amount": 1200000,
+    "date": "2026-09-29",
+    "fiscal_year": "2026-27",
+    "department": "Immigration, Refugees and Citizenship Canada",
+    "dept_code": "CI",
+    "program_code": "BGE07",
+    "source_type": "news",
+    "level": "federal",
+    "sources": [
+      {
+        "label": "The Pulse of the Eastern Townships",
+        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE11MzM5TjUxSENhODhjUGJVN25RdS1OZ0JqajkwT24yRFNUYWlhczZLaVBnNVlaX1BJQjNpWVRyY2xMdVF1bEZsMVBPZVlENGx0dlpYVktqUjR4T3ZQYWlmRDlUeUp4WnFoeVBYMmtTTk00XzcyUDhjNzlXbw?oc=5"
+      }
+    ],
+    "image_url": null,
+    "image_source_url": null,
+    "image_credit": null
+  },
+  {
     "id": "news-42d81134b623",
     "title": "Ottawa spent $1.8 million on diversity, equity, and inclusion in one year",
     "summary": "The federal government spent $1.8 million on DEI in a single year. Spending included payments to the Anti-Hate Network to train Environment Canada personnel.",
@@ -72,6 +142,28 @@
     "image_url": "/story-images/news/news-a9b6f26c6ace.webp",
     "image_source_url": "https://www.ipolitics.ca/2026/09/28/ottawa-steers-300m-of-housing-strategy-funds-to-indigenous-led-projects/",
     "image_credit": "iPolitics"
+  },
+  {
+    "id": "news-7514803cf188",
+    "title": "Ottawa announces $22.4M for Kelowna International Airport expansion",
+    "summary": "The federal government has announced $22.4 million to support expansion projects at Kelowna International Airport.",
+    "amount": 22400000,
+    "date": "2026-09-28",
+    "fiscal_year": "2026-27",
+    "department": "Transport Canada",
+    "dept_code": "TC",
+    "program_code": "BTY03",
+    "source_type": "news",
+    "level": "federal",
+    "sources": [
+      {
+        "label": "CBC",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxORmVGZEhmbTU5dmVtWXhnRGdsWjBQQnJKSVc0azNMUjZZV0JFYktfdW4tUXo5MUhpTjhrdTlGNFd1TVNrSmd5LWllaVBHYnk4STdXRDNyZnJkcy1DajAzOG0zYklXYlZRdjlSRlFOUVJzbFV0NnFlUThoNzhSd1RFd096b1pma25YendjdE1kc05udmtW?oc=5"
+      }
+    ],
+    "image_url": null,
+    "image_source_url": null,
+    "image_credit": null
   },
   {
     "id": "news-3de807b167c0",
