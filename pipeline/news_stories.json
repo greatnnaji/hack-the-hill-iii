@@ -812,7 +812,7 @@
     "image_credit": null
   },
   {
-    "id": "news-909cad9731e3",
+    "id": "news-6979a854491e",
     "title": "Feds announce $5M for HIV self-testing and support staff",
     "summary": "The federal government announced $5 million for HIV self-test kits and additional peer support staff.",
     "amount": 5000000,
@@ -845,13 +845,21 @@
         "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPY1lZYjJ6U0FYZlhscFFaWU5pdW56Ty1JTEtIS2RIbmhvM3pnRW9mdTVMYTExeGFrTGVUNDZ6a2VuOGNQLVE1c29CRjIzTDNVblF5V0RINVZBanhQaldsYW4wSXV3T2liSG5DaU9pNENvdzNJM09YNHBQOXViVG5XN2lrMmlGTi0yajVfTlJMOWVacC1jT19qaml1aVYxdWM?oc=5"
       },
       {
+        "label": "CP24",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQSTVpZk1UOXFiMlFyNlIwcVpmcXNBd1paZHpXbDdldUktbm1XQUpBajVwTFlvRzlCcC1yRVB3ckxZTmxHaDRzZ0FoN3BOMkhkdC1UN1Itb3VzWnlEck1ldFRLY2V1cmxGNEhHTUoxU2I1Z21ieVNhN2Y5Tm1FX1NlQUtYU3JneFY1OXVrcnJhNzE3ZEs0cHhyWFVzSDE4VXk2Z0JR?oc=5"
+      },
+      {
+        "label": "CityNews Halifax",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQbHRKeVJSSGhObFRxSG4tNzllZ2pvNTBrNEtfbTg0ZXRWd1dBelZBcllxRU9SemFkOFl0ZzVsdV9aS19ZdGxzRTZoV0xEVEtCeW9lV21DRFBGNjBmbWtQQnFCR2FPZW1VMzdodkk2cWh1SVpQdDZIdWp1NDFZaDhuTW1EeEE2Z0ZYTUswQmVnRTVaRkxkQnB3SHU2Yy0?oc=5"
+      },
+      {
         "label": "新住民全球新聞網",
         "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQSXdDWXRJWUxQdTRkVTMyOVE2WExMa1daNmpWWE4waTVFWnZrT19TTERGVnNxMVNaakFDaHpWMEdvTlJlSzdvcWYtX2JBeWhZTzBXNm0xcXVWMllQd0FXNmhUTE9uVnBFOVVJZmlLOVZuVW1ucDBLeTh3TWpqLV94UTVRNUJha0RyY2ZIWVNIS0NoZUx6SzNyUTNpSQ?oc=5"
       }
     ],
-    "image_url": "/story-images/news/news-909cad9731e3.webp",
-    "image_source_url": "https://rdnewsnow.com/2026/09/10/ottawa-announces-5m-for-hiv-self-test-kits-support-staff/",
-    "image_credit": "rdnewsnow.com"
+    "image_url": "/story-images/news/news-6979a854491e.webp",
+    "image_source_url": "https://www.ctvnews.ca/winnipeg/article/ottawa-announces-5m-for-hiv-self-test-kits-support-staff/",
+    "image_credit": "CP24"
   },
   {
     "id": "news-8a3fbe1df937",
