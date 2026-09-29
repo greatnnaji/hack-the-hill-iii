@@ -183,9 +183,9 @@
         "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOZ3lFQnBtNUNIV19OcjhOWDU3SzVxX0pRVUd2N1RuYW03ZUlmWVF0NUlMSUw1eTROTDJNalZBM3d6dzV1ZWxVUWNIVDlPelc2UkxHUFo0WVNTSHRIRlNnVXFRUnc4a0Z0ZS1oalRXOEtLb3d5OWt3QWxDNU1Wdi1GLTZwZXRrU0I3NTFhNVN3?oc=5"
       }
     ],
-    "image_url": "/story-images/news/news-5532d1f265ce.webp",
-    "image_source_url": "https://www.haitilibre.com/en/news-48504-canada-new-aid-to-haiti-of-$254-million.html",
-    "image_credit": "HaitiLibre.com"
+    "image_url": null,
+    "image_source_url": null,
+    "image_credit": null
   },
   {
     "id": "news-c14e48224d51",
@@ -841,6 +841,10 @@
         "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQajhNaDZ1Q0JSc0F0bGMzQlhQeXZOaTA0ZmNRT2FkMWR0VlROb2FURWhvRmNnSWRmQmVIc1hONDltOURtdEQ4T2FNeGpaemhWeGpjR2xCazZiOWRWejY0YzBSbzFuUTZPWmJFSUNsM3hHUEZDU1VCUFRTRHFlUmdKTkJBWDlhdVZVWkRjOHlXYTVfcmFl?oc=5"
       },
       {
+        "label": "vancouver.citynews.ca",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPY1lZYjJ6U0FYZlhscFFaWU5pdW56Ty1JTEtIS2RIbmhvM3pnRW9mdTVMYTExeGFrTGVUNDZ6a2VuOGNQLVE1c29CRjIzTDNVblF5V0RINVZBanhQaldsYW4wSXV3T2liSG5DaU9pNENvdzNJM09YNHBQOXViVG5XN2lrMmlGTi0yajVfTlJMOWVacC1jT19qaml1aVYxdWM?oc=5"
+      },
+      {
         "label": "新住民全球新聞網",
         "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQSXdDWXRJWUxQdTRkVTMyOVE2WExMa1daNmpWWE4waTVFWnZrT19TTERGVnNxMVNaakFDaHpWMEdvTlJlSzdvcWYtX2JBeWhZTzBXNm0xcXVWMllQd0FXNmhUTE9uVnBFOVVJZmlLOVZuVW1ucDBLeTh3TWpqLV94UTVRNUJha0RyY2ZIWVNIS0NoZUx6SzNyUTNpSQ?oc=5"
       }
@@ -1140,6 +1144,28 @@
     "image_url": "/story-images/news/news-7b0f1d5d4b0e.webp",
     "image_source_url": "https://www.ctvnews.ca/saskatoon/article/federal-govt-invests-116m-into-northern-sask-airport-infrastructure/",
     "image_credit": "CTV News"
+  },
+  {
+    "id": "news-0778e4a2a933",
+    "title": "Ottawa contributes $29 million for North Calgary Water Servicing Project",
+    "summary": "The federal government is contributing $29 million toward the North Calgary Water Servicing Project.",
+    "amount": 29000000,
+    "date": "2026-09-01",
+    "fiscal_year": "2026-27",
+    "department": "Office of Infrastructure of Canada",
+    "dept_code": "OICC",
+    "program_code": "BYC02",
+    "source_type": "news",
+    "level": "federal",
+    "sources": [
+      {
+        "label": "Yahoo News Canada",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNRnJ1cWlROWVKNW9MeGRlbmI1cllzcFRTR0NITmZrZkxZb3lyYk5vYWJYWm5HT1Z5YWVwVXloamJCczNIa1hfTURkbGVTbDV0S3k0MHlaR2YyS1JGX0R6NXg2TDRjZHNyS0s1YWVIb2twdHowVVN2NXItbTVYdF8xX2lGNjJTQ2E1SXc?oc=5"
+      }
+    ],
+    "image_url": "/story-images/news/news-0778e4a2a933.webp",
+    "image_source_url": "https://calgaryherald.com/news/federal-government-contributes-29-million-north-calgary-water-servicing-project",
+    "image_credit": "Yahoo News Canada"
   },
   {
     "id": "news-5b475691404a",
