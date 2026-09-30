@@ -115,6 +115,10 @@
       {
         "label": "skiesmag.com",
         "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQR3M4VEFxSktNWmJVdXNqeDRHZkZJc0xIUDQtWnVZakJfdmE5MExGTm5FajNucVdtQTFnOE1NTklKaTExN2VMWmgxeXZfSHFGVE10OUN0OTNVdmZBRkJ2YVg5TGlWM0gyTUlRMXNkQjN4aVZQNWN0bVQyUmc2dzdBZktZU1NKOE45Q3N3ZmQwWjAxdmwwQWfSAZsBQVVfeXFMTVZnSTBfQXZqQy16VnRReE5uWXpNT2VHdVdDaURCWVFHYVM0Qkh4Z2ZyeUZMOVlRazF5YXEzcDZWSTg1MDZMcjRPd25RNzZfelBtTlZnamMya19BaWNSZW1Zb2VpNXJLbVVGTWxfS2FQcHJHOFRzSDNjS1JlZjRmQWhfVUV6WFI3MWcwMUlEVmFsR29xZkpTVUM5bUE?oc=5"
+      },
+      {
+        "label": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPLUsyRXRmUjloMGxYbkk3dG1icGpINU80NzVqeURORVZORk1McDBWVDQwMzZSYUdCbzN6c2ozN2c4Sm9sdldIdEM0dS1GbzVtZ3ZVQjBuUVdiOUdLVS0xa0RQcVl4NWEzRW83QUJrc2U1NWxMMS00NkhzRmpXUFBEYzNGbGlBbVFPR3J4dDlxa3FxVmJSTjk3V052Yw?oc=5"
       }
     ],
     "image_url": "/story-images/news/news-c0f5c1f92367.webp",
@@ -1045,9 +1049,9 @@
         "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOTlNxSDJGNGdrQzYyMEhFRnNMTFFDU1c5Z1hEaFROSXdWemg5OVBBcGtkN3A2SjZwLXFhelpPNU02Q1VTWnVnRkdUWmtQTEFOd0RXOTBmMzhzdm9EbDliNXkyS3dVSmdTZnhmcExETzNhb1RmZjhlUHpiSS1EZ2RxSFFVM0FQTWt5YUxrWWVzWFBHUFpXSDAzaVNManRteUplakJmZGhGbm9HYVJwaEYtOUJR?oc=5"
       }
     ],
-    "image_url": "/story-images/news/news-0ed6f37bf9c8.webp",
-    "image_source_url": "https://www.on-sitemag.com/construction/pomerleau-lands-121-6m-federal-building-contract-in-st-johns/1003987929/",
-    "image_credit": "On-Site Magazine"
+    "image_url": null,
+    "image_source_url": null,
+    "image_credit": null
   },
   {
     "id": "news-28b59b949d4f",
