@@ -26,15 +26,15 @@
     "image_credit": "CityNews Halifax"
   },
   {
-    "id": "news-a728b805374d",
-    "title": "Ottawa spends $58M on health centre near Dorchester Penitentiary",
-    "summary": "The federal government is spending $58 million to construct a health centre near Dorchester Penitentiary in New Brunswick.",
+    "id": "news-05746d9a4102",
+    "title": "Ottawa spends $58M on federal inmate health centre design in N.B.",
+    "summary": "The federal government is spending $58 million on the design of a health centre near Dorchester Penitentiary in New Brunswick.",
     "amount": 58000000,
     "date": "2026-09-29",
     "fiscal_year": "2026-27",
     "department": "Correctional Service Canada",
     "dept_code": "CSC",
-    "program_code": null,
+    "program_code": "BUJ04",
     "source_type": "news",
     "level": "federal",
     "sources": [
@@ -43,7 +43,7 @@
         "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNWUlXckpRMloxRUZsTzNJdHhETE5mY3V5RG5tRUhVMFRtOFlfMTRYazRMV3k2U0VtUk1Iamk0aFp6T2NJY1ctN3RzdS1ha2F6VHBEaWN2U0tVSExLNnRYMHJPMm5LaUVBc0dfdGRkZW03VFVBSkxMRU1va192R0VpU0xPLXdxR1ZTcG16c1U1SmtsVGkzWGR4N2RTbDluMEtFamhLX2xJVHNGWDRHVDkyWVVwekVGZ2Q1bXRjbFA1MlRxaWdPNGt5SVdtVkZaY0l4X042VUhrSk9LQ1FTUzV1aHVSaw?oc=5"
       }
     ],
-    "image_url": "/story-images/news/news-a728b805374d.webp",
+    "image_url": "/story-images/news/news-05746d9a4102.webp",
     "image_source_url": "https://www.ctvnews.ca/atlantic/new-brunswick/article/ottawa-spending-58m-on-health-centre-near-dorchester-penitentiary-in-new-brunswick/",
     "image_credit": "CTV News"
   },
@@ -549,6 +549,10 @@
         "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNSjkyYkNFcklDT25Udmg5dVVTOFRjejg1eDRHdkNnbWZ1X2M5WjdHQW1acUtWQmhFRWVfQXRuWGxHZl82LU1lMFlPZmo1SjhTdkZac0kxbXY0LXJ0UVJQZGNyU0tBazZCUWZiOU1aNVBXdW9fSXBTOWNYWHNwcjJ5RGRnVEw0c3N6X21ueVVB?oc=5"
       },
       {
+        "label": "battlefordsNOW",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQampUWW1vS3I3RUJHaEV3QXhrNHJzUjRNM1BBZzVIX0RNOVJ4UWR3bEpnTm52Qk5Ga20zYmRfRDQtOGdpYnBzSkxVdDh0aHAyVFVaQS1kbDZsNWpDeWJhel9ucHFyT0pYNUEzd25JWC16dXRsNVU3dTkxOXpRVmtYY29Ja2NHTlBBZG9KalEzdEpUTk9XdklCMmUyY0NUNUlpRUVqTWtvSlBJQXl6c1VtanA1elZDWUFy?oc=5"
+      },
+      {
         "label": "canada.constructconnect.com",
         "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNVWhjWE9tal9VZm5XWEMtZ2JZaU9tQjNjSWI3X254VmxWSjJqUk5GRm9tMTN5ME1fdmNsQzgtWGZGZ0F3WFJFYnVJall2NVcwdm1UM0doV3pqRFk2ek5veVo1TlF6Tk9PZldGRVdtdU0zZzlXVE1Qc0VaczJqYU5CSU9FVHp1ZmJRVU1yekQ5bzAtMlc1a0hyeFlVbDZzMXJMaTdFb3RtYmNPbWpfWlJKaW5wTWJ6dTdwMmQ5eUc3bTFXQllJTTFnQXVlekZHRElVRFNqV1FYYw?oc=5"
       }
@@ -864,6 +868,28 @@
     "image_credit": "Stock Titan"
   },
   {
+    "id": "news-e6db6a4ce809",
+    "title": "Flair Airlines secures $76M federal bailout amid high fuel costs",
+    "summary": "Flair Airlines secured a $76 million bailout from the federal government due to soaring fuel costs.",
+    "amount": 76000000,
+    "date": "2026-09-14",
+    "fiscal_year": "2026-27",
+    "department": "Transport Canada",
+    "dept_code": "TC",
+    "program_code": null,
+    "source_type": "news",
+    "level": "federal",
+    "sources": [
+      {
+        "label": "CBC",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFByeGJDNGs1RXhoS2RlU29oel9wUGpQTE1DSXJXS1N4bEJlRTRueXFYRlYwMjVtM29IN0xyem9pSmhkQ0JUbjg4czBXSjAtVTF1VmY5ZFZ4bVc3Q0l3V1ZkMkhFdVAzSXVBODI0YmtDTEpMc1pYYWlOR2RxVXY1aVE?oc=5"
+      }
+    ],
+    "image_url": null,
+    "image_source_url": null,
+    "image_credit": null
+  },
+  {
     "id": "news-1ef08cae15ae",
     "title": "Canada completes $34.6M Parks Canada fire equipment facility",
     "summary": "The federal government announced the substantial completion of a new $34.6 million Parks Canada National Fire Equipment Cache.",
@@ -1049,9 +1075,9 @@
         "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOTlNxSDJGNGdrQzYyMEhFRnNMTFFDU1c5Z1hEaFROSXdWemg5OVBBcGtkN3A2SjZwLXFhelpPNU02Q1VTWnVnRkdUWmtQTEFOd0RXOTBmMzhzdm9EbDliNXkyS3dVSmdTZnhmcExETzNhb1RmZjhlUHpiSS1EZ2RxSFFVM0FQTWt5YUxrWWVzWFBHUFpXSDAzaVNManRteUplakJmZGhGbm9HYVJwaEYtOUJR?oc=5"
       }
     ],
-    "image_url": null,
-    "image_source_url": null,
-    "image_credit": null
+    "image_url": "/story-images/news/news-0ed6f37bf9c8.webp",
+    "image_source_url": "https://www.on-sitemag.com/construction/pomerleau-lands-121-6m-federal-building-contract-in-st-johns/1003987929/",
+    "image_credit": "On-Site Magazine"
   },
   {
     "id": "news-28b59b949d4f",
