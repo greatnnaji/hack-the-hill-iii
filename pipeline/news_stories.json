@@ -159,11 +159,15 @@
       {
         "label": "CBC",
         "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxORmVGZEhmbTU5dmVtWXhnRGdsWjBQQnJKSVc0azNMUjZZV0JFYktfdW4tUXo5MUhpTjhrdTlGNFd1TVNrSmd5LWllaVBHYnk4STdXRDNyZnJkcy1DajAzOG0zYklXYlZRdjlSRlFOUVJzbFV0NnFlUThoNzhSd1RFd096b1pma25YendjdE1kc05udmtW?oc=5"
+      },
+      {
+        "label": "Castanet",
+        "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOeUtZVTE1ZVZRS1JkUzNSSGJhZU1aN0FMOGx1dlJYTjkyUmR4c0MtMWt3QnFaZURET3F1OGNNeUFmY1dlU2JFNERtSWxkM3FtYTBxclhtTjdrUDdISXIwWWdubE16a05KRXA3ZHgtTzh5allQU25zN0FkUzBmajhXbElsNnF6cXpGSXdqeWppR2tLZ0QybkVNMkt0RkJpa3MxUmtuRzlyOEZsZkJMOGM5Y1NVTXVjUkwyWFRRbWRrdDFjLUxrM3dCNXJBMlR0QjBvbUZwTF9vbDRsNzZmZ3R5Zw?oc=5"
       }
     ],
-    "image_url": null,
-    "image_source_url": null,
-    "image_credit": null
+    "image_url": "/story-images/news/news-df2f8d5280e8.webp",
+    "image_source_url": "https://www.castanet.net/news/Kelowna/632702/Federal-government-commits-22-4-million-for-development-of-east-lands-at-Kelowna-International-Airport",
+    "image_credit": "Castanet"
   },
   {
     "id": "news-3de807b167c0",
@@ -207,6 +211,10 @@
       {
         "label": "railway.supply",
         "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPVXUydW9FRjBlaW1GYTVlWE1CWmF6c29wLTFMbnFIVk1sQndtdWpqWU01QkFtMWtVWU4tdXhnWkVabDVqMkltcm5iNExvbHdZSXRQYkswMU9Da3dIWnBLTVZZQ3dtUTFvRU9OMER1T1NLaE9vLWV1OUx1WjFuS0NFVVIyZ2ZyeG84SVJoVGZCTkl1bEZrNFZia2pXQ19jck0?oc=5"
+      },
+      {
+        "label": "Progressive Railroading",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQWUttc3RHVUc2MWkyR3R4b0lYN3BuRThrd2YtTHVHRWdsbnowVzYwaEtVa0k1ckVKU2NGYVRqa3Z3Vm43dFJmaUxfNHhsT25KRTZtWmhqQ0I4WTQ4ZE5FbG54bFFLZWpNMWdzU2VyeGpqQzlOMThTOHFwZDBNOWFSN0t1WURtczNERDhtbERQOENSUWp4QmJPUE1BdUk3Mnh4Y1pHRndCSTRNbzduRjAxeUkwZw?oc=5"
       }
     ],
     "image_url": "/story-images/news/news-49618d121882.webp",
