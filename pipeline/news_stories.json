@@ -1,5 +1,31 @@
 [
   {
+    "id": "news-6af802034403",
+    "title": "Canada invests $6.9 million to help Prince Edward Island businesses",
+    "summary": "The Government of Canada is investing $6.9 million to support Prince Edward Island businesses responding to tariffs.",
+    "amount": 6900000,
+    "date": "2026-10-01",
+    "fiscal_year": "2026-27",
+    "department": "Atlantic Canada Opportunities Agency",
+    "dept_code": "ACOA",
+    "program_code": "BED05",
+    "source_type": "news",
+    "level": "federal",
+    "sources": [
+      {
+        "label": "canada.ca",
+        "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQaDlQSXlPMGhSZEhUekFKOUJnb2RmR3g0b3czVktKS1RWcHhZNmlDd1ZmOFdVNlY0RmhQZWg4RjVjWjVrQUVxV1hpdTZ6ZHMwdkdVRFN5eVc3bW1UbjBPcjRaRHNJRmIzNWgyaXVpMkc0NURsRzgxQTBxcmpmTlo4OEdxYk1zMUN4OHFmNGRmR0JYNkU4b1lfTVVGSUVzQjA0djFDVDlSaGZjVEE2bFVUWS1ManhPY3hlQzVaYS1xVVl0WUt6WTRoNHJJa2ZrUGpwRnI5a3o2MDZfb0VaamlZelVwQWY?oc=5"
+      },
+      {
+        "label": "CBC",
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNNk5RWjNxT2FNOTlQdGRJWHNpNzRrVW55dHp5TG50XzhQOW81VURPNFZwS0VLU2ZQVlZGeXRFNU1Od3g2bTk2OThLcXI5LU5Ub1kxdGF1UDh3Q0sxRFk2Mk4tUV95ZXd3N0NJb0h4QnBfWlhlSmFOOW5zUnZJblVVOENFZ2tvZ21kLTNySzZQR3B4WHE5RXNKVGxyUmRIYzhFNzhRS0dGYXBvNFpsWnJtMFR2NXRyd1JBUUJsVg?oc=5"
+      }
+    ],
+    "image_url": "/story-images/news/news-6af802034403.webp",
+    "image_source_url": "https://www.canada.ca/en/atlantic-canada-opportunities/news/2026/10/canada-invests-69m-to-help-prince-edward-island-businesses-respond-to-tariffs.html",
+    "image_credit": "canada.ca"
+  },
+  {
     "id": "news-9aba27d46156",
     "title": "Federal government sending $100 million in aid to Palestinians",
     "summary": "The federal government is sending an additional $100 million in aid to Palestinians.",
@@ -214,7 +240,7 @@
     "image_credit": "iPolitics"
   },
   {
-    "id": "news-7514803cf188",
+    "id": "news-74d5b2562e3b",
     "title": "Ottawa announces $22.4M for Kelowna International Airport expansion",
     "summary": "The federal government has announced $22.4 million to support expansion projects at Kelowna International Airport.",
     "amount": 22400000,
@@ -233,11 +259,15 @@
       {
         "label": "Castanet",
         "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOeUtZVTE1ZVZRS1JkUzNSSGJhZU1aN0FMOGx1dlJYTjkyUmR4c0MtMWt3QnFaZURET3F1OGNNeUFmY1dlU2JFNERtSWxkM3FtYTBxclhtTjdrUDdISXIwWWdubE16a05KRXA3ZHgtTzh5allQU25zN0FkUzBmajhXbElsNnF6cXpGSXdqeWppR2tLZ0QybkVNMkt0RkJpa3MxUmtuRzlyOEZsZkJMOGM5Y1NVTXVjUkwyWFRRbWRrdDFjLUxrM3dCNXJBMlR0QjBvbUZwTF9vbDRsNzZmZ3R5Zw?oc=5"
+      },
+      {
+        "label": "Canadian Defence Review",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPN1d3QmtUUmlrVTFmeVdaOGpkdHZtaUxlQTR6djNQdGFNQ2kyUURmYUhaY3RLb05ibUppZG82cHdyQWVabl93LWItSlgyWG5WQmt4aFREd0hZWlp1RGYxOHRjeUU5djJrbDd6dFZrbG1JaEpnbWE4WGxzRkxfeFc0UkgxMXU5RTU1dXNQeFZhb3N0VHF3bU9IMGh5cWhtQU44?oc=5"
       }
     ],
-    "image_url": "/story-images/news/news-df2f8d5280e8.webp",
-    "image_source_url": "https://www.castanet.net/news/Kelowna/632702/Federal-government-commits-22-4-million-for-development-of-east-lands-at-Kelowna-International-Airport",
-    "image_credit": "Castanet"
+    "image_url": "/story-images/news/news-74d5b2562e3b.webp",
+    "image_source_url": "https://canadiandefencereview.com/canada-invests-22-4m-in-kelowna-airport-aerospace-infrastructure/",
+    "image_credit": "Canadian Defence Review"
   },
   {
     "id": "news-3de807b167c0",
@@ -684,7 +714,7 @@
     "image_credit": "windsoriteDOTca News"
   },
   {
-    "id": "news-c3c83f3e1caf",
+    "id": "news-07c349ae8aa4",
     "title": "Government of Canada invests up to $1.98 million in fertilizer technology",
     "summary": "The federal government is investing up to $1.98 million to develop sustainable fertilizer technology aimed at reducing emissions and microplastics.",
     "amount": 1980000,
@@ -699,6 +729,10 @@
       {
         "label": "The Globe and Mail",
         "url": "https://news.google.com/rss/articles/CBMiugJBVV95cUxQUTkteVR4RUdHajd4X2plUjNXQnlGYUI2bUh1RG5MYnA3WGpHUW5RbGkzc2VXZUY1Smp3dWxEb2tpSVR6RGFWdEg3VnNCRzRvem5CTGx5bDJVMDNRZTFxUDc2XzZMbEFKUFRMZUFrZFJ1U3dFcXFRVUlZN3JHeXVjU2ZUNjBncHdfWGczb1o5aVkxQUs2S0M0WG5rYkY3MjhzYzk5YnF0d2RjWGptV3NqZXFyQmttb0ZvMTlkc3B4cmxBaUtsT1I5YmtqenVQb3BmMmREQmY5SDVEeFlFbmZGTUtUV3YxOWFSSkhfT2NMdEt3ZE5JbnpQV0RCeWVTMWR0TTJOVVhuR2lPUThIemFpeVZrUDVoZGliNDFvbnJlMFZkVHI0ejRMVmxHMWk5blF1blJxTVB4cDhrdw?oc=5"
+      },
+      {
+        "label": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPSjdabEdRZzRqc3hhUk0yVDlrYU5YYUNHNjJuZ3ZoRWZrRThSM3NSb3BlRXFBcHlndnQ0RDZLdExUTi1BTXctb0p4Sktud09yM1h2cE9EOVJLaUQ4eXFmSmUzeF9WQmRKMTVCNmkwM0lnQy1vNV96Z0tvdDl3VlpveDIyN1drSV9PTkxfNXU2QzNQeWRyS2dYZnFYNA?oc=5"
       }
     ],
     "image_url": null,
@@ -863,9 +897,9 @@
         "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPT2RxRXdyOVF0ejQtalpkTjB6Qk9Nblh2cHlBdUZEV3JyZFhMRk0ya2RSWThmU2NrUnd5VzA1NW04c0VnWXVTSktINGxleldDdnV4aTZmeEZVb0JBakNtbHItVHZmSnVoR1hUYVJEOXBrX1Z5MXlrUEtGZDBrczZOZjZLWHRKYldYTjByc0VYWkdkVDNQdnQxRkR0Zm1Ba0NTeGRzdGdwSk91VjM4cmc?oc=5"
       }
     ],
-    "image_url": null,
-    "image_source_url": null,
-    "image_credit": null
+    "image_url": "/story-images/news/news-a49f84fd54b2.webp",
+    "image_source_url": "https://www.hpcwire.com/off-the-wire/qubic-wins-ca1-5m-canadian-government-contract-for-cryogenic-amplifiers/",
+    "image_credit": "HPCwire"
   },
   {
     "id": "news-c4098e4bdd5c",
@@ -1153,9 +1187,9 @@
         "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOTlNxSDJGNGdrQzYyMEhFRnNMTFFDU1c5Z1hEaFROSXdWemg5OVBBcGtkN3A2SjZwLXFhelpPNU02Q1VTWnVnRkdUWmtQTEFOd0RXOTBmMzhzdm9EbDliNXkyS3dVSmdTZnhmcExETzNhb1RmZjhlUHpiSS1EZ2RxSFFVM0FQTWt5YUxrWWVzWFBHUFpXSDAzaVNManRteUplakJmZGhGbm9HYVJwaEYtOUJR?oc=5"
       }
     ],
-    "image_url": null,
-    "image_source_url": null,
-    "image_credit": null
+    "image_url": "/story-images/news/news-0ed6f37bf9c8.webp",
+    "image_source_url": "https://www.on-sitemag.com/construction/pomerleau-lands-121-6m-federal-building-contract-in-st-johns/1003987929/",
+    "image_credit": "On-Site Magazine"
   },
   {
     "id": "news-28b59b949d4f",
