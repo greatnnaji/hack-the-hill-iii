@@ -22,6 +22,50 @@
     "image_credit": "Yahoo News Canada"
   },
   {
+    "id": "news-ddc38d0345f9",
+    "title": "Canada announces $1.2-billion investment for ocean conservation",
+    "summary": "The Canadian government has announced a $1.2-billion investment dedicated to ocean conservation.",
+    "amount": 1200000000,
+    "date": "2026-09-30",
+    "fiscal_year": "2026-27",
+    "department": "Fisheries and Oceans Canada",
+    "dept_code": "FO",
+    "program_code": "BTG04",
+    "source_type": "news",
+    "level": "federal",
+    "sources": [
+      {
+        "label": "The Weather Network",
+        "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOSXl1azUwR3hwUnhrZktlWkhaWHQ1MWtpM1ZJZ2lJVTZiVENxV3hwc0N0cGNlbEkzLWRrY1JMQ1pFV0IzWnNwUWM2VkJ5NTI3bkRyTFg2ZENBUVhuVnExLVRTU21kVGYxRW1BdWw2aldJY3J3WnJZbUhEODVybk9VNEJfeUNNRnpULU1MSlNrMFdaWktrUndkLTI1b0NFYjBiaExJb1pNTHB2YmlEbkwyMmh2NU9EV0VqelpxTk5qWEl6NzhwREMwanhRVXZwVEQ4NlZiazFvaFhxWVNmLUJseGVjVkNkSEtWX0h5WXE2dXhOZ2c?oc=5"
+      }
+    ],
+    "image_url": "/story-images/news/news-ddc38d0345f9.webp",
+    "image_source_url": "https://www.theweathernetwork.com/en/news/nature/habitats/canada-announces-a-historic-1-2b-investment-for-ocean-conservation-environment-climate-pacific-atlantic",
+    "image_credit": "The Weather Network"
+  },
+  {
+    "id": "news-0b2f11b1513b",
+    "title": "Canada announces $1.2 billion to protect oceans",
+    "summary": "The federal government has announced $1.2 billion in funding to protect oceans as major projects approach.",
+    "amount": 1200000000,
+    "date": "2026-09-30",
+    "fiscal_year": "2026-27",
+    "department": "Fisheries and Oceans Canada",
+    "dept_code": "FO",
+    "program_code": "BTG04",
+    "source_type": "news",
+    "level": "federal",
+    "sources": [
+      {
+        "label": "CBC",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQVFlmQXgzTm8wcmcwbHVDZG1vNUxrLUNjSW9XV2Y2TGVuYUI2Ny1Ub3VKTUhZVm1UbENKcVA5UVpoMkpjSmZrbXY3R3RsV1JIa3dBYTk1WGU4ZnNKVE9OTmFfMV9hRC1ndlFOSVR1dGxGUnkwY19SUUZnRU55SWFOTXNDU3p5Vzdzb2dnaS11NjdlTzl5MEE?oc=5"
+      }
+    ],
+    "image_url": null,
+    "image_source_url": null,
+    "image_credit": null
+  },
+  {
     "id": "news-49759a60c6c4",
     "title": "Halifax receives nearly $2M to prevent gun and gang violence",
     "summary": "Nearly $2 million has been dedicated toward initiatives aimed at preventing gun and gang violence in Halifax.",
@@ -819,9 +863,9 @@
         "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPT2RxRXdyOVF0ejQtalpkTjB6Qk9Nblh2cHlBdUZEV3JyZFhMRk0ya2RSWThmU2NrUnd5VzA1NW04c0VnWXVTSktINGxleldDdnV4aTZmeEZVb0JBakNtbHItVHZmSnVoR1hUYVJEOXBrX1Z5MXlrUEtGZDBrczZOZjZLWHRKYldYTjByc0VYWkdkVDNQdnQxRkR0Zm1Ba0NTeGRzdGdwSk91VjM4cmc?oc=5"
       }
     ],
-    "image_url": "/story-images/news/news-a49f84fd54b2.webp",
-    "image_source_url": "https://www.hpcwire.com/off-the-wire/qubic-wins-ca1-5m-canadian-government-contract-for-cryogenic-amplifiers/",
-    "image_credit": "HPCwire"
+    "image_url": null,
+    "image_source_url": null,
+    "image_credit": null
   },
   {
     "id": "news-c4098e4bdd5c",
@@ -843,6 +887,10 @@
       {
         "label": "ctvnews.ca",
         "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNUHBvaGhmX2xfODYxVGR0Q1lfSnBlc1N6dVBWRUdsZ3UyVW1Ram4wYm5iaFpOU2NDazdhTlduVlRRck5OSFM4NzE1bWZaaXUtbnY5clVLX3dxem1HVDZidFc1SkxzSlNZU0p6SHFmWmlRWmxkZ0xGdENyOXVHaldLbkktRzZIR09sX2diRl9iNmpMdmgtTjA2QU5GZGxKbEpyaHdBaGhDcUpCVXVsSkM5WEQyanNTT3dZTTVTNmNtYmljZTNkWmFwVUFIbXo0cjdiQTJfZA?oc=5"
+      },
+      {
+        "label": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNTHdUemNuRVRoYVg0UmR3ZW1vRGIwMmJqZ1Foc2NzWnBURHRpdXNlZ3hYNWVScm5QU3FacmZ5RkpiZVBfYzE5MXozOXhybmlpTWduQUg5aFcwR28yS25ZQ2JlYUFxbVlIbFV6U0M4b1ppQVVFZ2d2LURVSk5HSVQ5VGVCVm5IR3JscFlvQlM3WFNHWDZ0bXlnaXo3UFBmckU?oc=5"
       }
     ],
     "image_url": "/story-images/news/news-c4098e4bdd5c.webp",
@@ -1105,9 +1153,9 @@
         "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOTlNxSDJGNGdrQzYyMEhFRnNMTFFDU1c5Z1hEaFROSXdWemg5OVBBcGtkN3A2SjZwLXFhelpPNU02Q1VTWnVnRkdUWmtQTEFOd0RXOTBmMzhzdm9EbDliNXkyS3dVSmdTZnhmcExETzNhb1RmZjhlUHpiSS1EZ2RxSFFVM0FQTWt5YUxrWWVzWFBHUFpXSDAzaVNManRteUplakJmZGhGbm9HYVJwaEYtOUJR?oc=5"
       }
     ],
-    "image_url": "/story-images/news/news-0ed6f37bf9c8.webp",
-    "image_source_url": "https://www.on-sitemag.com/construction/pomerleau-lands-121-6m-federal-building-contract-in-st-johns/1003987929/",
-    "image_credit": "On-Site Magazine"
+    "image_url": null,
+    "image_source_url": null,
+    "image_credit": null
   },
   {
     "id": "news-28b59b949d4f",
@@ -1334,6 +1382,28 @@
     "image_url": "/story-images/news/news-0778e4a2a933.webp",
     "image_source_url": "https://calgaryherald.com/news/federal-government-contributes-29-million-north-calgary-water-servicing-project",
     "image_credit": "Yahoo News Canada"
+  },
+  {
+    "id": "news-9b4ed288629b",
+    "title": "Canada invests $50 million in agri-food automation network",
+    "summary": "An investment of $50 million has been made in the Canadian Agri-Food Automation and Intelligence Network.",
+    "amount": 50000000,
+    "date": "2026-09-01",
+    "fiscal_year": "2026-27",
+    "department": "Agriculture and Agri-Food Canada",
+    "dept_code": "AGR",
+    "program_code": null,
+    "source_type": "news",
+    "level": "federal",
+    "sources": [
+      {
+        "label": "Vertical Farm Daily",
+        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNM3c2dURwa3N0MTlmOHhvZmZiR3QteVhWdGNxa09FTHU0NGRKRDFDMHNMZ1psTVF2bHFGYWNqME9XZGxZRG50cFZhcVpCOFNuRVpqUmhiMFZvdGFlTXNLME92VnRvcHUtZm1WNi0zc0JzMXhZOFFDVGhZV0Z1TlE1YmN4NFEySURvNW0xcnpBSF8tNHdkLWFDSm5TQ0ZWN0FMQVZtUEd3YWl5NkNSc195Q29NdFZLTm5mRF9fTnY3TlRsQkp6eDRGaE1tZ1dPR3M?oc=5"
+      }
+    ],
+    "image_url": "/story-images/news/news-9b4ed288629b.webp",
+    "image_source_url": "https://www.verticalfarmdaily.com/article/9868531/50-million-investment-in-the-canadian-agri-food-automation-and-intelligence-network/",
+    "image_credit": "Vertical Farm Daily"
   },
   {
     "id": "news-5b475691404a",
