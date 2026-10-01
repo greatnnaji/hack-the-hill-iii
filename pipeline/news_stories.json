@@ -1,5 +1,27 @@
 [
   {
+    "id": "news-9aba27d46156",
+    "title": "Federal government sending $100 million in aid to Palestinians",
+    "summary": "The federal government is sending an additional $100 million in aid to Palestinians.",
+    "amount": 100000000,
+    "date": "2026-09-30",
+    "fiscal_year": "2026-27",
+    "department": "Global Affairs Canada",
+    "dept_code": "EA",
+    "program_code": "BVD02",
+    "source_type": "news",
+    "level": "federal",
+    "sources": [
+      {
+        "label": "Yahoo News Canada",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOd1ZzamhkUEN1YVFYN0RnMlpMZUxLOXRCUEUyaEdKZjE1ZW5yS19EWFdXV0JQa1dKZ0VxbXZrZEdFMVQ4U2Vnb25zbjE2azZqTEdjeW16dDVpZVY4dExVMGZ0ckhIQlE3a09TdTFCeVhlSUw2N0ZWSWJDOWpqeTVueQ?oc=5"
+      }
+    ],
+    "image_url": "/story-images/news/news-9aba27d46156.webp",
+    "image_source_url": "https://nationalpost.com/opinion/ottawa-is-sending-another-100-million-to-palestinians-without-knowing-where-the-money-will-be-spent",
+    "image_credit": "Yahoo News Canada"
+  },
+  {
     "id": "news-49759a60c6c4",
     "title": "Halifax receives nearly $2M to prevent gun and gang violence",
     "summary": "Nearly $2 million has been dedicated toward initiatives aimed at preventing gun and gang violence in Halifax.",
@@ -359,6 +381,10 @@
       {
         "label": "HighRiverOnline",
         "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOUzZrb2tMQkdNS2NQUnhqdzVSSjdPNkN2SVFvVENDRGdqRGZqM1lDOUtGS0l4LVBPdkdiZ3hpX1NoNGV1UkF3cnVqdEMtU05uYjdFSENQUUtOM01xNGpIYXVxeDdlRGZvSm5pVVZaV2xmaDFpLW5DNjkxMjdaODd1b3g5dVVoMldUMUdqRXVaOGR6cTBZSnhMMWw4U2lLY0JaNlktd3oteG5oTGdyeFhj?oc=5"
+      },
+      {
+        "label": "OkotoksOnline",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNN2tOeEpLczRtcV9UeEFZZzZsa1R0aS12NV95R3Nrek5NamNwYUpQc2tVUkxGX0FJbHZKaGhEX2t6a2FhV1JabVl4bnNHMzROeDB2ZnVSN20waThXYjR2dkVvUEZ1VUFaejNSR2N5UzFoMlBDbzdieXpKWHRCU01EQnptNWFQVzVUWUVwankxSkdFT1ZEOTVWVFhrSVVUYnJTeFp3SHJwbmt5RFZ6?oc=5"
       }
     ],
     "image_url": "/story-images/news/news-0112e97c9338.webp",
@@ -1014,21 +1040,25 @@
     "image_credit": null
   },
   {
-    "id": "news-6a9bc54a3c8a",
-    "title": "Canada invests over $11 million in Northern B.C. businesses and communities",
-    "summary": "The federal government is investing over $11 million to support businesses, jobs, and communities in Northern British Columbia.",
+    "id": "news-376176735177",
+    "title": "Government invests over $11 million in Northern British Columbia",
+    "summary": "The federal government is investing more than $11 million to support businesses, employment, and communities in Northern B.C.",
     "amount": 11000000,
     "date": "2026-09-04",
     "fiscal_year": "2026-27",
     "department": "Pacific Economic Development Agency of Canada",
     "dept_code": "PCAN",
-    "program_code": null,
+    "program_code": "BYK04",
     "source_type": "news",
     "level": "federal",
     "sources": [
       {
         "label": "PR Newswire Canada",
         "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQMVc4RzZ4bTdDS1lTcVZSME00QnktSHIycFowZ01xZlMwclBrRTNOMExUalB2THVTXzVOZU4xR3FaeDQ1YUptbkdjMHkwR2lKRGVHOEJjeThqWXlleVlsSjhsazVJNjVIVkl6WlN4VHlPWmRTamQ2OXhBLU9FUUZud3loR05IdWdHWS1JNmZ0eWtZdFRhNlotQTNFM3Z2NC1Ld21xTWhnUzVuazVXMGJ3MXl3UEtITDZ5TEhPMGtZSWh3MG0walpfc2JwR1A3OFZ1SUV4YmFPdERCTTd2eEF5VDFTai1KQ1F1elo2MmMyQkdodw?oc=5"
+      },
+      {
+        "label": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNaWlSdUNNYS0tVzR1cW5nTlpWd0ZIcFpiYnRwaVFsYThMazNFNTNWbFZtRm9oSE80amRKN081TkRYSlZ1UXhJWElGQS1TUGNHSGhYQlp4ZEFBSnFfWTlkX05ZNmVpVUdoNkhreG14cDN0VG9ubGRIWmtMSklkLUJ4ek9fVnI2NXJiWHVidmZ3YThLMDlYWTJTRUxIUVpOclE?oc=5"
       }
     ],
     "image_url": "/story-images/news/news-6a9bc54a3c8a.webp",
