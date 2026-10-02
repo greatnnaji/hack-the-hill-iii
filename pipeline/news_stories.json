@@ -296,9 +296,9 @@
     "image_credit": "Canadian Defence Review"
   },
   {
-    "id": "news-3de807b167c0",
-    "title": "Canada invests $162 million in 10,000 AI work placements",
-    "summary": "The federal government is investing $162 million to fund 10,000 artificial intelligence work placements.",
+    "id": "news-1476946fc0a2",
+    "title": "Canada commits $162 million to 10,000 AI work placements",
+    "summary": "The federal government has committed $162 million to fund 10,000 AI work placements to accelerate business adoption.",
     "amount": 162000000,
     "date": "2026-09-25",
     "fiscal_year": "2026-27",
@@ -311,6 +311,10 @@
       {
         "label": "betakit.com",
         "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOd04wWVZhUkJqMk5Tb2lPV2RXdlBldmZVdlNYTENUT1ZwUU80aTNJSjBQYnh3dWFEcjg2UWJ6cFptV3MwRmc2TVJRVVUwM0tROEM4dmI2RjJnQjFBM3dsTXQ0MzdfV2J4aFQ1T25mMU1zOHhyRXhCNGdGaVBXWndpMFdxbDF3SU0zZ2R6Q0txdkJyLXVLdkN4b3pTQW1qSmtYaXNQUFFRWjQxZjA?oc=5"
+      },
+      {
+        "label": "Spherical Insights",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPNUF3eFFZLWhMeWNVSkRVa3huSzg5QVp4azRmREJhcEdPT0J4U2RBLXBrWFpFV0JfZnFRdUQxSTh0OWhNbEtESjJZQU1Hbk5ORWlPTW5BUURQVVQ0SHh2SWR2SnVVVTVBTGt1WmFocUFudFlBampLMW5ZMm5iQi1lYkNDNF95OW5TWkU0STRWYkxBOW9NTXYzaFctZ090Z3pCU2RPMGVCV1hqMmxHbWZRZGdYajhURmx5MTdta0lSeEpIZjNpNnBZcA?oc=5"
       },
       {
         "label": "dig.watch",
@@ -1121,6 +1125,10 @@
         "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQbHRKeVJSSGhObFRxSG4tNzllZ2pvNTBrNEtfbTg0ZXRWd1dBelZBcllxRU9SemFkOFl0ZzVsdV9aS19ZdGxzRTZoV0xEVEtCeW9lV21DRFBGNjBmbWtQQnFCR2FPZW1VMzdodkk2cWh1SVpQdDZIdWp1NDFZaDhuTW1EeEE2Z0ZYTUswQmVnRTVaRkxkQnB3SHU2Yy0?oc=5"
       },
       {
+        "label": "CKPG Today",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOTW8wOFJwbTBBbTdLbXJ4UzdYcjlEek1XcUdpZWY0TDY1TFpyVFZkVkpxZFoxZEdsRGxWTzMxVlFKMnNPQzVPVUgweEdFd3d2SUJKeDFtNWNhcHhCZXJHRTEtcUZhN3Z6aDVkc0JoblVIRUdXWThDLU1sRHdDNkJVSEo3Z2N5UDFBWUY4R2tCRnJsOXM?oc=5"
+      },
+      {
         "label": "新住民全球新聞網",
         "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQSXdDWXRJWUxQdTRkVTMyOVE2WExMa1daNmpWWE4waTVFWnZrT19TTERGVnNxMVNaakFDaHpWMEdvTlJlSzdvcWYtX2JBeWhZTzBXNm0xcXVWMllQd0FXNmhUTE9uVnBFOVVJZmlLOVZuVW1ucDBLeTh3TWpqLV94UTVRNUJha0RyY2ZIWVNIS0NoZUx6SzNyUTNpSQ?oc=5"
       }
@@ -1217,9 +1225,9 @@
         "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOTlNxSDJGNGdrQzYyMEhFRnNMTFFDU1c5Z1hEaFROSXdWemg5OVBBcGtkN3A2SjZwLXFhelpPNU02Q1VTWnVnRkdUWmtQTEFOd0RXOTBmMzhzdm9EbDliNXkyS3dVSmdTZnhmcExETzNhb1RmZjhlUHpiSS1EZ2RxSFFVM0FQTWt5YUxrWWVzWFBHUFpXSDAzaVNManRteUplakJmZGhGbm9HYVJwaEYtOUJR?oc=5"
       }
     ],
-    "image_url": "/story-images/news/news-0ed6f37bf9c8.webp",
-    "image_source_url": "https://www.on-sitemag.com/construction/pomerleau-lands-121-6m-federal-building-contract-in-st-johns/1003987929/",
-    "image_credit": "On-Site Magazine"
+    "image_url": null,
+    "image_source_url": null,
+    "image_credit": null
   },
   {
     "id": "news-28b59b949d4f",
@@ -1278,7 +1286,7 @@
     "image_credit": null
   },
   {
-    "id": "news-132e38686a2e",
+    "id": "news-0bc37ef51883",
     "title": "Canada invests $67.8 million in urban forestry through FCM",
     "summary": "The federal government and the Federation of Canadian Municipalities are investing $67.8 million in urban forestry projects.",
     "amount": 67800000,
@@ -1297,6 +1305,10 @@
       {
         "label": "The Globe and Mail",
         "url": "https://news.google.com/rss/articles/CBMiuwJBVV95cUxOZEFVYmhDcG9MRGxEYmJzaldOUXk2UTdVUFdHaXZCbHdPOFpDZUJNNkoySW1NeTk3a3lXWTFLMXZVMTJJcUlxMHZXTGUtOUgxX1ZzSmFPazcwa2E5dnBIWnh6dmFaRUR1YXVJekprUGxKLWdNS0tiUE41V19sei1GMEN0MS1iYTdQNmNRd3RnLW9aM0xQUS1QdHVxNVlOQ0Exc3ptaTJGTHNXa0NxMHJMX2ZQSkJvR0N3ZFFMeTFpLVJ2dnV1cGo4QnRqTkJqbl9BT0txX1c4Y0E2QUVxTmlkdDJlR0tacndyX0pLYlA5cG93MHVnWUk4UGdfZzVRcThYbFpfQi1mYW9oRll2eVlSNkNYWkkwNEZDUkpTeE92SkUzSXJSVWNTbVNZYUs4ZmNNZXdESnpTVjliU1k?oc=5"
+      },
+      {
+        "label": "Lelezard",
+        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOZ25Xa2JpekFlTmdWbEZmQ0s1Sm43Z1BsWkFRdVFnY1dYZ24tbWdlQURESWVIdW1NeFVORW1JOThuSEtOQVo1ZkFkYWxjM2REOEh5VFFwSGs1VWRLOUN4cnplVlZHNERDaGRaQXZ4cFVvNDFzVW5pYk16cE1uUXltdlU0NVk3M1F1N1IwOXd3QkFlOW5Ca1hUWjhteHlQV1JSUzdhdXIzTmt0a1VCSWtoUXRfeWVWMHp3djhfU3F4Nmt3ekw0UTdyMWx1VkstbW55RHZYZ1Y5cEJTUQ?oc=5"
       }
     ],
     "image_url": "/story-images/news/news-4db66bb84f11.webp",
