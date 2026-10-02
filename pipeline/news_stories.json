@@ -22,6 +22,50 @@
     "image_credit": "PR Newswire Canada"
   },
   {
+    "id": "news-bcf645727408",
+    "title": "Fanshawe College announces $34M training partnership with RCAF",
+    "summary": "Fanshawe College announced a $34 million training partnership with the Royal Canadian Air Force.",
+    "amount": 34000000,
+    "date": "2026-10-02",
+    "fiscal_year": "2026-27",
+    "department": "National Defence",
+    "dept_code": "ND",
+    "program_code": "BUP02",
+    "source_type": "news",
+    "level": "federal",
+    "sources": [
+      {
+        "label": "CTV News",
+        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxORDVpbHZQM1R0dzNlZWFtaW9sbzFBZFhGNXYzUmZsQnd1NzI2QS1lMGdsVTJjRTJidXEwOFBTX1RJOVJNZE03aDQ3WlB6LU45bzV1RXE3Z0hhN29OZXppSS1nTGdNZlZPZlo1MmtrZkp1QmhoVlcyeGY0Z3lmT28tWHlsWUlnOFB0eFZuZVB3MmN0MUxFMTluVXc2R0FzWHRCUFNuWGpVbVVVU2FZa2lyQnFvc0c1YUZVN0JscHBQVE92M0dzbUxJcTNYMWJzUXc?oc=5"
+      }
+    ],
+    "image_url": "/story-images/news/news-bcf645727408.webp",
+    "image_source_url": "https://www.ctvnews.ca/london/article/fanshawe-college-announces-34m-training-partnership-with-royal-canadian-air-force/",
+    "image_credit": "CTV News"
+  },
+  {
+    "id": "news-1a90532af231",
+    "title": "Federal government invests $26M to support GTA businesses",
+    "summary": "A new $26-million investment has been announced to assist Greater Toronto Area businesses facing U.S. tariff tensions.",
+    "amount": 26000000,
+    "date": "2026-10-02",
+    "fiscal_year": "2026-27",
+    "department": "Federal Economic Development Agency for Southern Ontario",
+    "dept_code": "FEDSO",
+    "program_code": null,
+    "source_type": "news",
+    "level": "federal",
+    "sources": [
+      {
+        "label": "Yahoo News Canada",
+        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5Tamlyb1U3eGs0Yzl6UVY4M0UzN3l5dzJycFBJRGxEbUR4MGJnUDI1QmVabUlTT01aWFctMzRybjVsZXJfWHVkZ1IzakcwbkFxRDRIQklTRXUycG5pSEI5amNKWlVRMFlEeGZuWlJZQm90NkV0NHYtSE5jUQ?oc=5"
+      }
+    ],
+    "image_url": "/story-images/news/news-1a90532af231.webp",
+    "image_source_url": "https://ca.news.yahoo.com/26-million-investment-help-gta-185924678.html",
+    "image_credit": "Yahoo News Canada"
+  },
+  {
     "id": "news-6af802034403",
     "title": "Canada invests $6.9 million to help Prince Edward Island businesses",
     "summary": "The Government of Canada is investing $6.9 million to support Prince Edward Island businesses responding to tariffs.",
@@ -313,9 +357,9 @@
         "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPN1d3QmtUUmlrVTFmeVdaOGpkdHZtaUxlQTR6djNQdGFNQ2kyUURmYUhaY3RLb05ibUppZG82cHdyQWVabl93LWItSlgyWG5WQmt4aFREd0hZWlp1RGYxOHRjeUU5djJrbDd6dFZrbG1JaEpnbWE4WGxzRkxfeFc0UkgxMXU5RTU1dXNQeFZhb3N0VHF3bU9IMGh5cWhtQU44?oc=5"
       }
     ],
-    "image_url": "/story-images/news/news-df2f8d5280e8.webp",
-    "image_source_url": "https://www.castanet.net/news/Kelowna/632702/Federal-government-commits-22-4-million-for-development-of-east-lands-at-Kelowna-International-Airport",
-    "image_credit": "Castanet"
+    "image_url": "/story-images/news/news-74d5b2562e3b.webp",
+    "image_source_url": "https://canadiandefencereview.com/canada-invests-22-4m-in-kelowna-airport-aerospace-infrastructure/",
+    "image_credit": "Canadian Defence Review"
   },
   {
     "id": "news-1476946fc0a2",
@@ -953,9 +997,9 @@
         "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPT2RxRXdyOVF0ejQtalpkTjB6Qk9Nblh2cHlBdUZEV3JyZFhMRk0ya2RSWThmU2NrUnd5VzA1NW04c0VnWXVTSktINGxleldDdnV4aTZmeEZVb0JBakNtbHItVHZmSnVoR1hUYVJEOXBrX1Z5MXlrUEtGZDBrczZOZjZLWHRKYldYTjByc0VYWkdkVDNQdnQxRkR0Zm1Ba0NTeGRzdGdwSk91VjM4cmc?oc=5"
       }
     ],
-    "image_url": "/story-images/news/news-a49f84fd54b2.webp",
-    "image_source_url": "https://www.hpcwire.com/off-the-wire/qubic-wins-ca1-5m-canadian-government-contract-for-cryogenic-amplifiers/",
-    "image_credit": "HPCwire"
+    "image_url": null,
+    "image_source_url": null,
+    "image_credit": null
   },
   {
     "id": "news-c4098e4bdd5c",
