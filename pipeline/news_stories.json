@@ -1,5 +1,27 @@
 [
   {
+    "id": "news-0d19f4920d96",
+    "title": "Federal government announces $66.3M for energy-efficient housing projects",
+    "summary": "The Government of Canada and the Federation of Canadian Municipalities announced $66.3 million in funding for 162 energy-efficient housing projects.",
+    "amount": 66300000,
+    "date": "2026-10-02",
+    "fiscal_year": "2026-27",
+    "department": "Office of Infrastructure of Canada",
+    "dept_code": "OICC",
+    "program_code": "BYC02",
+    "source_type": "news",
+    "level": "federal",
+    "sources": [
+      {
+        "label": "PR Newswire Canada",
+        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPWGstOWM1MXd0OXJveW0tLWYyT1llU2dyRWJUd0k0YjlMRGNucVFjYllzeFNvZ3dWQ3dUZjVDMDZFR05iaUQyRWZrNWs5RFFPVUFrRXdRTHlmZ3FFZ3JRaGJON0FGN1BnYjJwMXltTE1rZ29IQUp2RUljLVdjQ2JnT0U0YXdVZ01zU0xiRG9yRDNuc2dMVEF1U1dtUDNBcFdPc2hNVDN1WXdnT0hSaWRtaGdOTFh6NjcyWFJmQklzN3FndTI3ZnM3ZWl5U3VKY3JLb2o0ZTBTTHRYQQ?oc=5"
+      }
+    ],
+    "image_url": "/story-images/news/news-0d19f4920d96.webp",
+    "image_source_url": "https://www.newswire.ca/news-releases/fcm-and-the-government-of-canada-announce-66-3-m-in-162-energy-efficient-housing-projects-828872435.html",
+    "image_credit": "PR Newswire Canada"
+  },
+  {
     "id": "news-6af802034403",
     "title": "Canada invests $6.9 million to help Prince Edward Island businesses",
     "summary": "The Government of Canada is investing $6.9 million to support Prince Edward Island businesses responding to tariffs.",
@@ -291,9 +313,9 @@
         "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPN1d3QmtUUmlrVTFmeVdaOGpkdHZtaUxlQTR6djNQdGFNQ2kyUURmYUhaY3RLb05ibUppZG82cHdyQWVabl93LWItSlgyWG5WQmt4aFREd0hZWlp1RGYxOHRjeUU5djJrbDd6dFZrbG1JaEpnbWE4WGxzRkxfeFc0UkgxMXU5RTU1dXNQeFZhb3N0VHF3bU9IMGh5cWhtQU44?oc=5"
       }
     ],
-    "image_url": "/story-images/news/news-74d5b2562e3b.webp",
-    "image_source_url": "https://canadiandefencereview.com/canada-invests-22-4m-in-kelowna-airport-aerospace-infrastructure/",
-    "image_credit": "Canadian Defence Review"
+    "image_url": "/story-images/news/news-df2f8d5280e8.webp",
+    "image_source_url": "https://www.castanet.net/news/Kelowna/632702/Federal-government-commits-22-4-million-for-development-of-east-lands-at-Kelowna-International-Airport",
+    "image_credit": "Castanet"
   },
   {
     "id": "news-1476946fc0a2",
@@ -1225,9 +1247,9 @@
         "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOTlNxSDJGNGdrQzYyMEhFRnNMTFFDU1c5Z1hEaFROSXdWemg5OVBBcGtkN3A2SjZwLXFhelpPNU02Q1VTWnVnRkdUWmtQTEFOd0RXOTBmMzhzdm9EbDliNXkyS3dVSmdTZnhmcExETzNhb1RmZjhlUHpiSS1EZ2RxSFFVM0FQTWt5YUxrWWVzWFBHUFpXSDAzaVNManRteUplakJmZGhGbm9HYVJwaEYtOUJR?oc=5"
       }
     ],
-    "image_url": null,
-    "image_source_url": null,
-    "image_credit": null
+    "image_url": "/story-images/news/news-0ed6f37bf9c8.webp",
+    "image_source_url": "https://www.on-sitemag.com/construction/pomerleau-lands-121-6m-federal-building-contract-in-st-johns/1003987929/",
+    "image_credit": "On-Site Magazine"
   },
   {
     "id": "news-28b59b949d4f",
