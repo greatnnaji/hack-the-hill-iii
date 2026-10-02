@@ -26,6 +26,28 @@
     "image_credit": "canada.ca"
   },
   {
+    "id": "news-19f66337f32a",
+    "title": "Canada invests $20.5 million in Northern Ontario community and business growth",
+    "summary": "The federal government is investing $20.5 million to expand community and business growth in Northern Ontario.",
+    "amount": 20500000,
+    "date": "2026-10-01",
+    "fiscal_year": "2026-27",
+    "department": "Federal Economic Development Agency for Northern Ontario",
+    "dept_code": "FEDNO",
+    "program_code": null,
+    "source_type": "news",
+    "level": "federal",
+    "sources": [
+      {
+        "label": "Traders Union",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNamV1TGx1X1NZemRWODZrV2lqZG5QRHg5TmlHWTJ4UkF6Y3ZabmFfUnVXR05jT2ZiWkR3S2VJR3VJTkpnbjJESzFIeDV6QmN1WFRXVWtCLTNOUU1VX2c3RjRGcFdMMVBkMUFxM0VjWHpGUXJKMVF1X1VnZERHTkZDZnBoaXgwa19pWTZzWHIxQVBxclE3OTZSZ0Q4TllRZw?oc=5"
+      }
+    ],
+    "image_url": null,
+    "image_source_url": null,
+    "image_credit": null
+  },
+  {
     "id": "news-9aba27d46156",
     "title": "Federal government sending $100 million in aid to Palestinians",
     "summary": "The federal government is sending an additional $100 million in aid to Palestinians.",
@@ -211,11 +233,15 @@
       {
         "label": "Yahoo Finance",
         "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPLUsyRXRmUjloMGxYbkk3dG1icGpINU80NzVqeURORVZORk1McDBWVDQwMzZSYUdCbzN6c2ozN2c4Sm9sdldIdEM0dS1GbzVtZ3ZVQjBuUVdiOUdLVS0xa0RQcVl4NWEzRW83QUJrc2U1NWxMMS00NkhzRmpXUFBEYzNGbGlBbVFPR3J4dDlxa3FxVmJSTjk3V052Yw?oc=5"
+      },
+      {
+        "label": "Yahoo! Finance Canada",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQWW9RRjliR2pSazFJejFIbldSQXh0SDRHOEpPVzYwWkdoV21KY3hONW9UekdfdllpeHZpUE5xaGV6aHZIdzlpZmhfTGNnU2R1ck83dzU2TUc0bEI3SFBiajBBMUx1bW5OUGVjR25ZLWFrRDhmQncyUE1Uc3JBeE82T21CT2p1dw?oc=5"
       }
     ],
-    "image_url": "/story-images/news/news-c0f5c1f92367.webp",
-    "image_source_url": "https://skiesmag.com/press-releases/rankin-inlet-airport-receives-85-5m-in-federal-funding/",
-    "image_credit": "skiesmag.com"
+    "image_url": "/story-images/news/news-b2088d71bdcb.webp",
+    "image_source_url": "https://ca.finance.yahoo.com/news/government-canada-invests-85-5-145600043.html",
+    "image_credit": "Yahoo! Finance Canada"
   },
   {
     "id": "news-a9b6f26c6ace",
@@ -707,6 +733,10 @@
       {
         "label": "The Globe and Mail",
         "url": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxQZHNQWHJNcE1XZmR3RVZBeDdOaGU3blFydDZOUzE2ZHlWZWRseEFDODVkaEpYSm41UnJRV0Y4dDhsUlZ4UEFjRE9YOGhnLU1SYnZPeEFoeXYtYmlhZGtwUVFJWWlaYVhKMjljNU54MkpPMjd4MlRRYlBadm1hNTN0VFJWcXozSER2bGtERVdTQmhhZ3pmTS1vMk9yUkE2bEw2YVUwR2RNcWRSb25LSXZvdVpBb045eGhGSUtBTVRBOGFMR3lWQ3lEcWlsR25WdVJpdnp0LThJM2VuTS1wUFdlVXF6ZHIyTDk0eUdjbkJ4VlBGeGhveVl3NTJ0Um1MREVoWDRXZUhfRTYxb25tZnRYU0w4MFdjSmZWZEk2Q0J2aThkdmhUZGVvaw?oc=5"
+      },
+      {
+        "label": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOM2R2T2Y0RVdpNkFhd2l5NklLX1V3SFR0NmxIYmJxYkpwZnNZVTZ3cUdvcnhEZERCOTRwdWxEdzJ2bFM2MUIxcWdMMFhxaFFJX19CWEhFbHk3NGR1ZEs2Sk1zdDVJUlp4b2l4bUNxSk9xZ2JVMTY3TXp3a3N6cVI1SkFqeTRUT01LemdZaTE0SUlVSFJHOVNlcEMxbTYteHlo?oc=5"
       }
     ],
     "image_url": "/story-images/news/news-2c5410b5ac82.webp",
