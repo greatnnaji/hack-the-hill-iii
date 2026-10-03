@@ -66,6 +66,28 @@
     "image_credit": "Yahoo News Canada"
   },
   {
+    "id": "news-bef811e8b8e4",
+    "title": "Canada invests $77 million in Arctic Bay harbour project",
+    "summary": "The Canadian government is investing $77 million in a harbour project in Arctic Bay. The project aims to expand marine access in Nunavut.",
+    "amount": 77000000,
+    "date": "2026-10-02",
+    "fiscal_year": "2026-27",
+    "department": "Fisheries and Oceans Canada",
+    "dept_code": "FO",
+    "program_code": "BTF06",
+    "source_type": "news",
+    "level": "federal",
+    "sources": [
+      {
+        "label": "Traders Union",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOVF9NUW54cG9hNUJWSUd4ZHZsSWdBUUo5VERTdTlVRXYtWExyLWVhclBkY01hQmR0Xy1MMll3QnBEc3NQZjd3Y2VfTWpueWkzWTItTDhoMHJoZE1zVHhSQ29vbFlDc0lZN283ZUZYcU9fWjVDVWpIb0pCNUcydnh4V2lIRER5TklCSk01eC1jX2lEdWpGUVpPeFhaREhsdW9aWC1rVktR?oc=5"
+      }
+    ],
+    "image_url": null,
+    "image_source_url": null,
+    "image_credit": null
+  },
+  {
     "id": "news-6af802034403",
     "title": "Canada invests $6.9 million to help Prince Edward Island businesses",
     "summary": "The Government of Canada is investing $6.9 million to support Prince Edward Island businesses responding to tariffs.",
