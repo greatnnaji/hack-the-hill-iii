@@ -528,6 +528,28 @@
     "image_credit": null
   },
   {
+    "id": "news-a334f81f4892",
+    "title": "Federal government assigns non-profit to manage $1.5B rental protection fund",
+    "summary": "The federal government has selected a non-profit organization to oversee its $1.5 billion Canada Rental Protection Fund. The program aims to preserve affordable rental housing.",
+    "amount": 1500000000,
+    "date": "2026-09-22",
+    "fiscal_year": "2026-27",
+    "department": "Canada Mortgage and Housing Corporation",
+    "dept_code": "CMHC",
+    "program_code": "BGJ00",
+    "source_type": "news",
+    "level": "federal",
+    "sources": [
+      {
+        "label": "CTV News",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNYWV4SXBRNzZFT2xXU1ktSFBxTFlic3BmN04yWV9yRm1iZmNTUWRGZFpDRlJab0ZGcVdhamZGU241V01MeUVKSmVzdHNlUE15czNoS2xvRjdCVXM0UjBCRzdzYUVpcHl4bk5YbkRhbjRhSGNEQzAzVWFWUlZxZUpDNzNGdG9LYmt3N3h6bXdncnQybUJreDZib3hjNk1TekZHQUxBeG5VRHk2MWpUN2VSRldRdw?oc=5"
+      }
+    ],
+    "image_url": "/story-images/news/news-a334f81f4892.webp",
+    "image_source_url": "https://www.ctvnews.ca/ottawa/article/federal-government-selects-non-profit-to-manage-15b-rental-protection-fund/",
+    "image_credit": "CTV News"
+  },
+  {
     "id": "news-95682aaf5c9c",
     "title": "Federal government launches $135.7 million program for Black communities",
     "summary": "The federal government has launched a new $135.7 million program dedicated to supporting Black communities.",
@@ -739,14 +761,14 @@
   },
   {
     "id": "news-15beea9f0e27",
-    "title": "Federal government invests $76 million in Toronto national basketball centre",
-    "summary": "The federal government is investing $76 million in a new national basketball centre located in Toronto.",
+    "title": "Federal government invests $76M in national basketball centre in Toronto",
+    "summary": "The federal government is investing $76 million into a new national basketball centre located in Toronto.",
     "amount": 76000000,
     "date": "2026-09-16",
     "fiscal_year": "2026-27",
-    "department": "Office of Infrastructure of Canada",
-    "dept_code": "OICC",
-    "program_code": "BYC02",
+    "department": "Canadian Heritage",
+    "dept_code": "CH",
+    "program_code": "BSF01",
     "source_type": "news",
     "level": "federal",
     "sources": [
@@ -769,6 +791,10 @@
       {
         "label": "battlefordsNOW",
         "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQampUWW1vS3I3RUJHaEV3QXhrNHJzUjRNM1BBZzVIX0RNOVJ4UWR3bEpnTm52Qk5Ga20zYmRfRDQtOGdpYnBzSkxVdDh0aHAyVFVaQS1kbDZsNWpDeWJhel9ucHFyT0pYNUEzd25JWC16dXRsNVU3dTkxOXpRVmtYY29Ja2NHTlBBZG9KalEzdEpUTk9XdklCMmUyY0NUNUlpRUVqTWtvSlBJQXl6c1VtanA1elZDWUFy?oc=5"
+      },
+      {
+        "label": "Toronto Star",
+        "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOMlBKWmFobExPUV8xazRBMS1zOXhHRlBZRU5GalR2QW1kNWJZNkowTVhNbG5jODZkVlBVaTdvM1pwdDlrM0Z5WllHckZCVWxaNjZkWmJ6S05IYXdvTmppVlk0WlRPSVpsa3BjWlR2YkFYQU9LUkItRGhHXzNydW5YUmxoaHdVOFFfNWJpTC0wc2RkbGsyVWgwVHUwQlBWLXZBa01WZkFoMjlYZE9ob0wwV2RaTkNUc1VqZjM0V2NQY2hiT2pEYnlMRW41TFI5ejg0d2p2anotSnk5TS04MkY2U01nVW1OQWVmQ1hvUzZxSXNJc253ZVVxa2dkY3h4QUU?oc=5"
       },
       {
         "label": "canada.constructconnect.com",
