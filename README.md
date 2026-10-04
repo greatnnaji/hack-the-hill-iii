@@ -19,13 +19,21 @@ Built at Hack the Hill III by a team of 4.
 your share = your federal tax × (program cost ÷ total federal spending that year)
 ```
 
-Example: on a $75,000 income in Ontario you pay about $8,920 in federal tax. Military aircraft cost $3.3B and total federal spending was about $520B, so your share is $8,920 × (3.3 ÷ 520), about $57.
+Example: on a $75,000 income in Ontario you pay about $8,920 in federal tax. Military aircraft purchases cost $3.26B in 2024-25, out of about $472B in total federal spending, so your share is $8,920 × (3.26 ÷ 472), about $62. The app shows $61.61.
 
 ## Screenshots
+
+The campaign screenshots use seeded demo data (`npm run db:seed`), not real supporters or a real MP.
 
 ![Start page: enter your income and province](docs/screenshots/banner.png)
 
 ![Receipt page: $8,920 of federal tax on a $75,000 income in Ontario, split across the biggest federal programs](docs/screenshots/tax_receipt.png)
+
+![Story page: your $61.61 share of military aircraft purchases, the source, and a campaign on the story](docs/screenshots/story.png)
+
+![Campaigns page: campaigns people started on spending stories, with member counts](docs/screenshots/campaigns.png)
+
+![Campaign page: the petition text, 1,000 of 1,000 members, and MP sponsorship agreed](docs/screenshots/campaign.png)
 
 ## How it works
 
