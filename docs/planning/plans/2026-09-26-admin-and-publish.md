@@ -13,7 +13,7 @@
 
 **Tech Stack:** Next.js 16.3.6 App Router, React 19, TypeScript, Tailwind v4 tokens, Vitest 5, Drizzle with PGlite for route tests.
 
-**Spec:** `docs/superpowers/specs/2026-09-26-admin-and-publish-design.md`
+**Spec:** `docs/planning/specs/2026-09-26-admin-and-publish-design.md`
 
 ## Global Constraints
 
