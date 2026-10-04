@@ -149,4 +149,6 @@ Department illustrations (needs a paid-tier `GEMINI_API_KEY`): `python3 pipeline
 | Great Nnaji | Stories pipeline (GC InfoBase spending jumps, Google News ingestion, LLM story generation, dedupe, 6-hourly GitHub Actions refresh) and campaigns (start and join) |
 | Izuchukwu Amadi | UI: all 6 screens |
 | Raphaël | Tax calculator, tax breakdown, spending API, official petitions |
-| Muktar Akinbile | Auth0 login, MP lookup, draft flow, admin page, deploy, demo |
+| Muktar Akinbile | Auth0 login, MP lookup, draft flow, admin page, deploy |
+
+All four of us presented the demo.
