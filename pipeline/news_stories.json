@@ -81,6 +81,10 @@
       {
         "label": "Yahoo News Canada",
         "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5Tamlyb1U3eGs0Yzl6UVY4M0UzN3l5dzJycFBJRGxEbUR4MGJnUDI1QmVabUlTT01aWFctMzRybjVsZXJfWHVkZ1IzakcwbkFxRDRIQklTRXUycG5pSEI5amNKWlVRMFlEeGZuWlJZQm90NkV0NHYtSE5jUQ?oc=5"
+      },
+      {
+        "label": "CBC",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQeG50U1F5TTdXdHJWUEF5bHoxNGhzMzBrMXp2eU14NjhaY2laUDk1QlJJaGR2UXdCcTN1ZmNEcXIxaEpiMlBCRFhOc1JSdEdUSHBNR28wNVRFSThCbkFLYkRJaG5rc0pUNUktei1ybFI0ZHBqc0JWZTFxQTJyRFREelUxaE0?oc=5"
       }
     ],
     "image_url": "/story-images/news/news-1a90532af231.webp",
@@ -103,6 +107,10 @@
       {
         "label": "Traders Union",
         "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOVF9NUW54cG9hNUJWSUd4ZHZsSWdBUUo5VERTdTlVRXYtWExyLWVhclBkY01hQmR0Xy1MMll3QnBEc3NQZjd3Y2VfTWpueWkzWTItTDhoMHJoZE1zVHhSQ29vbFlDc0lZN283ZUZYcU9fWjVDVWpIb0pCNUcydnh4V2lIRER5TklCSk01eC1jX2lEdWpGUVpPeFhaREhsdW9aWC1rVktR?oc=5"
+      },
+      {
+        "label": "Nunavut News",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQZWhFdXhpUDhIUHY4LTdoR2xidEozeDhrQ3VySldyRGdZYmV2REhfc2o2QUhnZkUwdkdvZWVZYmtKaWlCVWtqMVItZlExajI3eUhweUNleVFIU1E3M1Q3UGZQa1VmZERVUzNiZTJZQnZOTVZ6Q0UzTnpXNEltWkdoS0d3LXFNTlhqOXRHRGxJMTN0VGJWN3VjaXZubHVzQkdBVTJZdzJmaVpKd0lxNFdKY2Y4Um15UFE?oc=5"
       }
     ],
     "image_url": null,
@@ -423,9 +431,9 @@
         "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPN1d3QmtUUmlrVTFmeVdaOGpkdHZtaUxlQTR6djNQdGFNQ2kyUURmYUhaY3RLb05ibUppZG82cHdyQWVabl93LWItSlgyWG5WQmt4aFREd0hZWlp1RGYxOHRjeUU5djJrbDd6dFZrbG1JaEpnbWE4WGxzRkxfeFc0UkgxMXU5RTU1dXNQeFZhb3N0VHF3bU9IMGh5cWhtQU44?oc=5"
       }
     ],
-    "image_url": "/story-images/news/news-74d5b2562e3b.webp",
-    "image_source_url": "https://canadiandefencereview.com/canada-invests-22-4m-in-kelowna-airport-aerospace-infrastructure/",
-    "image_credit": "Canadian Defence Review"
+    "image_url": "/story-images/news/news-df2f8d5280e8.webp",
+    "image_source_url": "https://www.castanet.net/news/Kelowna/632702/Federal-government-commits-22-4-million-for-development-of-east-lands-at-Kelowna-International-Airport",
+    "image_credit": "Castanet"
   },
   {
     "id": "news-1476946fc0a2",
@@ -801,6 +809,28 @@
       {
         "label": "Farmtario",
         "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQMm9KVGdGLXVvYklqalpDbWJkZXlHRlY3ZDNvNzJ4eC1ib2FRcHhONVcxTnhfVWZoWE9DYkRad1J4ZEo4RTFCdF8zaUxESWVRLWZQRlhIbUVua1BlaEZlSHV6ck8wMlU1THJTdXVXZTZBWTdqblhLN05EVUl3NTRibnRYQk9CUzlHT0pRY1A1cUtaMnROMnNYWnRyRHFyNjNvaG92a1ZsVTJScUZNUEF0VDZFWHU3X3JvdWc?oc=5"
+      }
+    ],
+    "image_url": null,
+    "image_source_url": null,
+    "image_credit": null
+  },
+  {
+    "id": "news-0833ed8d711b",
+    "title": "Government of Canada announces $27 million for Campfire Circle programs",
+    "summary": "The federal government has announced $27 million in funding for Campfire Circle. The investment will support the expansion of programs for children with serious illnesses.",
+    "amount": 27000000,
+    "date": "2026-09-17",
+    "fiscal_year": "2026-27",
+    "department": "Health Canada",
+    "dept_code": "H",
+    "program_code": "BVG22",
+    "source_type": "news",
+    "level": "federal",
+    "sources": [
+      {
+        "label": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOMjduYnN5cngzUzlDbjk2dGxSRldXQzFRNS14d1V0YWFUc0ZXRndLMzJ1RTBTaVY4Q1RrVXdrTjBmYjMyQmM0WEZIVVZNX0hWNHFaTVNZaUZJQk1iT1ZpQlJuYnh1UVdGNVY0aFZxXzZ1Z1VqYkt5amdRc2NnWVhhV0d1b2RnY214cG1iY0pTbkFfNXktMzJIU1pYVTNVelV6?oc=5"
       }
     ],
     "image_url": null,
@@ -1387,9 +1417,9 @@
         "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOTlNxSDJGNGdrQzYyMEhFRnNMTFFDU1c5Z1hEaFROSXdWemg5OVBBcGtkN3A2SjZwLXFhelpPNU02Q1VTWnVnRkdUWmtQTEFOd0RXOTBmMzhzdm9EbDliNXkyS3dVSmdTZnhmcExETzNhb1RmZjhlUHpiSS1EZ2RxSFFVM0FQTWt5YUxrWWVzWFBHUFpXSDAzaVNManRteUplakJmZGhGbm9HYVJwaEYtOUJR?oc=5"
       }
     ],
-    "image_url": "/story-images/news/news-0ed6f37bf9c8.webp",
-    "image_source_url": "https://www.on-sitemag.com/construction/pomerleau-lands-121-6m-federal-building-contract-in-st-johns/1003987929/",
-    "image_credit": "On-Site Magazine"
+    "image_url": null,
+    "image_source_url": null,
+    "image_credit": null
   },
   {
     "id": "news-28b59b949d4f",
