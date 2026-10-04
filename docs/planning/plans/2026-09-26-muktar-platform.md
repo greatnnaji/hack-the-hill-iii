@@ -8,7 +8,7 @@
 
 **Tech Stack:** Next.js 16.3 (App Router, Turbopack), React 19, TypeScript, Tailwind v4, `@auth0/nextjs-auth0` 4.30, Drizzle ORM 0.45 with `postgres` 3.4, drizzle-kit 0.31, zod 4.6, Vitest 5, PGlite 0.5.
 
-**Spec:** `docs/superpowers/specs/2026-09-26-muktar-platform-design.md`
+**Spec:** `docs/planning/specs/2026-09-26-muktar-platform-design.md`
 
 ## Global Constraints
 

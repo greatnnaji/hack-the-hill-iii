@@ -160,6 +160,7 @@ implementation.md
 # Raw GC InfoBase downloads (large)
 pipeline/data/
 __pycache__/
+.venv/
 
 # Izu's branch-specific task brief
 izu-tasks.md
