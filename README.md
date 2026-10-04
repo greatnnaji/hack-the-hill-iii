@@ -83,6 +83,65 @@ flowchart LR
 - Pydantic for structured LLM output
 - Pillow for images
 
+## Local setup
+
+You need Node.js 22.12 or newer (Vitest 5 requires it), Python 3.11, and a Postgres database (Neon or local).
+
+### Web app
+
+```bash
+npm install
+cp .env.example .env
+```
+
+Fill in `.env`. At minimum set `DATABASE_URL`. Leave `AUTH0_DOMAIN` empty to use the local login bypass.
+
+Download the GC InfoBase CSVs into `pipeline/data/` (gitignored, too big to commit):
+
+```bash
+mkdir -p pipeline/data
+base=https://open.canada.ca/data/dataset/a35cf382-690c-4221-a971-cf0fd189a46f/resource
+curl -sfL -o pipeline/data/programs_spending.csv $base/55934650-3380-44d5-82c1-bb68f8cc5abb/download/programs_spending.csv
+curl -sfL -o pipeline/data/programs.csv $base/8d3cd22d-15b0-468a-bb75-c1e736107c45/download/programs.csv
+curl -sfL -o pipeline/data/organizations.csv $base/d9f87f7f-62f9-4baf-a803-2d8743f38e76/download/organizations.csv
+```
+
+Set up the database and start the app:
+
+```bash
+npm run db:migrate   # create tables
+npm run db:load      # load the GC InfoBase CSVs
+npm run db:seed      # optional: demo campaigns
+npm run dev
+```
+
+Open http://localhost:3000. Run `npm test` for the test suite and `npm run lint` for lint.
+
+### Stories pipeline
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r pipeline/requirements.txt
+```
+
+News stories (needs `GEMINI_API_KEY`):
+
+```bash
+python3 pipeline/fetch_news.py
+python3 pipeline/build_news.py
+```
+
+Data stories (`ANTHROPIC_API_KEY` is optional, only used when `picked.csv` has no title for a story):
+
+```bash
+python3 pipeline/find_jumps.py      # writes candidates.csv for review
+# copy the approved rows into pipeline/picked.csv
+python3 pipeline/build_stories.py
+```
+
+Department illustrations (needs a paid-tier `GEMINI_API_KEY`): `python3 pipeline/make_images.py`
+
 ## Team
 
 | Person | Area |
