@@ -19,13 +19,13 @@ Built at Hack the Hill III by a team of 4.
 your share = your federal tax × (program cost ÷ total federal spending that year)
 ```
 
-Example: you pay $9,510 in federal tax, military aircraft cost $3.3B, and total federal spending was about $520B. Your share is $9,510 × (3.3 ÷ 520), about $60.
+Example: on a $75,000 income in Ontario you pay about $8,920 in federal tax. Military aircraft cost $3.3B and total federal spending was about $520B, so your share is $8,920 × (3.3 ÷ 520), about $57.
 
 ## Screenshots
 
-| Tax breakdown | Spending stories | Story detail | Campaign |
-|---|---|---|---|
-| ![Tax breakdown](docs/screenshots/breakdown.png) | ![Spending stories](docs/screenshots/feed.png) | ![Story detail](docs/screenshots/story.png) | ![Campaign](docs/screenshots/campaign.png) |
+![Start page: enter your income and province](docs/screenshots/banner.png)
+
+![Receipt page: $8,920 of federal tax on a $75,000 income in Ontario, split across the biggest federal programs](docs/screenshots/tax_receipt.png)
 
 ## How it works
 
