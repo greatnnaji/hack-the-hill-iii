@@ -22,7 +22,7 @@
     "image_credit": "PR Newswire Canada"
   },
   {
-    "id": "news-bcf645727408",
+    "id": "news-2ae005432c57",
     "title": "Fanshawe College announces $34M training partnership with RCAF",
     "summary": "Fanshawe College announced a $34 million training partnership with the Royal Canadian Air Force.",
     "amount": 34000000,
@@ -39,7 +39,7 @@
         "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxORDVpbHZQM1R0dzNlZWFtaW9sbzFBZFhGNXYzUmZsQnd1NzI2QS1lMGdsVTJjRTJidXEwOFBTX1RJOVJNZE03aDQ3WlB6LU45bzV1RXE3Z0hhN29OZXppSS1nTGdNZlZPZlo1MmtrZkp1QmhoVlcyeGY0Z3lmT28tWHlsWUlnOFB0eFZuZVB3MmN0MUxFMTluVXc2R0FzWHRCUFNuWGpVbVVVU2FZa2lyQnFvc0c1YUZVN0JscHBQVE92M0dzbUxJcTNYMWJzUXc?oc=5"
       }
     ],
-    "image_url": "/story-images/news/news-bcf645727408.webp",
+    "image_url": "/story-images/news/news-2ae005432c57.webp",
     "image_source_url": "https://www.ctvnews.ca/london/article/fanshawe-college-announces-34m-training-partnership-with-royal-canadian-air-force/",
     "image_credit": "CTV News"
   },
@@ -86,6 +86,28 @@
     "image_url": null,
     "image_source_url": null,
     "image_credit": null
+  },
+  {
+    "id": "news-26187fc02472",
+    "title": "Palmerston manufacturing company granted $3.9M to expand",
+    "summary": "A manufacturing company in Palmerston has received a $3.9 million grant to expand its operations.",
+    "amount": 3900000,
+    "date": "2026-10-02",
+    "fiscal_year": "2026-27",
+    "department": "Federal Economic Development Agency for Southern Ontario",
+    "dept_code": "FEDSO",
+    "program_code": "BNM10",
+    "source_type": "news",
+    "level": "federal",
+    "sources": [
+      {
+        "label": "CTV News",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQb1VMWElfUDJKZ1NwMC1aYWcycnptS3BrdmptTk04MzJfUUlKejFkYUdDZjFfeE9Ja21jOWJtYWtoSWx2WlZNZ3RRUGtONy1MUVVETklDNDhLS1RLVlB6anFNNHF4dFJzNUNEbElrWFVfX2tWT3AyTXR4MFhlajNzdlFBeXFNZUlFRC1TSTNWRkduY3pIekktS2lxSDRFSElKbUE?oc=5"
+      }
+    ],
+    "image_url": "/story-images/news/news-26187fc02472.webp",
+    "image_source_url": "https://www.ctvnews.ca/london/article/palmerston-manufacturing-company-granted-39-million-to-expand/",
+    "image_credit": "CTV News"
   },
   {
     "id": "news-6af802034403",
@@ -379,9 +401,9 @@
         "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPN1d3QmtUUmlrVTFmeVdaOGpkdHZtaUxlQTR6djNQdGFNQ2kyUURmYUhaY3RLb05ibUppZG82cHdyQWVabl93LWItSlgyWG5WQmt4aFREd0hZWlp1RGYxOHRjeUU5djJrbDd6dFZrbG1JaEpnbWE4WGxzRkxfeFc0UkgxMXU5RTU1dXNQeFZhb3N0VHF3bU9IMGh5cWhtQU44?oc=5"
       }
     ],
-    "image_url": "/story-images/news/news-df2f8d5280e8.webp",
-    "image_source_url": "https://www.castanet.net/news/Kelowna/632702/Federal-government-commits-22-4-million-for-development-of-east-lands-at-Kelowna-International-Airport",
-    "image_credit": "Castanet"
+    "image_url": "/story-images/news/news-74d5b2562e3b.webp",
+    "image_source_url": "https://canadiandefencereview.com/canada-invests-22-4m-in-kelowna-airport-aerospace-infrastructure/",
+    "image_credit": "Canadian Defence Review"
   },
   {
     "id": "news-1476946fc0a2",
@@ -887,9 +909,9 @@
         "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPSjdabEdRZzRqc3hhUk0yVDlrYU5YYUNHNjJuZ3ZoRWZrRThSM3NSb3BlRXFBcHlndnQ0RDZLdExUTi1BTXctb0p4Sktud09yM1h2cE9EOVJLaUQ4eXFmSmUzeF9WQmRKMTVCNmkwM0lnQy1vNV96Z0tvdDl3VlpveDIyN1drSV9PTkxfNXU2QzNQeWRyS2dYZnFYNA?oc=5"
       }
     ],
-    "image_url": "/story-images/news/news-07c349ae8aa4.webp",
-    "image_source_url": "https://finance.yahoo.com/economy/policy/articles/government-canada-invests-1-98-163400092.html",
-    "image_credit": "Yahoo Finance"
+    "image_url": null,
+    "image_source_url": null,
+    "image_credit": null
   },
   {
     "id": "news-753dd62e809f",
@@ -1343,9 +1365,9 @@
         "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOTlNxSDJGNGdrQzYyMEhFRnNMTFFDU1c5Z1hEaFROSXdWemg5OVBBcGtkN3A2SjZwLXFhelpPNU02Q1VTWnVnRkdUWmtQTEFOd0RXOTBmMzhzdm9EbDliNXkyS3dVSmdTZnhmcExETzNhb1RmZjhlUHpiSS1EZ2RxSFFVM0FQTWt5YUxrWWVzWFBHUFpXSDAzaVNManRteUplakJmZGhGbm9HYVJwaEYtOUJR?oc=5"
       }
     ],
-    "image_url": "/story-images/news/news-0ed6f37bf9c8.webp",
-    "image_source_url": "https://www.on-sitemag.com/construction/pomerleau-lands-121-6m-federal-building-contract-in-st-johns/1003987929/",
-    "image_credit": "On-Site Magazine"
+    "image_url": null,
+    "image_source_url": null,
+    "image_credit": null
   },
   {
     "id": "news-28b59b949d4f",
