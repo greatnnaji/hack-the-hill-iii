@@ -1,5 +1,27 @@
 [
   {
+    "id": "news-0115600630fa",
+    "title": "Health Canada outlines plans for $144.8 million in N.W.T. healthcare",
+    "summary": "Health Canada has outlined plans to invest $144.8 million to support healthcare services in the Northwest Territories.",
+    "amount": 144800000,
+    "date": "2026-10-05",
+    "fiscal_year": "2026-27",
+    "department": "Health Canada",
+    "dept_code": "H",
+    "program_code": null,
+    "source_type": "news",
+    "level": "federal",
+    "sources": [
+      {
+        "label": "cbc.ca",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOX1dhOUp5UFRJb2pMczhBRjB4TXRFLUlXYjBOZXZpSGUyLWRYNU1HQVYzYmpyakVxcUNNNGpvTlBhc1RfV3Z1Qy1MSkNPZnZreGJmZWc4Ynl3UDZjN2cyYVEyOTNLRmZPVEdVbGdFX1dFVUw2Tmw2YU8wMi04S3JJREsyX3dUWFV2dVBpanBfUnpXamQ1LTlVS0VqVXNoWFk?oc=5"
+      }
+    ],
+    "image_url": null,
+    "image_source_url": null,
+    "image_credit": null
+  },
+  {
     "id": "news-e087d04d21b3",
     "title": "FINTRAC redacted details for $26.7 million in contracts",
     "summary": "FINTRAC has redacted details for $26.7 million in contracts since 2021. A watchdog warned that there is no oversight over these disclosures.",
@@ -22,6 +44,62 @@
     "image_credit": "The Hill Times"
   },
   {
+    "id": "news-2ae005432c57",
+    "title": "Fanshawe College announces $34M training partnership with RCAF",
+    "summary": "Fanshawe College announced a $34 million training partnership with the Royal Canadian Air Force.",
+    "amount": 34000000,
+    "date": "2026-10-02",
+    "fiscal_year": "2026-27",
+    "department": "National Defence",
+    "dept_code": "ND",
+    "program_code": "BUP02",
+    "source_type": "news",
+    "level": "federal",
+    "sources": [
+      {
+        "label": "CTV News",
+        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxORDVpbHZQM1R0dzNlZWFtaW9sbzFBZFhGNXYzUmZsQnd1NzI2QS1lMGdsVTJjRTJidXEwOFBTX1RJOVJNZE03aDQ3WlB6LU45bzV1RXE3Z0hhN29OZXppSS1nTGdNZlZPZlo1MmtrZkp1QmhoVlcyeGY0Z3lmT28tWHlsWUlnOFB0eFZuZVB3MmN0MUxFMTluVXc2R0FzWHRCUFNuWGpVbVVVU2FZa2lyQnFvc0c1YUZVN0JscHBQVE92M0dzbUxJcTNYMWJzUXc?oc=5"
+      },
+      {
+        "label": "cbc.ca",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOLTU5ZzBOUG81TGVLVEtaaTBQRW1vMENTUnBJNjNrVkFEN2gtR0Y3OWFUNVdiR09VeEU0eTNIdTBzQTJUOUZuRGNTWGs1b3FDRGUxaHlUaFVaQVVjMnR6QlVwZ2xBT2FYR0F0M3lhWndVaGpQUEcyWjAycGZ1eEJ4VHNVRDE2N2pyczZwMFhGbURjNGhTLURxVlFSOVZiRWRaV0NrXzZhNkFwd040cnE0?oc=5"
+      }
+    ],
+    "image_url": "/story-images/news/news-2ae005432c57.webp",
+    "image_source_url": "https://www.ctvnews.ca/london/article/fanshawe-college-announces-34m-training-partnership-with-royal-canadian-air-force/",
+    "image_credit": "CTV News"
+  },
+  {
+    "id": "news-bef811e8b8e4",
+    "title": "Canada invests $77 million in Arctic Bay harbour project",
+    "summary": "The Canadian government is investing $77 million in a harbour project in Arctic Bay. The project aims to expand marine access in Nunavut.",
+    "amount": 77000000,
+    "date": "2026-10-02",
+    "fiscal_year": "2026-27",
+    "department": "Fisheries and Oceans Canada",
+    "dept_code": "FO",
+    "program_code": "BTF06",
+    "source_type": "news",
+    "level": "federal",
+    "sources": [
+      {
+        "label": "Traders Union",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOVF9NUW54cG9hNUJWSUd4ZHZsSWdBUUo5VERTdTlVRXYtWExyLWVhclBkY01hQmR0Xy1MMll3QnBEc3NQZjd3Y2VfTWpueWkzWTItTDhoMHJoZE1zVHhSQ29vbFlDc0lZN283ZUZYcU9fWjVDVWpIb0pCNUcydnh4V2lIRER5TklCSk01eC1jX2lEdWpGUVpPeFhaREhsdW9aWC1rVktR?oc=5"
+      },
+      {
+        "label": "Nunavut News",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQZWhFdXhpUDhIUHY4LTdoR2xidEozeDhrQ3VySldyRGdZYmV2REhfc2o2QUhnZkUwdkdvZWVZYmtKaWlCVWtqMVItZlExajI3eUhweUNleVFIU1E3M1Q3UGZQa1VmZERVUzNiZTJZQnZOTVZ6Q0UzTnpXNEltWkdoS0d3LXFNTlhqOXRHRGxJMTN0VGJWN3VjaXZubHVzQkdBVTJZdzJmaVpKd0lxNFdKY2Y4Um15UFE?oc=5"
+      },
+      {
+        "label": "cedarnews.net",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPNTJqMjIwek82dklMSlh5cjFJZjJTSUNtczFFLVZNNUxqdGxWeXZNU3p5SXAtZ1pBdElKNlIxVHNGTkxxalV6UkJTYnFYWmRKZ1BrN3lpQmppVVpBdzhaZjlBREZqRDZ5WHp4X2dlbmFQVndZZk1TZGJ2b0RKbm1MQTlWTDFpX21XY2xOS2hKNA?oc=5"
+      }
+    ],
+    "image_url": "/story-images/news/news-93c940219547.webp",
+    "image_source_url": "https://cedarnews.net/newstasks/1032597/canada-invests-77m-small-craft-harbour-arctic/",
+    "image_credit": "cedarnews.net"
+  },
+  {
     "id": "news-0d19f4920d96",
     "title": "Federal government announces $66.3M for energy-efficient housing projects",
     "summary": "The Government of Canada and the Federation of Canadian Municipalities announced $66.3 million in funding for 162 energy-efficient housing projects.",
@@ -42,28 +120,6 @@
     "image_url": "/story-images/news/news-0d19f4920d96.webp",
     "image_source_url": "https://www.newswire.ca/news-releases/fcm-and-the-government-of-canada-announce-66-3-m-in-162-energy-efficient-housing-projects-828872435.html",
     "image_credit": "PR Newswire Canada"
-  },
-  {
-    "id": "news-2ae005432c57",
-    "title": "Fanshawe College announces $34M training partnership with RCAF",
-    "summary": "Fanshawe College announced a $34 million training partnership with the Royal Canadian Air Force.",
-    "amount": 34000000,
-    "date": "2026-10-02",
-    "fiscal_year": "2026-27",
-    "department": "National Defence",
-    "dept_code": "ND",
-    "program_code": "BUP02",
-    "source_type": "news",
-    "level": "federal",
-    "sources": [
-      {
-        "label": "CTV News",
-        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxORDVpbHZQM1R0dzNlZWFtaW9sbzFBZFhGNXYzUmZsQnd1NzI2QS1lMGdsVTJjRTJidXEwOFBTX1RJOVJNZE03aDQ3WlB6LU45bzV1RXE3Z0hhN29OZXppSS1nTGdNZlZPZlo1MmtrZkp1QmhoVlcyeGY0Z3lmT28tWHlsWUlnOFB0eFZuZVB3MmN0MUxFMTluVXc2R0FzWHRCUFNuWGpVbVVVU2FZa2lyQnFvc0c1YUZVN0JscHBQVE92M0dzbUxJcTNYMWJzUXc?oc=5"
-      }
-    ],
-    "image_url": "/story-images/news/news-2ae005432c57.webp",
-    "image_source_url": "https://www.ctvnews.ca/london/article/fanshawe-college-announces-34m-training-partnership-with-royal-canadian-air-force/",
-    "image_credit": "CTV News"
   },
   {
     "id": "news-1a90532af231",
@@ -92,32 +148,6 @@
     "image_credit": "Yahoo News Canada"
   },
   {
-    "id": "news-bef811e8b8e4",
-    "title": "Canada invests $77 million in Arctic Bay harbour project",
-    "summary": "The Canadian government is investing $77 million in a harbour project in Arctic Bay. The project aims to expand marine access in Nunavut.",
-    "amount": 77000000,
-    "date": "2026-10-02",
-    "fiscal_year": "2026-27",
-    "department": "Fisheries and Oceans Canada",
-    "dept_code": "FO",
-    "program_code": "BTF06",
-    "source_type": "news",
-    "level": "federal",
-    "sources": [
-      {
-        "label": "Traders Union",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOVF9NUW54cG9hNUJWSUd4ZHZsSWdBUUo5VERTdTlVRXYtWExyLWVhclBkY01hQmR0Xy1MMll3QnBEc3NQZjd3Y2VfTWpueWkzWTItTDhoMHJoZE1zVHhSQ29vbFlDc0lZN283ZUZYcU9fWjVDVWpIb0pCNUcydnh4V2lIRER5TklCSk01eC1jX2lEdWpGUVpPeFhaREhsdW9aWC1rVktR?oc=5"
-      },
-      {
-        "label": "Nunavut News",
-        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQZWhFdXhpUDhIUHY4LTdoR2xidEozeDhrQ3VySldyRGdZYmV2REhfc2o2QUhnZkUwdkdvZWVZYmtKaWlCVWtqMVItZlExajI3eUhweUNleVFIU1E3M1Q3UGZQa1VmZERVUzNiZTJZQnZOTVZ6Q0UzTnpXNEltWkdoS0d3LXFNTlhqOXRHRGxJMTN0VGJWN3VjaXZubHVzQkdBVTJZdzJmaVpKd0lxNFdKY2Y4Um15UFE?oc=5"
-      }
-    ],
-    "image_url": null,
-    "image_source_url": null,
-    "image_credit": null
-  },
-  {
     "id": "news-26187fc02472",
     "title": "Palmerston manufacturing company granted $3.9M to expand",
     "summary": "A manufacturing company in Palmerston has received a $3.9 million grant to expand its operations.",
@@ -138,6 +168,28 @@
     "image_url": "/story-images/news/news-26187fc02472.webp",
     "image_source_url": "https://www.ctvnews.ca/london/article/palmerston-manufacturing-company-granted-39-million-to-expand/",
     "image_credit": "CTV News"
+  },
+  {
+    "id": "news-703e38618857",
+    "title": "Federal government invests $32 million in PEI prescription drug initiative",
+    "summary": "The federal government is investing $32 million to support Prince Edward Island's prescription drug initiative.",
+    "amount": 32000000,
+    "date": "2026-10-02",
+    "fiscal_year": "2026-27",
+    "department": "Health Canada",
+    "dept_code": "H",
+    "program_code": null,
+    "source_type": "news",
+    "level": "federal",
+    "sources": [
+      {
+        "label": "NAVLIN DAILY",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQczEweGJTTE91YXBOM2Z6aFFlTWRac0w1QnZWaXoxTlJRMmxaYnhJcVJNZ2JqTDRjWC1uQ29kQkJwM2o5NEs1WWNJRXdVckZ0Y3pxb1c1Q0J5dVJQMmdZanY0TmRzLUZZbm85dUhJSzJ0dVpsOXI2UEdwZlRvMzFnOTRYbV90YUo2UVlhOUwyMVM1LVdpOHBKZUxOaEhIMnMyVllvX2F2aFNFWXQydHk0bXdYZ0h1MmtBMTFGYjRBY2d4S3BkcXc0cTQ4ZWY?oc=5"
+      }
+    ],
+    "image_url": null,
+    "image_source_url": null,
+    "image_credit": null
   },
   {
     "id": "news-6af802034403",
@@ -457,9 +509,9 @@
         "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOS0JlNjBhMFFDUERlYUstQVluY3JiaGtxaW5UMnNQelNMa25Wc2NfYy1yTlQ3TVEwajlaRGk3bVdHZFpEb0tKRXozb3Z3dnlYYm5FTDNGRnpxN3VTZENqQmUwZDRZRmZjSnNVTlZqVjZ1b002NUp0X25wMENLTk1GOWZmTDdCeldLc2NsLXRFeFUwTXlzbmVubEVKZ3NIcHkzT0Zlbw?oc=5"
       }
     ],
-    "image_url": "/story-images/news/news-74d5b2562e3b.webp",
-    "image_source_url": "https://canadiandefencereview.com/canada-invests-22-4m-in-kelowna-airport-aerospace-infrastructure/",
-    "image_credit": "Canadian Defence Review"
+    "image_url": "/story-images/news/news-df2f8d5280e8.webp",
+    "image_source_url": "https://www.castanet.net/news/Kelowna/632702/Federal-government-commits-22-4-million-for-development-of-east-lands-at-Kelowna-International-Airport",
+    "image_credit": "Castanet"
   },
   {
     "id": "news-1476946fc0a2",
