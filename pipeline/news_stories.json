@@ -254,6 +254,28 @@
     "image_credit": null
   },
   {
+    "id": "news-b649e580907d",
+    "title": "Xanadu secures $195M in federal aid for quantum supply chain",
+    "summary": "Xanadu has secured $195 million in federal aid to develop a quantum supply chain.",
+    "amount": 195000000,
+    "date": "2026-09-30",
+    "fiscal_year": "2026-27",
+    "department": "Innovation, Science and Economic Development Canada",
+    "dept_code": "ISC",
+    "program_code": null,
+    "source_type": "news",
+    "level": "federal",
+    "sources": [
+      {
+        "label": "scanx.trade",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNNkJZUGV3andSODhDX0tsbkdadjFIcmFqN09MdUJmYTFFVjhJalVmd1lWaVQ3UE1oUXRsT2dwWFFNdi1iclFVRUY5aFpSdjFadlZLNE45S3ZmOGo1dFQ2TFBzak9GeTJIZWo4SkRCQkd4NjBidVFZaDkyME4zb29TVmFib3pOMkZBQzhQR0J5YTRaOGVjSHZTTzRUMkxLSGRfOGNySm5HZjRXRnhzTlRFNUxYQQ?oc=5"
+      }
+    ],
+    "image_url": null,
+    "image_source_url": null,
+    "image_credit": null
+  },
+  {
     "id": "news-49759a60c6c4",
     "title": "Halifax receives nearly $2M to prevent gun and gang violence",
     "summary": "Nearly $2 million has been dedicated toward initiatives aimed at preventing gun and gang violence in Halifax.",
@@ -435,9 +457,9 @@
         "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOS0JlNjBhMFFDUERlYUstQVluY3JiaGtxaW5UMnNQelNMa25Wc2NfYy1yTlQ3TVEwajlaRGk3bVdHZFpEb0tKRXozb3Z3dnlYYm5FTDNGRnpxN3VTZENqQmUwZDRZRmZjSnNVTlZqVjZ1b002NUp0X25wMENLTk1GOWZmTDdCeldLc2NsLXRFeFUwTXlzbmVubEVKZ3NIcHkzT0Zlbw?oc=5"
       }
     ],
-    "image_url": "/story-images/news/news-df2f8d5280e8.webp",
-    "image_source_url": "https://www.castanet.net/news/Kelowna/632702/Federal-government-commits-22-4-million-for-development-of-east-lands-at-Kelowna-International-Airport",
-    "image_credit": "Castanet"
+    "image_url": "/story-images/news/news-74d5b2562e3b.webp",
+    "image_source_url": "https://canadiandefencereview.com/canada-invests-22-4m-in-kelowna-airport-aerospace-infrastructure/",
+    "image_credit": "Canadian Defence Review"
   },
   {
     "id": "news-1476946fc0a2",
