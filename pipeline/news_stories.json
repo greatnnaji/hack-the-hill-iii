@@ -93,11 +93,15 @@
       {
         "label": "cedarnews.net",
         "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPNTJqMjIwek82dklMSlh5cjFJZjJTSUNtczFFLVZNNUxqdGxWeXZNU3p5SXAtZ1pBdElKNlIxVHNGTkxxalV6UkJTYnFYWmRKZ1BrN3lpQmppVVpBdzhaZjlBREZqRDZ5WHp4X2dlbmFQVndZZk1TZGJ2b0RKbm1MQTlWTDFpX21XY2xOS2hKNA?oc=5"
+      },
+      {
+        "label": "Canadian Defence Review",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOYWRvUzlyT0hOR1RoVE5GaUpNc2JjeGpOYzhsUkpKRmhvbHQ1V0s4dUtVeDBYWDQweDNqZm9DV3Y1X2ZTTF9ablRmTWVHa21lZ0xjSll5aEs1MFhpNi12WEdkVDl2YmZMc012ZS1ENlM3WS1TbkpWRWctQlpaay1MVjBqWEM3VFNBajdDWGVyczJJR1dmRlFVcnV4b2NTaGc?oc=5"
       }
     ],
-    "image_url": "/story-images/news/news-93c940219547.webp",
-    "image_source_url": "https://cedarnews.net/newstasks/1032597/canada-invests-77m-small-craft-harbour-arctic/",
-    "image_credit": "cedarnews.net"
+    "image_url": "/story-images/news/news-84165101ceaf.webp",
+    "image_source_url": "https://canadiandefencereview.com/canada-invests-77m-in-small-craft-harbour-in-arctic-bay-nunavut/",
+    "image_credit": "Canadian Defence Review"
   },
   {
     "id": "news-0d19f4920d96",
@@ -115,6 +119,10 @@
       {
         "label": "PR Newswire Canada",
         "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPWGstOWM1MXd0OXJveW0tLWYyT1llU2dyRWJUd0k0YjlMRGNucVFjYllzeFNvZ3dWQ3dUZjVDMDZFR05iaUQyRWZrNWs5RFFPVUFrRXdRTHlmZ3FFZ3JRaGJON0FGN1BnYjJwMXltTE1rZ29IQUp2RUljLVdjQ2JnT0U0YXdVZ01zU0xiRG9yRDNuc2dMVEF1U1dtUDNBcFdPc2hNVDN1WXdnT0hSaWRtaGdOTFh6NjcyWFJmQklzN3FndTI3ZnM3ZWl5U3VKY3JLb2o0ZTBTTHRYQQ?oc=5"
+      },
+      {
+        "label": "Yahoo! Finance Canada",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOYndQX1otQ1dNMEFhVWljby1vcmFWYUNOQVF3WTlIMi1LRndvZEpqREV2UDJMNEthd05sQXI5aVZjRHQ5aGpiMUh4a0Z6OTQzajlsWlV2UVZfa1NkWmJpeEpCWUZDYlhuV1VtMzIxdm9RSnJVbXAzSFlUMFI4X2cwTklKczJMQmsyM0E?oc=5"
       }
     ],
     "image_url": "/story-images/news/news-0d19f4920d96.webp",
@@ -509,9 +517,9 @@
         "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOS0JlNjBhMFFDUERlYUstQVluY3JiaGtxaW5UMnNQelNMa25Wc2NfYy1yTlQ3TVEwajlaRGk3bVdHZFpEb0tKRXozb3Z3dnlYYm5FTDNGRnpxN3VTZENqQmUwZDRZRmZjSnNVTlZqVjZ1b002NUp0X25wMENLTk1GOWZmTDdCeldLc2NsLXRFeFUwTXlzbmVubEVKZ3NIcHkzT0Zlbw?oc=5"
       }
     ],
-    "image_url": "/story-images/news/news-df2f8d5280e8.webp",
-    "image_source_url": "https://www.castanet.net/news/Kelowna/632702/Federal-government-commits-22-4-million-for-development-of-east-lands-at-Kelowna-International-Airport",
-    "image_credit": "Castanet"
+    "image_url": "/story-images/news/news-74d5b2562e3b.webp",
+    "image_source_url": "https://canadiandefencereview.com/canada-invests-22-4m-in-kelowna-airport-aerospace-infrastructure/",
+    "image_credit": "Canadian Defence Review"
   },
   {
     "id": "news-1476946fc0a2",
