@@ -336,6 +336,32 @@
     "image_credit": null
   },
   {
+    "id": "news-6192b93c3a90",
+    "title": "Ottawa invests $1.2M in Francophone immigration projects outside Quebec",
+    "summary": "The federal government announced $1.2 million to support Francophone immigration initiatives in communities outside Quebec.",
+    "amount": 1200000,
+    "date": "2026-09-29",
+    "fiscal_year": "2026-27",
+    "department": "Immigration, Refugees and Citizenship Canada",
+    "dept_code": "CI",
+    "program_code": "BGE07",
+    "source_type": "news",
+    "level": "federal",
+    "sources": [
+      {
+        "label": "The Pulse of the Eastern Townships",
+        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE11MzM5TjUxSENhODhjUGJVN25RdS1OZ0JqajkwT24yRFNUYWlhczZLaVBnNVlaX1BJQjNpWVRyY2xMdVF1bEZsMVBPZVlENGx0dlpYVktqUjR4T3ZQYWlmRDlUeUp4WnFoeVBYMmtTTk00XzcyUDhjNzlXbw?oc=5"
+      },
+      {
+        "label": "ImmigCanada",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxORGg3OUpNMTVPRTNZQkxPRG81NlRidzBPNW4tVkNGbTdWMmVKUGVTaVRtcHZ1cFZCVF9EWjIzRXUzd3VRa05RZllEVXBqTi14amw2X0wweDh1RmRxcDAwUVBkZk9sZmNfYkxmOHRvdXJUXzA1ZE41VmNIbFlBaVRiZlpxSVpDa3dGd0NDOHItb3NEZnljSUhtTHQzeFBhcmVJRGRBbDhVai0tZXJWdHRz?oc=5"
+      }
+    ],
+    "image_url": "/story-images/news/news-f01cf9c0f716.webp",
+    "image_source_url": "https://immigcanada.com/canada-invests-1-2-million-to-strengthen-francophone-immigration-across-three-regions/",
+    "image_credit": "ImmigCanada"
+  },
+  {
     "id": "news-49759a60c6c4",
     "title": "Halifax receives nearly $2M to prevent gun and gang violence",
     "summary": "Nearly $2 million has been dedicated toward initiatives aimed at preventing gun and gang violence in Halifax.",
@@ -382,28 +408,6 @@
     "image_url": "/story-images/news/news-05746d9a4102.webp",
     "image_source_url": "https://www.ctvnews.ca/atlantic/new-brunswick/article/ottawa-spending-58m-on-health-centre-near-dorchester-penitentiary-in-new-brunswick/",
     "image_credit": "CTV News"
-  },
-  {
-    "id": "news-6192b93c3a90",
-    "title": "Ottawa invests $1.2M in Francophone immigration projects outside Quebec",
-    "summary": "The federal government announced $1.2 million to support Francophone immigration initiatives in communities outside Quebec.",
-    "amount": 1200000,
-    "date": "2026-09-29",
-    "fiscal_year": "2026-27",
-    "department": "Immigration, Refugees and Citizenship Canada",
-    "dept_code": "CI",
-    "program_code": "BGE07",
-    "source_type": "news",
-    "level": "federal",
-    "sources": [
-      {
-        "label": "The Pulse of the Eastern Townships",
-        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE11MzM5TjUxSENhODhjUGJVN25RdS1OZ0JqajkwT24yRFNUYWlhczZLaVBnNVlaX1BJQjNpWVRyY2xMdVF1bEZsMVBPZVlENGx0dlpYVktqUjR4T3ZQYWlmRDlUeUp4WnFoeVBYMmtTTk00XzcyUDhjNzlXbw?oc=5"
-      }
-    ],
-    "image_url": null,
-    "image_source_url": null,
-    "image_credit": null
   },
   {
     "id": "news-42d81134b623",
@@ -576,6 +580,28 @@
     "image_url": "/story-images/news/news-49618d121882.webp",
     "image_source_url": "https://www.railway.supply/two-recipients-get-two-thirds-of-canadas-c4-5m-rail-trespassing-grants/",
     "image_credit": "railway.supply"
+  },
+  {
+    "id": "news-4c5234c268c3",
+    "title": "Federal government grants New Brunswick $461 million for infrastructure",
+    "summary": "The federal government has granted $461 million to New Brunswick to support various infrastructure projects.",
+    "amount": 461000000,
+    "date": "2026-09-25",
+    "fiscal_year": "2026-27",
+    "department": "Office of Infrastructure of Canada",
+    "dept_code": "OICC",
+    "program_code": "BYC02",
+    "source_type": "news",
+    "level": "federal",
+    "sources": [
+      {
+        "label": "Global News",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOMXZJcmM3UkRZQVhDdmN1STh4MFZSb19GZ3FiZFkyNjgxYTJGZC1ibmpwNWZOZk9UREFwWnlYMVV0YVlwRldoenpvR0wzTmNkZVYxeTJ3TXZmQmVwZTRYejlXdVB0RktrTnV0TVA4cXZDZlRLNDhTOFpvV1p2RG5SOGNfaw?oc=5"
+      }
+    ],
+    "image_url": null,
+    "image_source_url": null,
+    "image_credit": null
   },
   {
     "id": "news-1ea76d425f6a",
@@ -1145,6 +1171,10 @@
       {
         "label": "Big News Network.com",
         "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQSGppcmRxT3hvTGZ6U18tYU52Y3NVOWNrRUtfQUFzZlF5OGhqTHdGYnRKaThXZU9kWHJzY0FkZWdCZ0lFcnpPS2N3MUt4ajJtOXVYRk9DY0FOeG5tSVZFblM1ekRlek5EMWx3bndCWTZkNDlkOTc1WFZ3TldoaGd0TGMzSnRKX3psaUlkS01td3U5SFdYYlZtWlA1a2Vrc0hIZVN0N25iZUhWeFR0TGJvN0VvaTNOQnV3dVU0WnFjS0ZVU0pLeDZjN2ZXXzV5WnA0anhQOTZnbjlmaWN6UndIM1Q3V0hzYTQ?oc=5"
+      },
+      {
+        "label": "theglobeandmail.com",
+        "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxOaFkzZUIyOXN1MWIzOUxfMFZVblZJRHpEMFgteU5namFYTnUtenRTWlF2Q1VBUVQzdkpLcjdKLTl0VGFCV0RweHBnaEp0ZTRiVFc5VUUxYXNlZUJmSjNDdzJ6NmQ5ZGZhX29HZlJCSDJSNDBBSzZtcXdjN3ByQklXV1FDTXFDQ0Q0VjBQZWs4T1lNQTVLSmlLQ0JGV21naWRxbmo5M3gyT0hwdDFxV250a3AtdzFjaWFYVnhFdl9kWVE2OUdrbjRkdjVkQ3BGQk9kY3VQb3o3dUxjNTdnU2RsWmgwRjlSX0dRZ05iQkdpSUdBbmZMUExIUDdfQmlvYTExaDRvYXk3dmFRYWhmVmtPczl6d0p1dndZSnpn?oc=5"
       }
     ],
     "image_url": null,
