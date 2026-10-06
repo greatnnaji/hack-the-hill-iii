@@ -1,5 +1,27 @@
 [
   {
+    "id": "news-a7231c7c783d",
+    "title": "CyberWorks awarded $1 million Canadian Armed Forces contract",
+    "summary": "CyberWorks has secured a $1 million contract with the Canadian Armed Forces.",
+    "amount": 1000000,
+    "date": "2026-10-06",
+    "fiscal_year": "2026-27",
+    "department": "National Defence",
+    "dept_code": "ND",
+    "program_code": null,
+    "source_type": "news",
+    "level": "federal",
+    "sources": [
+      {
+        "label": "BetaKit",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQRGI1MXVDS1NXM2N2X3BCNFhDZHhQU2hkZzE2Z1lURUNqTzJ1OTNFSFU2WTR5TVd5SXRxbW5CUktFb1ZTbzk5cE9jOVMtUzlfc0NaRS1NX2paeU5Va3lxWUtYTmd1TGdfbnY3QlNuMTZ2MXJyLVNrWkx0ZjlISjBoR2NDdWE?oc=5"
+      }
+    ],
+    "image_url": "/story-images/news/news-a7231c7c783d.webp",
+    "image_source_url": "https://betakit.com/cyberworks-lands-1-million-canadian-armed-forces-contract/",
+    "image_credit": "BetaKit"
+  },
+  {
     "id": "news-0115600630fa",
     "title": "Health Canada outlines plans for $144.8 million in N.W.T. healthcare",
     "summary": "Health Canada has outlined plans to invest $144.8 million to support healthcare services in the Northwest Territories.",
@@ -42,6 +64,40 @@
     "image_url": "/story-images/news/news-e087d04d21b3.webp",
     "image_source_url": "https://www.hilltimes.com/2026/10/04/fintrac-redacted-details-for-26-7-million-in-contracts-since-2021-as-watchdog-warns-there-is-no-oversight-over-disclosures/515071/",
     "image_credit": "The Hill Times"
+  },
+  {
+    "id": "news-0d19f4920d96",
+    "title": "FCM and Canada announce $66.3M for 162 energy-efficient housing projects",
+    "summary": "The Government of Canada and the Federation of Canadian Municipalities announced $66.3 million to support 162 energy-efficient housing projects.",
+    "amount": 66300000,
+    "date": "2026-10-02",
+    "fiscal_year": "2026-27",
+    "department": "Natural Resources Canada",
+    "dept_code": "NR",
+    "program_code": "BTM10",
+    "source_type": "news",
+    "level": "federal",
+    "sources": [
+      {
+        "label": "PR Newswire Canada",
+        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPWGstOWM1MXd0OXJveW0tLWYyT1llU2dyRWJUd0k0YjlMRGNucVFjYllzeFNvZ3dWQ3dUZjVDMDZFR05iaUQyRWZrNWs5RFFPVUFrRXdRTHlmZ3FFZ3JRaGJON0FGN1BnYjJwMXltTE1rZ29IQUp2RUljLVdjQ2JnT0U0YXdVZ01zU0xiRG9yRDNuc2dMVEF1U1dtUDNBcFdPc2hNVDN1WXdnT0hSaWRtaGdOTFh6NjcyWFJmQklzN3FndTI3ZnM3ZWl5U3VKY3JLb2o0ZTBTTHRYQQ?oc=5"
+      },
+      {
+        "label": "Yahoo! Finance Canada",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOYndQX1otQ1dNMEFhVWljby1vcmFWYUNOQVF3WTlIMi1LRndvZEpqREV2UDJMNEthd05sQXI5aVZjRHQ5aGpiMUh4a0Z6OTQzajlsWlV2UVZfa1NkWmJpeEpCWUZDYlhuV1VtMzIxdm9RSnJVbXAzSFlUMFI4X2cwTklKczJMQmsyM0E?oc=5"
+      },
+      {
+        "label": "ReNew Canada",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQeHF4dUVIV1B2aGhXUndZMlBhYTdfbEE4UTB5UVo2bjRoQnRwbkJ3dThZUnM1ak9aLUllMXgxbVF0RE9nTy1JQ3J3akhMWFUyczJOLU5RM1AyQnhDQWM5cVlhT1hYWmFMOWpSMU01RGM0dEc0NUhLajVhRzZDRmk2dzVLZTZCTS15bGhYbTF5ZVpOdWlMUHRHdFVfZklOUDk4TlE?oc=5"
+      },
+      {
+        "label": "The Environment Journal",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOT2dZcXRjaExVWHdFdGJuRXhfWTA1OUhCRWItaU1peXZDaDJpVWt2WlpzZGVGMGtaM2o5dHJwcnIzVlNDOHZjVDRGTllXZ3k4dlI0cGlKbGk1TkZEZnFvbklfdktfczJmeVQ2bUQ1TVNTZGhjYnZFUEJiejAtdGpmdEUyd1lsMEk2UnZYcTNYMFBkVWM2akZFWQ?oc=5"
+      }
+    ],
+    "image_url": "/story-images/news/news-0d19f4920d96.webp",
+    "image_source_url": "https://www.newswire.ca/news-releases/fcm-and-the-government-of-canada-announce-66-3-m-in-162-energy-efficient-housing-projects-828872435.html",
+    "image_credit": "PR Newswire Canada"
   },
   {
     "id": "news-2ae005432c57",
@@ -99,35 +155,9 @@
         "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOYWRvUzlyT0hOR1RoVE5GaUpNc2JjeGpOYzhsUkpKRmhvbHQ1V0s4dUtVeDBYWDQweDNqZm9DV3Y1X2ZTTF9ablRmTWVHa21lZ0xjSll5aEs1MFhpNi12WEdkVDl2YmZMc012ZS1ENlM3WS1TbkpWRWctQlpaay1MVjBqWEM3VFNBajdDWGVyczJJR1dmRlFVcnV4b2NTaGc?oc=5"
       }
     ],
-    "image_url": "/story-images/news/news-84165101ceaf.webp",
-    "image_source_url": "https://canadiandefencereview.com/canada-invests-77m-in-small-craft-harbour-in-arctic-bay-nunavut/",
-    "image_credit": "Canadian Defence Review"
-  },
-  {
-    "id": "news-0d19f4920d96",
-    "title": "Federal government announces $66.3M for energy-efficient housing projects",
-    "summary": "The Government of Canada and the Federation of Canadian Municipalities announced $66.3 million in funding for 162 energy-efficient housing projects.",
-    "amount": 66300000,
-    "date": "2026-10-02",
-    "fiscal_year": "2026-27",
-    "department": "Office of Infrastructure of Canada",
-    "dept_code": "OICC",
-    "program_code": "BYC02",
-    "source_type": "news",
-    "level": "federal",
-    "sources": [
-      {
-        "label": "PR Newswire Canada",
-        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPWGstOWM1MXd0OXJveW0tLWYyT1llU2dyRWJUd0k0YjlMRGNucVFjYllzeFNvZ3dWQ3dUZjVDMDZFR05iaUQyRWZrNWs5RFFPVUFrRXdRTHlmZ3FFZ3JRaGJON0FGN1BnYjJwMXltTE1rZ29IQUp2RUljLVdjQ2JnT0U0YXdVZ01zU0xiRG9yRDNuc2dMVEF1U1dtUDNBcFdPc2hNVDN1WXdnT0hSaWRtaGdOTFh6NjcyWFJmQklzN3FndTI3ZnM3ZWl5U3VKY3JLb2o0ZTBTTHRYQQ?oc=5"
-      },
-      {
-        "label": "Yahoo! Finance Canada",
-        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOYndQX1otQ1dNMEFhVWljby1vcmFWYUNOQVF3WTlIMi1LRndvZEpqREV2UDJMNEthd05sQXI5aVZjRHQ5aGpiMUh4a0Z6OTQzajlsWlV2UVZfa1NkWmJpeEpCWUZDYlhuV1VtMzIxdm9RSnJVbXAzSFlUMFI4X2cwTklKczJMQmsyM0E?oc=5"
-      }
-    ],
-    "image_url": "/story-images/news/news-0d19f4920d96.webp",
-    "image_source_url": "https://www.newswire.ca/news-releases/fcm-and-the-government-of-canada-announce-66-3-m-in-162-energy-efficient-housing-projects-828872435.html",
-    "image_credit": "PR Newswire Canada"
+    "image_url": "/story-images/news/news-93c940219547.webp",
+    "image_source_url": "https://cedarnews.net/newstasks/1032597/canada-invests-77m-small-craft-harbour-arctic/",
+    "image_credit": "cedarnews.net"
   },
   {
     "id": "news-1a90532af231",
@@ -521,9 +551,9 @@
         "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOS0JlNjBhMFFDUERlYUstQVluY3JiaGtxaW5UMnNQelNMa25Wc2NfYy1yTlQ3TVEwajlaRGk3bVdHZFpEb0tKRXozb3Z3dnlYYm5FTDNGRnpxN3VTZENqQmUwZDRZRmZjSnNVTlZqVjZ1b002NUp0X25wMENLTk1GOWZmTDdCeldLc2NsLXRFeFUwTXlzbmVubEVKZ3NIcHkzT0Zlbw?oc=5"
       }
     ],
-    "image_url": "/story-images/news/news-74d5b2562e3b.webp",
-    "image_source_url": "https://canadiandefencereview.com/canada-invests-22-4m-in-kelowna-airport-aerospace-infrastructure/",
-    "image_credit": "Canadian Defence Review"
+    "image_url": "/story-images/news/news-df2f8d5280e8.webp",
+    "image_source_url": "https://www.castanet.net/news/Kelowna/632702/Federal-government-commits-22-4-million-for-development-of-east-lands-at-Kelowna-International-Airport",
+    "image_credit": "Castanet"
   },
   {
     "id": "news-1476946fc0a2",
@@ -582,7 +612,7 @@
     "image_credit": "railway.supply"
   },
   {
-    "id": "news-4c5234c268c3",
+    "id": "news-1c558bfadffd",
     "title": "Federal government grants New Brunswick $461 million for infrastructure",
     "summary": "The federal government has granted $461 million to New Brunswick to support various infrastructure projects.",
     "amount": 461000000,
@@ -597,11 +627,15 @@
       {
         "label": "Global News",
         "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOMXZJcmM3UkRZQVhDdmN1STh4MFZSb19GZ3FiZFkyNjgxYTJGZC1ibmpwNWZOZk9UREFwWnlYMVV0YVlwRldoenpvR0wzTmNkZVYxeTJ3TXZmQmVwZTRYejlXdVB0RktrTnV0TVA4cXZDZlRLNDhTOFpvV1p2RG5SOGNfaw?oc=5"
+      },
+      {
+        "label": "Yahoo! Finance Canada",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPa1BhQV83ZjZFLWJRQUJqUFVBUHp0Si1NMkhFb2tncEk4cV9adXhwS0hsZG8zUDM4OF8yb0U2SUx5RmZmdEhJOFF6WkxOclVmNGJLeVpuZnJHQllUR0RCbjVUc1BRZVBzXzdHREtLTkZSUGxSNXhZV25TaHZKYnc0SnM4X1VQTHo3?oc=5"
       }
     ],
-    "image_url": null,
-    "image_source_url": null,
-    "image_credit": null
+    "image_url": "/story-images/news/news-1c558bfadffd.webp",
+    "image_source_url": "https://ca.finance.yahoo.com/news/feds-grant-brunswick-461-million-191526066.html",
+    "image_credit": "Yahoo! Finance Canada"
   },
   {
     "id": "news-1ea76d425f6a",
@@ -692,7 +726,7 @@
     "image_credit": null
   },
   {
-    "id": "news-a334f81f4892",
+    "id": "news-70d90f0218d4",
     "title": "Federal government assigns non-profit to manage $1.5B rental protection fund",
     "summary": "The federal government has selected a non-profit organization to oversee its $1.5 billion Canada Rental Protection Fund. The program aims to preserve affordable rental housing.",
     "amount": 1500000000,
@@ -707,11 +741,15 @@
       {
         "label": "CTV News",
         "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNYWV4SXBRNzZFT2xXU1ktSFBxTFlic3BmN04yWV9yRm1iZmNTUWRGZFpDRlJab0ZGcVdhamZGU241V01MeUVKSmVzdHNlUE15czNoS2xvRjdCVXM0UjBCRzdzYUVpcHl4bk5YbkRhbjRhSGNEQzAzVWFWUlZxZUpDNzNGdG9LYmt3N3h6bXdncnQybUJreDZib3hjNk1TekZHQUxBeG5VRHk2MWpUN2VSRldRdw?oc=5"
+      },
+      {
+        "label": "Toronto Star",
+        "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxOSXo0bktSNmc0SlptalVPcWk0N3dKRkd3SS1td2ZWb25XYTNfMDNEemVwcVZySVM0ODlsbUJRLUttenhEMm9KQTJzNmhJZG5uMkFZQVo4cklTN3dBZ2VsS090UjVEaFZlamlxSXJQSUZET2tQVzFZM1Etd1kzdHBtYUNVbzBPMkN2clA5ckluMVBjbmJkVy1NdDczazhObDIydW82OXAtYkJEVUFlUVdDb1ZlQ1RXRkdZY1NKYmNZNEc1VUxsOE9rOWluTXlZQldrNWdfQUk1TXdzODdHWWdUcng4OVVZaEE2Z1FIRlg5R3NKYUtRRE1Zb01CMUNpbmZl?oc=5"
       }
     ],
-    "image_url": "/story-images/news/news-a334f81f4892.webp",
-    "image_source_url": "https://www.ctvnews.ca/ottawa/article/federal-government-selects-non-profit-to-manage-15b-rental-protection-fund/",
-    "image_credit": "CTV News"
+    "image_url": "/story-images/news/news-70d90f0218d4.webp",
+    "image_source_url": "https://www.thestar.com/real-estate/federal-government-launches-1-5-billion-program-to-preserve-affordable-rental-housing/article_2278ee41-6025-453e-94e7-654c72cb0c12.html",
+    "image_credit": "Toronto Star"
   },
   {
     "id": "news-95682aaf5c9c",
@@ -1221,9 +1259,9 @@
         "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOaXZvWjIzdWgxSFRuMjVTbE01bzFBZ0hoU3BNSllmeXdXYkE4eVpXbklQUW56QVJkbmJSdWRxMUV5MlczV0MwSGt1MVJ3YkYzX2dEc1FxZlUyN1lDSUlva1F0eDFVV0J5LUNPbzRva04xSHFwMUk3U3dMVnFHazdjRWZ6d1NqRVhmWXBpZ2F3MEM0YlNxRWp2UXFTejJpdGE5?oc=5"
       }
     ],
-    "image_url": "/story-images/news/news-a8eec1d5754f.webp",
-    "image_source_url": "https://www.intelligencer.ca/news/bay-of-quinte-mohawks-awarded-66-4m-to-end-boil-water-advisories/",
-    "image_credit": "Belleville Intelligencer"
+    "image_url": null,
+    "image_source_url": null,
+    "image_credit": null
   },
   {
     "id": "news-a49f84fd54b2",
@@ -1243,9 +1281,9 @@
         "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPT2RxRXdyOVF0ejQtalpkTjB6Qk9Nblh2cHlBdUZEV3JyZFhMRk0ya2RSWThmU2NrUnd5VzA1NW04c0VnWXVTSktINGxleldDdnV4aTZmeEZVb0JBakNtbHItVHZmSnVoR1hUYVJEOXBrX1Z5MXlrUEtGZDBrczZOZjZLWHRKYldYTjByc0VYWkdkVDNQdnQxRkR0Zm1Ba0NTeGRzdGdwSk91VjM4cmc?oc=5"
       }
     ],
-    "image_url": null,
-    "image_source_url": null,
-    "image_credit": null
+    "image_url": "/story-images/news/news-a49f84fd54b2.webp",
+    "image_source_url": "https://www.hpcwire.com/off-the-wire/qubic-wins-ca1-5m-canadian-government-contract-for-cryogenic-amplifiers/",
+    "image_credit": "HPCwire"
   },
   {
     "id": "news-c4098e4bdd5c",
