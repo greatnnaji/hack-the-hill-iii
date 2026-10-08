@@ -1,5 +1,27 @@
 [
   {
+    "id": "news-bf40a45e6cda",
+    "title": "Ottawa to provide $2B in rebates for heat pump installations",
+    "summary": "The federal government plans to provide $2 billion in rebates for homeowners who install heat pumps.",
+    "amount": 2000000000,
+    "date": "2026-10-08",
+    "fiscal_year": "2026-27",
+    "department": "Natural Resources Canada",
+    "dept_code": "NR",
+    "program_code": "BTM10",
+    "source_type": "news",
+    "level": "federal",
+    "sources": [
+      {
+        "label": "CBC",
+        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNcWU5dTg5NURFXzd1Umg4VHpyT2ZmWEVzWjVwNkxqWjNGTm9WWWpQTE9GRGdqZWdFN0VZSGRybElNM3VjUG5hTzdqWDh3ajFKUWE0RnNsRzUzSjJaNTdQN2VQUEVBODJicEwwWXBPYkZlc0pjRzFWMW1fMTZJeFpMV3RJRkI4VV8tbmZZ?oc=5"
+      }
+    ],
+    "image_url": null,
+    "image_source_url": null,
+    "image_credit": null
+  },
+  {
     "id": "news-2a6af56aac81",
     "title": "Federal government announces $8 billion in military spending in Alberta",
     "summary": "The federal government has announced $8 billion in military funding for Alberta.",
@@ -111,6 +133,28 @@
       {
         "label": "cbc.ca",
         "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOX1dhOUp5UFRJb2pMczhBRjB4TXRFLUlXYjBOZXZpSGUyLWRYNU1HQVYzYmpyakVxcUNNNGpvTlBhc1RfV3Z1Qy1MSkNPZnZreGJmZWc4Ynl3UDZjN2cyYVEyOTNLRmZPVEdVbGdFX1dFVUw2Tmw2YU8wMi04S3JJREsyX3dUWFV2dVBpanBfUnpXamQ1LTlVS0VqVXNoWFk?oc=5"
+      }
+    ],
+    "image_url": null,
+    "image_source_url": null,
+    "image_credit": null
+  },
+  {
+    "id": "news-6baafdd33f3b",
+    "title": "Ottawa and Northwest Territories sign $51M health funding agreement",
+    "summary": "The federal government and the Northwest Territories have signed a $51-million healthcare funding agreement.",
+    "amount": 51000000,
+    "date": "2026-10-05",
+    "fiscal_year": "2026-27",
+    "department": "Health Canada",
+    "dept_code": "H",
+    "program_code": "BVG21",
+    "source_type": "news",
+    "level": "federal",
+    "sources": [
+      {
+        "label": "INsauga",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNaUpzaGhXZ3NVQW12TGoxVUZvVVozbHFVenlmN3diQXZkelJveHl3cHlSNXNMVUcyajgzNFUzS2N4enRWTkNqcDZuVDFyWDJjQ291am5wMUtlcVR1U0wyRk4zUG1UWWltc05sYlhXTEZKZUNqM1VjcWktTmkyWGI3TkJrYWo0VXdYanpidnlBSF9rN2prT2ExZm9n?oc=5"
       }
     ],
     "image_url": null,
@@ -1687,9 +1731,9 @@
         "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOTlNxSDJGNGdrQzYyMEhFRnNMTFFDU1c5Z1hEaFROSXdWemg5OVBBcGtkN3A2SjZwLXFhelpPNU02Q1VTWnVnRkdUWmtQTEFOd0RXOTBmMzhzdm9EbDliNXkyS3dVSmdTZnhmcExETzNhb1RmZjhlUHpiSS1EZ2RxSFFVM0FQTWt5YUxrWWVzWFBHUFpXSDAzaVNManRteUplakJmZGhGbm9HYVJwaEYtOUJR?oc=5"
       }
     ],
-    "image_url": null,
-    "image_source_url": null,
-    "image_credit": null
+    "image_url": "/story-images/news/news-0ed6f37bf9c8.webp",
+    "image_source_url": "https://www.on-sitemag.com/construction/pomerleau-lands-121-6m-federal-building-contract-in-st-johns/1003987929/",
+    "image_credit": "On-Site Magazine"
   },
   {
     "id": "news-28b59b949d4f",
