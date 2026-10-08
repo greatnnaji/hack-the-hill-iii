@@ -1,5 +1,75 @@
 [
   {
+    "id": "news-2a6af56aac81",
+    "title": "Federal government announces $8 billion in military spending in Alberta",
+    "summary": "The federal government has announced $8 billion in military funding for Alberta.",
+    "amount": 8000000000,
+    "date": "2026-10-07",
+    "fiscal_year": "2026-27",
+    "department": "National Defence",
+    "dept_code": "ND",
+    "program_code": null,
+    "source_type": "news",
+    "level": "federal",
+    "sources": [
+      {
+        "label": "Red Deer Advocate",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNNFg1QWczVDJrOHRBVXE0dlIzVmFLNUoyWkhYekpFRVVQdkJZeWRmVHQyb1M5NzNqTmlaZ3hRcVFRZlYtNS1iU2p5OHRWOGxsWmswU1h0MW9oRVc3LWFjSHdWaEIzME9Cc0h1dFJzZzNhQk1CLTNDT2JkTHY5ZDBkNGtCbmtpRkFKQWszbnlYQkpqT2RjTS1LRnJHeVdFVXVQRHdHejBLTmtiSFRJUE1B?oc=5"
+      },
+      {
+        "label": "Global News",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNejlmNU9lZk4tYk9Ka0ZUYnNENXJfOHhaZk5yOFlIeC13YjJGMWVPWUMzYUNBM25pZzJnSlhibnliMXNUaFFNX0VLcE1BVzBqdUtyVkNjWVlFNUM1eFNtOGduTlRyMXJNamxlOVJ2VFdWamUzS09HMlFxSXhBMERCaldvejVDZDR1amZGM241cDhfUVMt?oc=5"
+      }
+    ],
+    "image_url": "/story-images/news/news-c2af858ab248.webp",
+    "image_source_url": "https://reddeeradvocate.com/2026/10/07/federal-government-announces-8-billion-in-military-spending-in-alberta/",
+    "image_credit": "Red Deer Advocate"
+  },
+  {
+    "id": "news-f13676be3a94",
+    "title": "Saskatoon Tribal Council signs $269 million federal contract",
+    "summary": "The Saskatoon Tribal Council has signed a $269 million federal contract for child and family services.",
+    "amount": 269000000,
+    "date": "2026-10-07",
+    "fiscal_year": "2026-27",
+    "department": "Department of Indigenous Services",
+    "dept_code": "INDSC",
+    "program_code": "BYP08",
+    "source_type": "news",
+    "level": "federal",
+    "sources": [
+      {
+        "label": "Global News",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNdzdfY2xQMlU3M0NJd1RkdHp3V2FLUk5OZFZMX3BHZ05kYV96SnhVX2VqZVhCOS12cU1VX3RISU1FZjhvclBSUHQ3clJHb2M5R3RMQmlpOXBZMDZ2YjVSTUUwWWYyaTZjUUR5VmNVYmVnM1hsR19aNThYMnE5ZmZxX20yell0Nkt0?oc=5"
+      }
+    ],
+    "image_url": null,
+    "image_source_url": null,
+    "image_credit": null
+  },
+  {
+    "id": "news-ca846b49a11c",
+    "title": "FedNor invests $1.5 million to support Muskoka-area businesses",
+    "summary": "FedNor is investing $1.5 million in the Community Futures Development Corporation to support businesses in the Muskoka area.",
+    "amount": 1500000,
+    "date": "2026-10-07",
+    "fiscal_year": "2026-27",
+    "department": "Federal Economic Development Agency for Northern Ontario",
+    "dept_code": "FEDNO",
+    "program_code": "BYL03",
+    "source_type": "news",
+    "level": "federal",
+    "sources": [
+      {
+        "label": "South Muskoka Doppler",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNaUhrNEZ2NnExQ2tYeG1OTzM3WWVxdDI4YlV3UWZueTBYcjVqUzllVFp6cDZvanN0MVpyQ3ZNMEo2Q2lZTEZpTHlCQ2JLb3ZTWTRwMGxmeHNNbkdmNWxoZFJCX1NIOFk2N2I5cTNVVFFMWEVsTWttN3ZfdFpVUUg3RnhBMzBLaVUwZWFzbDNxUG9Ic3p4V0ZaUURxT3N4NE1DYkREbnk3c0trekZo?oc=5"
+      }
+    ],
+    "image_url": null,
+    "image_source_url": null,
+    "image_credit": null
+  },
+  {
     "id": "news-a7231c7c783d",
     "title": "CyberWorks awarded $1 million Canadian Armed Forces contract",
     "summary": "CyberWorks has secured a $1 million contract with the Canadian Armed Forces.",
@@ -66,6 +136,44 @@
     "image_credit": "The Hill Times"
   },
   {
+    "id": "news-bef811e8b8e4",
+    "title": "Canada invests $77 million in Arctic Bay harbour project",
+    "summary": "The Canadian government is investing $77 million in a harbour project in Arctic Bay. The project aims to expand marine access in Nunavut.",
+    "amount": 77000000,
+    "date": "2026-10-02",
+    "fiscal_year": "2026-27",
+    "department": "Fisheries and Oceans Canada",
+    "dept_code": "FO",
+    "program_code": "BTF06",
+    "source_type": "news",
+    "level": "federal",
+    "sources": [
+      {
+        "label": "Traders Union",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOVF9NUW54cG9hNUJWSUd4ZHZsSWdBUUo5VERTdTlVRXYtWExyLWVhclBkY01hQmR0Xy1MMll3QnBEc3NQZjd3Y2VfTWpueWkzWTItTDhoMHJoZE1zVHhSQ29vbFlDc0lZN283ZUZYcU9fWjVDVWpIb0pCNUcydnh4V2lIRER5TklCSk01eC1jX2lEdWpGUVpPeFhaREhsdW9aWC1rVktR?oc=5"
+      },
+      {
+        "label": "Nunavut News",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQZWhFdXhpUDhIUHY4LTdoR2xidEozeDhrQ3VySldyRGdZYmV2REhfc2o2QUhnZkUwdkdvZWVZYmtKaWlCVWtqMVItZlExajI3eUhweUNleVFIU1E3M1Q3UGZQa1VmZERVUzNiZTJZQnZOTVZ6Q0UzTnpXNEltWkdoS0d3LXFNTlhqOXRHRGxJMTN0VGJWN3VjaXZubHVzQkdBVTJZdzJmaVpKd0lxNFdKY2Y4Um15UFE?oc=5"
+      },
+      {
+        "label": "cedarnews.net",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPNTJqMjIwek82dklMSlh5cjFJZjJTSUNtczFFLVZNNUxqdGxWeXZNU3p5SXAtZ1pBdElKNlIxVHNGTkxxalV6UkJTYnFYWmRKZ1BrN3lpQmppVVpBdzhaZjlBREZqRDZ5WHp4X2dlbmFQVndZZk1TZGJ2b0RKbm1MQTlWTDFpX21XY2xOS2hKNA?oc=5"
+      },
+      {
+        "label": "Canadian Defence Review",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOYWRvUzlyT0hOR1RoVE5GaUpNc2JjeGpOYzhsUkpKRmhvbHQ1V0s4dUtVeDBYWDQweDNqZm9DV3Y1X2ZTTF9ablRmTWVHa21lZ0xjSll5aEs1MFhpNi12WEdkVDl2YmZMc012ZS1ENlM3WS1TbkpWRWctQlpaay1MVjBqWEM3VFNBajdDWGVyczJJR1dmRlFVcnV4b2NTaGc?oc=5"
+      },
+      {
+        "label": "Nunatsiaq News",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQMzhnbldZRE9nNlVSZTFIVDN2ODhiTlZOaW9Nd0o4bE04RS1TRzEwaVozaDBqRlhNQWtlNG5ENG5oTFBEWFd6UmFWNEhGTWFCeEVfQXVUUzQ3aDJUV3M4dDgySnZsNGpQT1I3bTBZWnd4bkllWHNTa2NfR3RiY3dHdFFlUTFjbTB0NC1VeVcydDBjcm5ldDJVSw?oc=5"
+      }
+    ],
+    "image_url": "/story-images/news/news-84165101ceaf.webp",
+    "image_source_url": "https://canadiandefencereview.com/canada-invests-77m-in-small-craft-harbour-in-arctic-bay-nunavut/",
+    "image_credit": "Canadian Defence Review"
+  },
+  {
     "id": "news-0d19f4920d96",
     "title": "FCM and Canada announce $66.3M for 162 energy-efficient housing projects",
     "summary": "The Government of Canada and the Federation of Canadian Municipalities announced $66.3 million to support 162 energy-efficient housing projects.",
@@ -93,6 +201,10 @@
       {
         "label": "The Environment Journal",
         "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOT2dZcXRjaExVWHdFdGJuRXhfWTA1OUhCRWItaU1peXZDaDJpVWt2WlpzZGVGMGtaM2o5dHJwcnIzVlNDOHZjVDRGTllXZ3k4dlI0cGlKbGk1TkZEZnFvbklfdktfczJmeVQ2bUQ1TVNTZGhjYnZFUEJiejAtdGpmdEUyd1lsMEk2UnZYcTNYMFBkVWM2akZFWQ?oc=5"
+      },
+      {
+        "label": "HPAC Magazine",
+        "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQM1FKZFZGWU96RVlaX3ZLVU9FU0s1UWFrbUZlejIwZzZzQ2dmQ0QwdlVKeW1SaTIyMzdjWV9yd01aemRzUjJRQ3N4aTltTmh2ZzFXelJpUEQtY1puNDFKaDNNOXNHaXQ1S1lYVzlaNV9fcE9ES0VVWjd6dlM1N3ZrUzNBbkUtQjh4ck5mLVUwRklLSTVxaEcta0s0QVJPZkRyTkNvY3Q0aFZZUFNUUHZLaDBWRFUtTU9yeTZRcEJIVUgtdy1QZ21DQk9adF9jTjVSSWU5ZGotN3Y5S09sYUI3VnBjMHg1al9jdlVMUmR1QXVQUlNtR280?oc=5"
       }
     ],
     "image_url": "/story-images/news/news-0d19f4920d96.webp",
@@ -124,40 +236,6 @@
     "image_url": "/story-images/news/news-2ae005432c57.webp",
     "image_source_url": "https://www.ctvnews.ca/london/article/fanshawe-college-announces-34m-training-partnership-with-royal-canadian-air-force/",
     "image_credit": "CTV News"
-  },
-  {
-    "id": "news-bef811e8b8e4",
-    "title": "Canada invests $77 million in Arctic Bay harbour project",
-    "summary": "The Canadian government is investing $77 million in a harbour project in Arctic Bay. The project aims to expand marine access in Nunavut.",
-    "amount": 77000000,
-    "date": "2026-10-02",
-    "fiscal_year": "2026-27",
-    "department": "Fisheries and Oceans Canada",
-    "dept_code": "FO",
-    "program_code": "BTF06",
-    "source_type": "news",
-    "level": "federal",
-    "sources": [
-      {
-        "label": "Traders Union",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOVF9NUW54cG9hNUJWSUd4ZHZsSWdBUUo5VERTdTlVRXYtWExyLWVhclBkY01hQmR0Xy1MMll3QnBEc3NQZjd3Y2VfTWpueWkzWTItTDhoMHJoZE1zVHhSQ29vbFlDc0lZN283ZUZYcU9fWjVDVWpIb0pCNUcydnh4V2lIRER5TklCSk01eC1jX2lEdWpGUVpPeFhaREhsdW9aWC1rVktR?oc=5"
-      },
-      {
-        "label": "Nunavut News",
-        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQZWhFdXhpUDhIUHY4LTdoR2xidEozeDhrQ3VySldyRGdZYmV2REhfc2o2QUhnZkUwdkdvZWVZYmtKaWlCVWtqMVItZlExajI3eUhweUNleVFIU1E3M1Q3UGZQa1VmZERVUzNiZTJZQnZOTVZ6Q0UzTnpXNEltWkdoS0d3LXFNTlhqOXRHRGxJMTN0VGJWN3VjaXZubHVzQkdBVTJZdzJmaVpKd0lxNFdKY2Y4Um15UFE?oc=5"
-      },
-      {
-        "label": "cedarnews.net",
-        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPNTJqMjIwek82dklMSlh5cjFJZjJTSUNtczFFLVZNNUxqdGxWeXZNU3p5SXAtZ1pBdElKNlIxVHNGTkxxalV6UkJTYnFYWmRKZ1BrN3lpQmppVVpBdzhaZjlBREZqRDZ5WHp4X2dlbmFQVndZZk1TZGJ2b0RKbm1MQTlWTDFpX21XY2xOS2hKNA?oc=5"
-      },
-      {
-        "label": "Canadian Defence Review",
-        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOYWRvUzlyT0hOR1RoVE5GaUpNc2JjeGpOYzhsUkpKRmhvbHQ1V0s4dUtVeDBYWDQweDNqZm9DV3Y1X2ZTTF9ablRmTWVHa21lZ0xjSll5aEs1MFhpNi12WEdkVDl2YmZMc012ZS1ENlM3WS1TbkpWRWctQlpaay1MVjBqWEM3VFNBajdDWGVyczJJR1dmRlFVcnV4b2NTaGc?oc=5"
-      }
-    ],
-    "image_url": null,
-    "image_source_url": null,
-    "image_credit": null
   },
   {
     "id": "news-1a90532af231",
@@ -551,9 +629,31 @@
         "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOS0JlNjBhMFFDUERlYUstQVluY3JiaGtxaW5UMnNQelNMa25Wc2NfYy1yTlQ3TVEwajlaRGk3bVdHZFpEb0tKRXozb3Z3dnlYYm5FTDNGRnpxN3VTZENqQmUwZDRZRmZjSnNVTlZqVjZ1b002NUp0X25wMENLTk1GOWZmTDdCeldLc2NsLXRFeFUwTXlzbmVubEVKZ3NIcHkzT0Zlbw?oc=5"
       }
     ],
-    "image_url": "/story-images/news/news-df2f8d5280e8.webp",
-    "image_source_url": "https://www.castanet.net/news/Kelowna/632702/Federal-government-commits-22-4-million-for-development-of-east-lands-at-Kelowna-International-Airport",
-    "image_credit": "Castanet"
+    "image_url": "/story-images/news/news-74d5b2562e3b.webp",
+    "image_source_url": "https://canadiandefencereview.com/canada-invests-22-4m-in-kelowna-airport-aerospace-infrastructure/",
+    "image_credit": "Canadian Defence Review"
+  },
+  {
+    "id": "news-54680293248a",
+    "title": "RCMP pays $394,000 of $7.5 million contract for grounded helicopter",
+    "summary": "The RCMP has paid $394,000 of a $7.5 million contract for a grounded Black Hawk helicopter.",
+    "amount": 394000,
+    "date": "2026-09-28",
+    "fiscal_year": "2026-27",
+    "department": "Royal Canadian Mounted Police",
+    "dept_code": "RCMP",
+    "program_code": "ISS0Z",
+    "source_type": "news",
+    "level": "federal",
+    "sources": [
+      {
+        "label": "www.jennykwanndp.ca",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOdldEbXFFUXZhUXhTMGFCZnlfZmZhTUM4amNiSVR6WUFtWXpyNi1jZmE3ZEdNNDZwUUUwcmNodDdFMlRMRmxNTWp1T3BrdE9NMkhXZDFuUFctczVwbFZGMkpRR2pFcUFXRlBYSDhnN3c1R0NrQWtSLU1tUTF2MFpLa0N0NXRwM2xkeW5uZjM1cU1mQ0FqR3dRZ0x5Ym13cjAzbXpXdGVJandrZlRVMzVzaEdzUUNVekc5?oc=5"
+      }
+    ],
+    "image_url": null,
+    "image_source_url": null,
+    "image_credit": null
   },
   {
     "id": "news-1476946fc0a2",
@@ -1281,9 +1381,9 @@
         "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPT2RxRXdyOVF0ejQtalpkTjB6Qk9Nblh2cHlBdUZEV3JyZFhMRk0ya2RSWThmU2NrUnd5VzA1NW04c0VnWXVTSktINGxleldDdnV4aTZmeEZVb0JBakNtbHItVHZmSnVoR1hUYVJEOXBrX1Z5MXlrUEtGZDBrczZOZjZLWHRKYldYTjByc0VYWkdkVDNQdnQxRkR0Zm1Ba0NTeGRzdGdwSk91VjM4cmc?oc=5"
       }
     ],
-    "image_url": null,
-    "image_source_url": null,
-    "image_credit": null
+    "image_url": "/story-images/news/news-a49f84fd54b2.webp",
+    "image_source_url": "https://www.hpcwire.com/off-the-wire/qubic-wins-ca1-5m-canadian-government-contract-for-cryogenic-amplifiers/",
+    "image_credit": "HPCwire"
   },
   {
     "id": "news-c4098e4bdd5c",
