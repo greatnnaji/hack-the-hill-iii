@@ -19,11 +19,15 @@
       {
         "label": "Global News",
         "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNejlmNU9lZk4tYk9Ka0ZUYnNENXJfOHhaZk5yOFlIeC13YjJGMWVPWUMzYUNBM25pZzJnSlhibnliMXNUaFFNX0VLcE1BVzBqdUtyVkNjWVlFNUM1eFNtOGduTlRyMXJNamxlOVJ2VFdWamUzS09HMlFxSXhBMERCaldvejVDZDR1amZGM241cDhfUVMt?oc=5"
+      },
+      {
+        "label": "Today in BC",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOb2FuM0pEYVY2WEV0TDkwcGJqV3J0SjVfMEQ0N1VFSy1TRjNzTzZFRXNuUlNQa3FfblZuRDBwWk5YX2pxRFpFalJFVGxMSUJQcksyOXFsajJEaE9CY19MaC1fWXBkMEFrcENxLW9sVTlVVXNvZmhFTUM4TVhpamFuU3BDVzRwWVB6ZV9iV183NGZDclE3LTVXU3JSakJnMG4xNlltenBDbw?oc=5"
       }
     ],
-    "image_url": "/story-images/news/news-c2af858ab248.webp",
-    "image_source_url": "https://reddeeradvocate.com/2026/10/07/federal-government-announces-8-billion-in-military-spending-in-alberta/",
-    "image_credit": "Red Deer Advocate"
+    "image_url": "/story-images/news/news-88a849cd23a2.webp",
+    "image_source_url": "https://todayinbc.com/2026/10/07/federal-government-announces-8-billion-in-military-spending-in-alberta/",
+    "image_credit": "Today in BC"
   },
   {
     "id": "news-f13676be3a94",
@@ -1093,14 +1097,14 @@
   },
   {
     "id": "news-15beea9f0e27",
-    "title": "Federal government invests $76M in national basketball centre in Toronto",
-    "summary": "The federal government is investing $76 million into a new national basketball centre located in Toronto.",
+    "title": "Federal government invests $76 million in Toronto national basketball centre",
+    "summary": "The federal government is investing $76 million in a new national basketball centre located in Toronto.",
     "amount": 76000000,
     "date": "2026-09-16",
     "fiscal_year": "2026-27",
-    "department": "Canadian Heritage",
-    "dept_code": "CH",
-    "program_code": "BSF01",
+    "department": "Office of Infrastructure of Canada",
+    "dept_code": "OICC",
+    "program_code": "BYC02",
     "source_type": "news",
     "level": "federal",
     "sources": [
@@ -1127,6 +1131,10 @@
       {
         "label": "Toronto Star",
         "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOMlBKWmFobExPUV8xazRBMS1zOXhHRlBZRU5GalR2QW1kNWJZNkowTVhNbG5jODZkVlBVaTdvM1pwdDlrM0Z5WllHckZCVWxaNjZkWmJ6S05IYXdvTmppVlk0WlRPSVpsa3BjWlR2YkFYQU9LUkItRGhHXzNydW5YUmxoaHdVOFFfNWJpTC0wc2RkbGsyVWgwVHUwQlBWLXZBa01WZkFoMjlYZE9ob0wwV2RaTkNUc1VqZjM0V2NQY2hiT2pEYnlMRW41TFI5ejg0d2p2anotSnk5TS04MkY2U01nVW1OQWVmQ1hvUzZxSXNJc253ZVVxa2dkY3h4QUU?oc=5"
+      },
+      {
+        "label": "rdnewsnow.com",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOWDAzSW5nd3puSWNyWGYtM29FT1pXVVNIaEd1OGtxcWxPTzJqS0J6b3dIYjJaX1VSaW82dGtIalpyRXM3VmxHdDlFYzV5VDVfN2VEbm9HVi1EVnJZNmhFYWc1S0ZyVlZjWFhRV2g2QVU4TEpRSDhsenRRRlNOQWdPeVY1RER5OUxxTEJOaFhHWHk2dkk2VlFVMk9LM3A0bEhFVTVLbGQzMnJYWm96eHZrYjJB?oc=5"
       },
       {
         "label": "canada.constructconnect.com",
@@ -1679,9 +1687,9 @@
         "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOTlNxSDJGNGdrQzYyMEhFRnNMTFFDU1c5Z1hEaFROSXdWemg5OVBBcGtkN3A2SjZwLXFhelpPNU02Q1VTWnVnRkdUWmtQTEFOd0RXOTBmMzhzdm9EbDliNXkyS3dVSmdTZnhmcExETzNhb1RmZjhlUHpiSS1EZ2RxSFFVM0FQTWt5YUxrWWVzWFBHUFpXSDAzaVNManRteUplakJmZGhGbm9HYVJwaEYtOUJR?oc=5"
       }
     ],
-    "image_url": "/story-images/news/news-0ed6f37bf9c8.webp",
-    "image_source_url": "https://www.on-sitemag.com/construction/pomerleau-lands-121-6m-federal-building-contract-in-st-johns/1003987929/",
-    "image_credit": "On-Site Magazine"
+    "image_url": null,
+    "image_source_url": null,
+    "image_credit": null
   },
   {
     "id": "news-28b59b949d4f",
