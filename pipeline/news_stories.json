@@ -159,11 +159,15 @@
       {
         "label": "INsauga",
         "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNaUpzaGhXZ3NVQW12TGoxVUZvVVozbHFVenlmN3diQXZkelJveHl3cHlSNXNMVUcyajgzNFUzS2N4enRWTkNqcDZuVDFyWDJjQ291am5wMUtlcVR1U0wyRk4zUG1UWWltc05sYlhXTEZKZUNqM1VjcWktTmkyWGI3TkJrYWo0VXdYanpidnlBSF9rN2prT2ExZm9n?oc=5"
+      },
+      {
+        "label": "CTV News",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNZlF0VFZ1MTZNTkJmbTZ6c1ZGUDlxWlkzRTVXckdzdlZremdnOWFsOEhZSmY3d1B2RENrdTJXRmI5LVhuOXBsc1VadGd0VGxmTHpkeXM4dFM2cndXYVlZdzNDX05WbG9zbUJ6aW1vZUVMSHQ5UGVWLUJHa0JORW1zUHB2REV3d3NlbGpFV3BWZnF5QXRoU1haSlpCZVFVOHRIVGdhWWljV0hKcHR5OTY0?oc=5"
       }
     ],
-    "image_url": null,
-    "image_source_url": null,
-    "image_credit": null
+    "image_url": "/story-images/news/news-bcc6992b0090.webp",
+    "image_source_url": "https://www.ctvnews.ca/politics/article/ottawa-northwest-territories-sign-51-million-health-funding-agreement/",
+    "image_credit": "CTV News"
   },
   {
     "id": "news-e087d04d21b3",
@@ -221,9 +225,9 @@
         "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQMzhnbldZRE9nNlVSZTFIVDN2ODhiTlZOaW9Nd0o4bE04RS1TRzEwaVozaDBqRlhNQWtlNG5ENG5oTFBEWFd6UmFWNEhGTWFCeEVfQXVUUzQ3aDJUV3M4dDgySnZsNGpQT1I3bTBZWnd4bkllWHNTa2NfR3RiY3dHdFFlUTFjbTB0NC1VeVcydDBjcm5ldDJVSw?oc=5"
       }
     ],
-    "image_url": "/story-images/news/news-84165101ceaf.webp",
-    "image_source_url": "https://canadiandefencereview.com/canada-invests-77m-in-small-craft-harbour-in-arctic-bay-nunavut/",
-    "image_credit": "Canadian Defence Review"
+    "image_url": null,
+    "image_source_url": null,
+    "image_credit": null
   },
   {
     "id": "news-0d19f4920d96",
@@ -681,9 +685,9 @@
         "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOS0JlNjBhMFFDUERlYUstQVluY3JiaGtxaW5UMnNQelNMa25Wc2NfYy1yTlQ3TVEwajlaRGk3bVdHZFpEb0tKRXozb3Z3dnlYYm5FTDNGRnpxN3VTZENqQmUwZDRZRmZjSnNVTlZqVjZ1b002NUp0X25wMENLTk1GOWZmTDdCeldLc2NsLXRFeFUwTXlzbmVubEVKZ3NIcHkzT0Zlbw?oc=5"
       }
     ],
-    "image_url": "/story-images/news/news-74d5b2562e3b.webp",
-    "image_source_url": "https://canadiandefencereview.com/canada-invests-22-4m-in-kelowna-airport-aerospace-infrastructure/",
-    "image_credit": "Canadian Defence Review"
+    "image_url": "/story-images/news/news-df2f8d5280e8.webp",
+    "image_source_url": "https://www.castanet.net/news/Kelowna/632702/Federal-government-commits-22-4-million-for-development-of-east-lands-at-Kelowna-International-Airport",
+    "image_credit": "Castanet"
   },
   {
     "id": "news-54680293248a",
@@ -1598,7 +1602,7 @@
     "image_credit": null
   },
   {
-    "id": "news-6979a854491e",
+    "id": "news-0b0318ac53e5",
     "title": "Feds announce $5M for HIV self-testing and support staff",
     "summary": "The federal government announced $5 million for HIV self-test kits and additional peer support staff.",
     "amount": 5000000,
@@ -1643,13 +1647,17 @@
         "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOTW8wOFJwbTBBbTdLbXJ4UzdYcjlEek1XcUdpZWY0TDY1TFpyVFZkVkpxZFoxZEdsRGxWTzMxVlFKMnNPQzVPVUgweEdFd3d2SUJKeDFtNWNhcHhCZXJHRTEtcUZhN3Z6aDVkc0JoblVIRUdXWThDLU1sRHdDNkJVSEo3Z2N5UDFBWUY4R2tCRnJsOXM?oc=5"
       },
       {
+        "label": "CityNews Ottawa",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNN1VTUXllRzBUWnpKU2FEeGRiYkk5RmUzaVVzbzJERE9lc1hJT1Fkb19GLXlyZnFBRmE0U3ZfTTRELUZfZ1dmTURLaldnRW1tMjhMdWd6dF9HMkhKWmZXU2JaWkJZTlF3c2MyXzZ0cS1iYy1SQlpTbXNQQy1iZl9UVC1ERTJZdDlNQzVjMVZ5Um1teTVXaXp0ZzFKYw?oc=5"
+      },
+      {
         "label": "新住民全球新聞網",
         "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQSXdDWXRJWUxQdTRkVTMyOVE2WExMa1daNmpWWE4waTVFWnZrT19TTERGVnNxMVNaakFDaHpWMEdvTlJlSzdvcWYtX2JBeWhZTzBXNm0xcXVWMllQd0FXNmhUTE9uVnBFOVVJZmlLOVZuVW1ucDBLeTh3TWpqLV94UTVRNUJha0RyY2ZIWVNIS0NoZUx6SzNyUTNpSQ?oc=5"
       }
     ],
-    "image_url": "/story-images/news/news-6979a854491e.webp",
-    "image_source_url": "https://www.ctvnews.ca/winnipeg/article/ottawa-announces-5m-for-hiv-self-test-kits-support-staff/",
-    "image_credit": "CP24"
+    "image_url": "/story-images/news/news-0b0318ac53e5.webp",
+    "image_source_url": "https://toronto.citynews.ca/2026/09/10/ottawa-announces-5m-for-hiv-self-test-kits-support-staff/",
+    "image_credit": "CityNews Ottawa"
   },
   {
     "id": "news-8a3fbe1df937",
@@ -1739,9 +1747,9 @@
         "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOTlNxSDJGNGdrQzYyMEhFRnNMTFFDU1c5Z1hEaFROSXdWemg5OVBBcGtkN3A2SjZwLXFhelpPNU02Q1VTWnVnRkdUWmtQTEFOd0RXOTBmMzhzdm9EbDliNXkyS3dVSmdTZnhmcExETzNhb1RmZjhlUHpiSS1EZ2RxSFFVM0FQTWt5YUxrWWVzWFBHUFpXSDAzaVNManRteUplakJmZGhGbm9HYVJwaEYtOUJR?oc=5"
       }
     ],
-    "image_url": "/story-images/news/news-0ed6f37bf9c8.webp",
-    "image_source_url": "https://www.on-sitemag.com/construction/pomerleau-lands-121-6m-federal-building-contract-in-st-johns/1003987929/",
-    "image_credit": "On-Site Magazine"
+    "image_url": null,
+    "image_source_url": null,
+    "image_credit": null
   },
   {
     "id": "news-28b59b949d4f",
