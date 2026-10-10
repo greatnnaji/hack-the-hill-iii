@@ -225,9 +225,9 @@
         "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQMzhnbldZRE9nNlVSZTFIVDN2ODhiTlZOaW9Nd0o4bE04RS1TRzEwaVozaDBqRlhNQWtlNG5ENG5oTFBEWFd6UmFWNEhGTWFCeEVfQXVUUzQ3aDJUV3M4dDgySnZsNGpQT1I3bTBZWnd4bkllWHNTa2NfR3RiY3dHdFFlUTFjbTB0NC1VeVcydDBjcm5ldDJVSw?oc=5"
       }
     ],
-    "image_url": null,
-    "image_source_url": null,
-    "image_credit": null
+    "image_url": "/story-images/news/news-93c940219547.webp",
+    "image_source_url": "https://cedarnews.net/newstasks/1032597/canada-invests-77m-small-craft-harbour-arctic/",
+    "image_credit": "cedarnews.net"
   },
   {
     "id": "news-0d19f4920d96",
@@ -572,6 +572,28 @@
     "image_url": "/story-images/news/news-05746d9a4102.webp",
     "image_source_url": "https://www.ctvnews.ca/atlantic/new-brunswick/article/ottawa-spending-58m-on-health-centre-near-dorchester-penitentiary-in-new-brunswick/",
     "image_credit": "CTV News"
+  },
+  {
+    "id": "news-ec12e7d9d9ae",
+    "title": "Canada to expand fisheries enforcement under $845M plan",
+    "summary": "The federal government is expanding fisheries enforcement with drones and new officers under an $845 million plan.",
+    "amount": 845000000,
+    "date": "2026-09-29",
+    "fiscal_year": "2026-27",
+    "department": "Fisheries and Oceans Canada",
+    "dept_code": "FO",
+    "program_code": "BTF07",
+    "source_type": "news",
+    "level": "federal",
+    "sources": [
+      {
+        "label": "IntraFish",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQNm1oVk1vZXNGWVp5aktkS01QUGI3bWNiRjNTRjIzd1FiWm5jQWRvYzB0emhYc0w3QUMtdGVsTXRYNmNINVBNT0dkSlJBdGNabklnSG8yTURlVExRMW91SlRHdTZST1BzYXlJeXJTXzNkMUhpSzlwTGsyS3YtRnRPblJaX2NLc2Q0MUFTRXZOWnhZRHdncXl2QWtUQVJSamlUTlcwSno5bG5KUDVPNlFrcGgxZ1ZGUWF4V2p2NUtxbS1XS0VkS0E?oc=5"
+      }
+    ],
+    "image_url": "/story-images/news/news-ec12e7d9d9ae.webp",
+    "image_source_url": "https://www.intrafish.com/fisheries/canada-to-expand-fisheries-enforcement-with-drones-new-officers-under-845m-plan/2-1-2051357?zephr_sso_ott=PGsdFe",
+    "image_credit": "IntraFish"
   },
   {
     "id": "news-42d81134b623",
@@ -1747,9 +1769,9 @@
         "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOTlNxSDJGNGdrQzYyMEhFRnNMTFFDU1c5Z1hEaFROSXdWemg5OVBBcGtkN3A2SjZwLXFhelpPNU02Q1VTWnVnRkdUWmtQTEFOd0RXOTBmMzhzdm9EbDliNXkyS3dVSmdTZnhmcExETzNhb1RmZjhlUHpiSS1EZ2RxSFFVM0FQTWt5YUxrWWVzWFBHUFpXSDAzaVNManRteUplakJmZGhGbm9HYVJwaEYtOUJR?oc=5"
       }
     ],
-    "image_url": null,
-    "image_source_url": null,
-    "image_credit": null
+    "image_url": "/story-images/news/news-0ed6f37bf9c8.webp",
+    "image_source_url": "https://www.on-sitemag.com/construction/pomerleau-lands-121-6m-federal-building-contract-in-st-johns/1003987929/",
+    "image_credit": "On-Site Magazine"
   },
   {
     "id": "news-28b59b949d4f",
